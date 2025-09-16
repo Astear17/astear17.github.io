@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name's Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* --- Styles --- */
+        body {
+            margin: 0;
+            font-family: 'Inter', Segoe UI, sans-serif;
+            font-weight: 600;
+            background: linear-gradient(135deg, #10151c 0%, #232a36 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-x: hidden;
+            color: #f4f6fb;
+            padding: 60px 20px;
+        }
+
+        .blur-bg {
+            position: fixed;
+            top: -120px;
+            left: -120px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #0ea5e9 60%, transparent 100%);
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        .showcase-card {
+            background: rgba(20, 24, 32, 0.6);
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(30, 40, 50, 0.18);
+            padding: 32px 40px;
+            max-width: 700px;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            animation: pop-in 1s cubic-bezier(.4, 2, .6, 1.2);
+        }
+
+        @keyframes pop-in {
+            0% {
+                transform: scale(0.9) translateY(60px);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .logo-img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            border: 3px solid #38bdf8;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+            background: #161b22;
+            display: inline-block;
+        }
+
+        .showcase-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            background: linear-gradient(90deg, #38bdf8, #f43f5e 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .showcase-desc {
+            font-size: 1.1rem;
+            color: #d3d6e1;
+            margin-bottom: 24px;
+        }
+
+        .button-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .two-buttons {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .redirect-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 25px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.22s;
+            text-decoration: none;
+            color: #f2f3fa !important;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .redirect-button i {
+            font-size: 1.2em;
+        }
+
+        .redirect-button:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button-idevice { background: linear-gradient(90deg,#a1a1aaCC 60%,#e4e4e7CC 100%); color: #18181b !important;}
+        .button-idevice:hover { background: linear-gradient(90deg,#71717aCC 80%,#a1a1aaCC 100%);}
+        
+        .button-ytremark { background: linear-gradient(90deg,#ff4242CC 60%,#ff7373CC 100%);}
+        .button-ytremark:hover { background: linear-gradient(90deg,#be123cCC 70%,#f59e42CC 100%);}
+
+        hr {
+            border: none;
+            height: 1px;
+            margin: 30px 0;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, #38bdf8, #f43f5e, transparent);
+        }
+
+        .section-header {
+            color: #f2f3fa;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        
+        p, ul {
+            text-align: left;
+            color: #d3d6e1;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        a:hover {
+            color: #f43f5e;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            font-size: 1.8rem;
+            margin: 0 12px;
+            color: #d3d6e1;
+            transition: all 0.2s;
+        }
+        
+        .social-links a:hover {
+            color: #38bdf8;
+            transform: scale(1.1);
+        }
+
+        .donate-label {
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        .donate-qr {
+            display: block;
+            margin: 15px auto 0 auto;
+            max-width: 250px;
+            width: 100%;
+            border-radius: 16px; /* Rounded corners */
+            border: 2px solid #38bdf8;
+        }
+
+        .snowfall-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-bg"></div>
+    <canvas class="snowfall-canvas" id="snowfall-canvas"></canvas>
+
+    <div class="showcase-card">
+        <img class="logo-img" src="https://raw.githubusercontent.com/Astear17/astear17.github.io/main/03583A8D-9731-4EDC-B72D-6773464445BA.jpeg" alt="Your Profile Picture" />
+        <div class="showcase-title">Your Name</div>
+        <div class="showcase-desc">
+            Developer & Tech Enthusiast from Vietnam
+        </div>
+
+        <div class="button-section two-buttons">
+            <a href="https://astear17.github.io/iDevicePatcher" target="_blank" class="redirect-button button-idevice">
+                <i class="fab fa-apple"></i> iDevicePatcher
+            </a>
+            <a href="#" target="_blank" class="redirect-button button-ytremark">
+                <i class="fab fa-youtube"></i> YTRemark (YT Adblock)
+            </a>
+        </div>
+
+        <hr />
+
+        <h3 class="section-header" id="socials">Find Me On</h3>
+        <div class="social-links">
+            <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+
+        <hr />
+
+        <h3 class="section-header">About Me</h3>
+        <p>
+            Hello! I'm a passionate developer and technology enthusiast based in Vietnam. My focus is on creating useful tools and applications for the community. When I'm not coding, I enjoy exploring new tech and sharing my findings.
+        </p>
+
+        <hr />
+
+        <h3 class="section-header">Contact</h3>
+        <p>Contact me via email, tele phone, Zalo or Messenger:</p>
+        <p style="text-align: center; font-size: 1.1rem;"><a href="mailto:youremail@example.com">go548394@gmail.com</a></p>
+      <p style="text-align: center; font-size: 1.1rem;"><a href="tel:+84359623729">Phone call: (+84) 359 623 729</a></p>
+      <p style="text-align: center; font-size: 1.1rem;"><a href="https://www.facebook.com/Uma.MoXumXue"Facebook: Lê Thành Nghĩa</a></p>
+      <p style="text-align: center; font-size: 1.1rem;"><a href="mailto:youremail@example.com">Zalo: Lê Thành Nghĩa</a></p>
+        
+        <hr />
+
+        <h3 class="section-header">Support / Donate</h3>
+        <p class="donate-label">ZaloPay</p>
+        <img class="donate-qr" src="https://raw.githubusercontent.com/Astear17/astear17.github.io/main/92335C6B-5E4F-47E9-957C-61268AFFC276.jpeg" alt="ZaloPay QR Code">
+    </div>
+
+    <script>
+        const canvas = document.getElementById('snowfall-canvas');
+        const ctx = canvas.getContext('2d');
+        let snowflakes = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function createSnowflake() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * -canvas.height,
+                r: Math.random() * 2.2 + 1.7,
+                d: Math.random() * 1.1 + 0.7,
+                a: Math.random() * Math.PI * 2
+            };
+        }
+
+        function drawSnowflakes() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'rgba(255,255,255,0.95)';
+            ctx.beginPath();
+            for (let i = 0; i < snowflakes.length; i++) {
+                const f = snowflakes[i];
+                ctx.moveTo(f.x, f.y);
+                ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+            }
+            ctx.fill();
+            moveSnowflakes();
+        }
+
+        function moveSnowflakes() {
+            for (let i = 0; i < snowflakes.length; i++) {
+                let f = snowflakes[i];
+                f.y += Math.pow(f.d, 2) + 0.45;
+                f.x += Math.sin(f.a) * 0.7;
+                f.a += 0.01;
+                if (f.y > canvas.height) {
+                    snowflakes[i] = createSnowflake();
+                    snowflakes[i].y = 0;
+                }
+            }
+        }
+
+        function snowfallLoop() {
+            drawSnowflakes();
+            requestAnimationFrame(snowfallLoop);
+        }
+
+        function initSnowflakes() {
+            snowflakes = [];
+            let flakeCount = Math.floor(canvas.width / 25) + 10;
+            for (let i = 0; i < flakeCount; i++) {
+                snowflakes.push(createSnowflake());
+            }
+        }
+        window.addEventListener('resize', initSnowflakes);
+        initSnowflakes();
+        snowfallLoop();
+    </script>
+</body>
+</html>
