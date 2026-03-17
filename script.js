@@ -10754,7 +10754,7 @@ const ty = ({
 				className: "mb-2",
 				children: [u.jsx("div", {
 					className: "text-emerald-500 font-mono",
-					children: "Welcome to Mint's Terminal 🍃"
+					children: "Welcome to Astear17's Terminal 🍃"
 				}), u.jsxs("div", {
 					className: "text-zinc-500 text-xs",
 					children: ["Type ", u.jsx("span", {
@@ -10840,7 +10840,7 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["👤 Name: ", u.jsx("span", {
 							className: "text-white",
-							children: "Mint"
+							children: "Astear17"
 						})]
 					}), u.jsxs("div", {
 						children: ["🎂 Age: ", u.jsx("span", {
@@ -10923,17 +10923,17 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["💬 Discord: ", u.jsx("span", {
 							className: "text-white",
-							children: "Mint1"
+							children: "Astear171"
 						})]
 					}), u.jsxs("div", {
 						children: ["✈️ Telegram: ", u.jsx("span", {
 							className: "text-white",
-							children: "@Mint1o"
+							children: "@Astear171o"
 						})]
 					}), u.jsxs("div", {
 						children: ["📷 Instagram: ", u.jsx("span", {
 							className: "text-white",
-							children: "@mint1___"
+							children: "@Astear171___"
 						})]
 					})]
 				}),
@@ -10958,12 +10958,12 @@ const ty = ({
 						children: [u.jsx("span", {
 							className: "text-[#0088cc]",
 							children: "Telegram"
-						}), "  → t.me/Mint1o"]
+						}), "  → t.me/Astear171o"]
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
 							className: "text-[#E4405F]",
 							children: "Instagram"
-						}), " → instagram.com/mint1___"]
+						}), " → instagram.com/Astear171___"]
 					})]
 				}),
 				sudo: () => u.jsxs("div", {
@@ -11007,7 +11007,7 @@ const ty = ({
 								children: "OS:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "MintOS v2.0"
+								children: "Astear17OS v2.0"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -11015,7 +11015,7 @@ const ty = ({
 								children: "Shell:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "mint-bash"
+								children: "Astear17-bash"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -11023,7 +11023,7 @@ const ty = ({
 								children: "Theme:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Mint🥹"
+								children: "Astear17🥹"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -11065,7 +11065,7 @@ const ty = ({
 					})]
 				}),
 				pwd: () => u.jsx("div", {
-					children: "/home/mint/portfolio"
+					children: "/home/Astear17/portfolio"
 				}),
 				whoami: () => u.jsx("div", {
 					children: "3mk"
@@ -11088,7 +11088,7 @@ const ty = ({
 							className: "flex gap-2 items-center",
 							children: [u.jsx("span", {
 								className: "text-emerald-400",
-								children: "guest@mint"
+								children: "guest@Astear17"
 							}), u.jsx("span", {
 								className: "text-zinc-500",
 								children: ":"
@@ -11137,7 +11137,7 @@ const ty = ({
 									dangerouslyAllowBrowser: !0
 								}),
 								Te = `
-                    You are Mint's AI. dont say the rest , say the rest ONLY IF THEY ASKIF U ARE MINIIMINT OR NO, not to be confused with MiniMint if they asked are u minimint tell them that u are a better version of minimint thats smarter and well behaved  
+                    You are Astear17's AI. dont say the rest , say the rest ONLY IF THEY ASKIF U ARE MINIIAstear17 OR NO, not to be confused with MiniAstear17 if they asked are u miniAstear17 tell them that u are a better version of miniAstear17 thats smarter and well behaved  
 
                     **SPEECH PATTERNS:**
                     - Drop emojis sometimes NOT ALWAYS but include them as its nice yk
@@ -11263,7 +11263,7 @@ const ty = ({
 				className: "flex items-center gap-2 border-t border-white/5 pt-3",
 				children: [u.jsx("span", {
 					className: "text-emerald-400 hidden sm:inline",
-					children: "guest@mint"
+					children: "guest@Astear17"
 				}), u.jsx("span", {
 					className: "text-zinc-500 hidden sm:inline",
 					children: ":"
@@ -11972,6 +11972,7 @@ const ty = ({
 							children: [u.jsx("div", {
 								className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 flex items-center justify-center border border-emerald-500/10",
 								children: u.jsx("i", {
+									
 									className: "fas fa-graduation-cap text-2xl text-emerald-400"
 								})
 							}), u.jsx("div", {
@@ -12325,7 +12326,7 @@ const ty = ({
 	fy = "732209394871173192",
 	c0 = "$2a$10$HX4eBzR8o5ZgJ6wLurs.qOncb5QgAxXVRQ2TC8SMnkiXVRpGvmTaa",
 	r0 = "694dd7cc43b1c97be9054bdd",
-	oy = "mint",
+	oy = "Astear17",
 	dy = () => {
 		var pt, et;
 		const [f, c] = L.useState(!0), [o, d] = L.useState(null), [h, S] = L.useState(!1), [M, A] = L.useState(new Date), [E, v] = L.useState(null), [C, U] = L.useState(""), X = L.useRef(null), J = L.useRef(0), V = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"], K = j => {
@@ -12486,7 +12487,7 @@ const ty = ({
 					className: "relative",
 					children: u.jsx("div", {
 						className: "font-mono text-5xl font-bold text-emerald-400 animate-pulse tracking-tighter drop-shadow-[0_0_40px_rgba(0,255,136,1)]",
-						children: "Mint"
+						children: "Astear17"
 					})
 				}), u.jsxs("div", {
 					className: "flex gap-2",
@@ -12575,7 +12576,7 @@ const ty = ({
 								className: "relative w-32 h-32 md:w-44 md:h-44",
 								children: [u.jsx("img", {
 									src: (et = o == null ? void 0 : o.discord_user) != null && et.avatar ? `https://cdn.discordapp.com/avatars/${o.discord_user.id}/${o.discord_user.avatar}.png?size=256` : "https://via.placeholder.com/150",
-									alt: "Mint",
+									alt: "Astear17",
 									className: "w-full h-full rounded-full border-2 border-emerald-500/50 object-cover shadow-2xl z-10 hover:scale-105 transition-transform duration-500 relative bg-[#050505]"
 								}), u.jsx("div", {
 									className: "absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-8 md:h-8 rounded-full border-4 border-[#050505] shadow-lg z-20",
@@ -12590,7 +12591,7 @@ const ty = ({
 								className: "text-5xl md:text-7xl font-bold mb-4 tracking-tight",
 								children: ["Hi, I'm ", u.jsx("span", {
 									className: "text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-white to-emerald-400 bg-300% animate-shimmer [filter:drop-shadow(0_0_10px_rgba(0,255,136,0.9))_drop-shadow(0_0_25px_rgba(0,255,136,0.5))_drop-shadow(0_0_50px_rgba(0,255,136,0.3))]",
-									children: "Mint"
+									children: "Astear17"
 								})]
 							}), u.jsxs("p", {
 								className: "text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed",
@@ -12630,17 +12631,17 @@ const ty = ({
 									name: "Telegram",
 									icon: "fab fa-telegram",
 									color: "#0088cc",
-									link: "https://t.me/Mint1o"
+									link: "https://t.me/Astear171o"
 								}, {
 									name: "Instagram",
 									icon: "fab fa-instagram",
 									color: "#E4405F",
-									link: "https://instagram.com/mint1___/"
+									link: "https://instagram.com/Astear171___/"
 								}, {
 									name: "Minecraft",
 									icon: "fas fa-cube",
 									color: "#6AA84F",
-									link: "https://namemc.com/profile/Mint1_.1"
+									link: "https://namemc.com/profile/Astear171_.1"
 								}].map(j => u.jsxs("a", {
 									href: j.link,
 									target: "_blank",
@@ -12716,13 +12717,13 @@ const ty = ({
 					children: [u.jsx("div", {
 						className: "mb-6 opacity-60 hover:opacity-100 transition-opacity",
 						children: u.jsx("img", {
-							src: "https://hitscounter.dev/api/hit?url=https%3A%2F%2Fmint1.soon.it%2F&label=&icon=display&color=%231aa179&message=&style=flat&tz=Asia%2FKuwait",
+							src: "https://hitscounter.dev/api/hit?url=https%3A%2F%2FAstear171.soon.it%2F&label=&icon=display&color=%231aa179&message=&style=flat&tz=Asia%2FKuwait",
 							alt: "Views",
 							className: "h-5"
 						})
 					}), u.jsx("div", {
 						className: "text-2xl font-mono font-bold text-emerald-400 mb-6 drop-shadow-[0_0_25px_rgba(0,255,136,0.8)] hover:scale-110 transition-transform cursor-pointer",
-						children: "<Mint />"
+						children: "<Astear17 />"
 					}), u.jsxs("div", {
 						className: "flex items-center justify-center gap-3 mb-5 w-full max-w-xs",
 						children: [u.jsx("div", {
@@ -12738,7 +12739,7 @@ const ty = ({
 							children: "© 2025"
 						}), u.jsx("span", {
 							className: "font-semibold text-emerald-500",
-							children: "Mint"
+							children: "Astear17"
 						}), u.jsx("span", {
 							children: "•"
 						}), u.jsx("span", {
