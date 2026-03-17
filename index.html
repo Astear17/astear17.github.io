@@ -1,354 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astear17</title>
-
+<html lang="en" class="scroll-smooth bg-[#050505]">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astear17 | Developer Portfolio</title>
+    <meta name="description" content="Astear17 - Developer specializing in Web, Games, and iOS.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', Segoe UI, sans-serif;
-            font-weight: 600;
-            background: linear-gradient(135deg, #10151c 0%, #232a36 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            overflow-x: hidden;
-            color: #f4f6fb;
-            padding: 60px 20px;
-        }
-
-        .blur-bg {
-            position: fixed;
-            top: -120px;
-            left: -120px;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, #0ea5e9 60%, transparent 100%);
-            filter: blur(80px);
-            z-index: 0;
-            opacity: 0.25;
-            pointer-events: none;
-        }
-
-        .showcase-card {
-            background: rgba(20, 24, 32, 0.6);
-            border-radius: 24px;
-            box-shadow: 0 10px 40px rgba(30, 40, 50, 0.18);
-            padding: 32px 40px;
-            max-width: 700px;
-            width: 100%;
-            z-index: 1;
-            text-align: center;
-            backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            animation: pop-in 1s cubic-bezier(.4, 2, .6, 1.2);
-        }
-
-        @keyframes pop-in {
-            0% {
-                transform: scale(0.9) translateY(60px);
-                opacity: 0;
-            }
-            100% {
-                transform: scale(1) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .logo-img {
-            width: 110px;
-            height: 110px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 12px;
-            border: 3px solid #38bdf8;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
-            background: #161b22;
-            display: inline-block;
-        }
-
-        .showcase-title {
-            font-family: 'Inter', sans-serif;
-            font-weight: 900;
-            font-size: 2.8rem;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-            background: linear-gradient(90deg, #38bdf8, #f43f5e 80%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .showcase-desc {
-            font-size: 1.1rem;
-            color: #d3d6e1;
-            margin-bottom: 24px;
-        }
-
-        .button-section {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .two-buttons {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .redirect-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 18px 25px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.22s;
-            text-decoration: none;
-            color: #f2f3fa !important;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .redirect-button i {
-            font-size: 1.2em;
-        }
-
-        .redirect-button:hover {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
-        }
-        
-        .button-idevice { background: linear-gradient(90deg,#a1a1aaCC 60%,#e4e4e7CC 100%); color: #18181b !important;}
-        .button-idevice:hover { background: linear-gradient(90deg,#71717aCC 80%,#a1a1aaCC 100%);}
-        
-        .button-ytremark { background: linear-gradient(90deg,#ff4242CC 60%,#ff7373CC 100%);}
-        .button-ytremark:hover { background: linear-gradient(90deg,#be123cCC 70%,#f59e42CC 100%);}
-
-        .button-console { background: linear-gradient(90deg, #10b981 60%, #34d399 100%); }
-        .button-console:hover { background: linear-gradient(90deg, #059669 70%, #10b981 100%); }
-
-        .button-vn { background: linear-gradient(90deg, #da251d 60%, #ef4444 100%); }
-        .button-vn:hover { background: linear-gradient(90deg, #991b1b 70%, #da251d 100%); }
-
-
-        hr {
-            border: none;
-            height: 1px;
-            margin: 30px 0;
-            width: 100%;
-            background: linear-gradient(90deg, transparent, #38bdf8, #f43f5e, transparent);
-        }
-
-        .section-header {
-            color: #f2f3fa;
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-align: left;
-            margin-bottom: 15px;
-        }
-        
-        p, ul {
-            text-align: left;
-            color: #d3d6e1;
-            line-height: 1.7;
-            font-weight: 400;
-        }
-        
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s;
-        }
-        
-        a:hover {
-            color: #f43f5e;
-        }
-
-        .social-links {
-            text-align: center;
-            margin-top: 15px;
-        }
-        
-        .social-links a {
-            font-size: 1.8rem;
-            margin: 0 12px;
-            color: #d3d6e1;
-            transition: all 0.2s;
-        }
-        
-        .social-links a:hover {
-            color: #38bdf8;
-            transform: scale(1.1);
-        }
-
-        .donate-label {
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #e0e0e0;
-            margin-bottom: 10px;
-        }
-
-        .donate-qr {
-            display: block;
-            margin: 15px auto 0 auto;
-            max-width: 250px;
-            width: 100%;
-            border-radius: 16px; 
-            border: 2px solid #38bdf8;
-        }
-
-        .snowfall-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            pointer-events: none;
-            z-index: 10;
-        }
-    </style>
-</head>
-<body>
-    <div class="blur-bg"></div>
-    <canvas class="snowfall-canvas" id="snowfall-canvas"></canvas>
-
-    <div class="showcase-card">
-        <img class="logo-img" src="https://raw.githubusercontent.com/Astear17/astear17.github.io/main/03583A8D-9731-4EDC-B72D-6773464445BA.jpeg" alt="Your Profile Picture" />
-        <div class="showcase-title">Astear17</div>
-        <div class="showcase-desc">
-            Developer of iDevPatch & Tech Enthusiast from Vietnam
-        </div>
-
-        <div class="button-section two-buttons">
-            <a href="https://astear17.github.io/iDevicePatcher" target="_blank" class="redirect-button button-idevice">
-                <i class="fab fa-apple"></i> iDevicePatcher
-            </a>
-            <a href="https://astear17.github.io/YTRemark" target="_blank" class="redirect-button button-ytremark">
-                <i class="fab fa-youtube"></i> YTRemark (YT Adblock)
-            </a>
-            
-            <a href="https://astear17.github.io/Console_Tester" target="_blank" class="redirect-button button-console">
-                <i class="fas fa-gamepad"></i> Console Tester
-            </a>
-            <a href="https://astear17.github.io/VNTelexWriter" target="_blank" class="redirect-button button-vn">
-                <i class="fas fa-star"></i> VN Telex Writer
-            </a>
-        </div>
-
-        <hr />
-
-        <h3 class="section-header" id="socials">Find Me On</h3>
-        <div class="social-links">
-            <a href="https://github.com/Astear17" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/Uma.MoXumXue" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://discord.com/users/1036621192515297322" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-            <a href="https://www.tiktok.com/@hyper_astear.17" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/@Astear17" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://t.me/Astear17" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-        </div>
-
-        <hr />
-
-        <h3 class="section-header">About Me</h3>
-        <p>
-            Hello! I'm a passionate developer and technology enthusiast based in Vietnam. My focus is on creating useful tools and applications for the community. When I'm not coding, I enjoy exploring new tech and sharing my findings.
-        </p>
-
-        <hr />
-
-        <h3 class="section-header">Contact</h3>
-        <p>Contact me via email, telephone, Zalo or Messenger:</p>
-        <p style="text-align: center; font-size: 1.1rem;"><a href="go548394@gmail.com">Mail: go548394@gmail.com</a></p>
-        <p style="text-align: center; font-size: 1.1rem;"><a href="tel:+84359623729">Telephone: (+84) 359 623 729</a></p>
-        <p style="text-align: center; font-size: 1.1rem;"><a href="https://www.facebook.com/Uma.MoXumXue">Messenger: Lê Thành Nghĩa</a></p>
-        <p style="text-align: center; font-size: 1.1rem;"><a href="https://zaloapp.com/qr/p/wcotot3277t5">Zalo: Lê Thành Nghĩa</a></p>
-        
-        <hr />
-
-        <h3 class="section-header">Support / Donate</h3>
-        <p class="donate-label">ZaloPay: 0359623729 (NGUYEN THI THUONG)</p>
-        <img class="donate-qr" src="https://raw.githubusercontent.com/Astear17/astear17.github.io/main/92335C6B-5E4F-47E9-957C-61268AFFC276.jpeg" alt="ZaloPay QR Code">
-    </div>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-DLh8YxFD.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DHYLg9CM.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-D8JjKKKj.png">
+    <link rel="manifest" href="/assets/site-CvzhGub1.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon-hUVoc0Rw.ico">
+    <meta name="msapplication-TileColor" content="#00ff88">
+    <meta name="theme-color" content="#050505">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        const canvas = document.getElementById('snowfall-canvas');
-        const ctx = canvas.getContext('2d');
-        let snowflakes = [];
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        function createSnowflake() {
-            return {
-                x: Math.random() * canvas.width,
-                y: Math.random() * -canvas.height,
-                r: Math.random() * 2.2 + 1.7,
-                d: Math.random() * 1.1 + 0.7,
-                a: Math.random() * Math.PI * 2
-            };
-        }
-
-        function drawSnowflakes() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = 'rgba(255,255,255,0.95)';
-            ctx.beginPath();
-            for (let i = 0; i < snowflakes.length; i++) {
-                const f = snowflakes[i];
-                ctx.moveTo(f.x, f.y);
-                ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: '#00ff88',
+              'accent-blue': '#00d4ff',
+              'bg-dark': '#050505',
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            backgroundSize: {
+                '300%': '300%',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'bounce-high': 'bounce-high 1s infinite',
+              'shimmer': 'shimmer 4s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              glow: {
+                'from': { boxShadow: '0 0 10px #00ff88' },
+                'to': { boxShadow: '0 0 20px #00ff88, 0 0 10px #00ff88' },
+              },
+              'bounce-high': {
+                '0%, 100%': { transform: 'translateY(-200%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+              },
+              shimmer: {
+                  '0%': { backgroundPosition: '0% 50%' },
+                  '50%': { backgroundPosition: '100% 50%' },
+                  '100%': { backgroundPosition: '0% 50%' },
+              }
             }
-            ctx.fill();
-            moveSnowflakes();
+          }
         }
-
-        function moveSnowflakes() {
-            for (let i = 0; i < snowflakes.length; i++) {
-                let f = snowflakes[i];
-                f.y += Math.pow(f.d, 2) + 0.45;
-                f.x += Math.sin(f.a) * 0.7;
-                f.a += 0.01;
-                if (f.y > canvas.height) {
-                    snowflakes[i] = createSnowflake();
-                    snowflakes[i].y = 0;
-                }
-            }
-        }
-
-        function snowfallLoop() {
-            drawSnowflakes();
-            requestAnimationFrame(snowfallLoop);
-        }
-
-        function initSnowflakes() {
-            snowflakes = [];
-            let flakeCount = Math.floor(canvas.width / 25) + 10;
-            for (let i = 0; i < flakeCount; i++) {
-                snowflakes.push(createSnowflake());
-            }
-        }
-        window.addEventListener('resize', initSnowflakes);
-        initSnowflakes();
-        snowfallLoop();
+      }
     </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #0a0a0a; }
+      ::-webkit-scrollbar-thumb { 
+          background: linear-gradient(to bottom, #00ff88, #00cc66); 
+          border-radius: 10px;
+      }
+      /* Hide scrollbar for dock */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* Ensure cursor doesn't change on hover by overriding all common elements and specific states */
+      html, body, *, *::before, *::after, a, button, input, select, textarea, [role="button"], .cursor-pointer {
+        cursor: url('https://r2.guns.lol/eaadfbbf-c971-4f37-bb03-d2ed75f62d09.webp'), auto !important;
+      }
+      /* Specifically target text and pointers to enforce the custom cursor */
+      p, h1, h2, h3, h4, h5, h6, span, div {
+        cursor: url('https://r2.guns.lol/eaadfbbf-c971-4f37-bb03-d2ed75f62d09.webp'), auto !important;
+      }
+      .glass {
+        /* restore original translucent panel interior */
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(12px);
+        /* visible, blended border only (doesn't change inner fill) */
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 0 8px rgba(0,255,136,0.02);
+        position: relative;
+      }
+      .glass:hover {
+        border-color: rgba(0, 255, 136, 0.28);
+        background: rgba(255, 255, 255, 0.045);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.20), 0 0 18px rgba(0,255,136,0.04);
+      }
+      /* stronger panel blur utility for activity/terminal */
+      .panel-blur {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+      /* slightly stronger blur for terminal specifically */
+      .terminal-blur {
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+      }
+      /* Refracted gradient border for selected panels */
+      .refract {
+        position: relative;
+        /* remove straight border image; use pseudo-element ring instead for rounded corners */
+        border: none;
+        z-index: 0;
+        border-radius: inherit;
+        overflow: hidden;
+      }
+      .refract::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        box-sizing: border-box;
+        padding: 2px; /* thickness of the refracted ring */
+        border-radius: inherit;
+        pointer-events: none;
+        /* reduce white, favor soft emerald hues to avoid washing colors */
+        background: conic-gradient(from 200deg at 50% 50%, rgba(0,255,136,0.16), rgba(0,210,120,0.12) 40%, rgba(0,170,100,0.06) 70%, transparent 100%);
+        /* mask out the center so the gradient forms a rounded ring */
+        -webkit-mask: linear-gradient(#fff,#fff) padding-box, linear-gradient(#fff,#fff) content-box;
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        filter: blur(5px) saturate(105%);
+        mix-blend-mode: overlay;
+        opacity: 0.45;
+        z-index: 1;
+      }
+      .refract::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0));
+        mix-blend-mode: normal;
+        z-index: 2;
+        opacity: 0.6;
+      }
+      .refract:hover::before { filter: blur(4px) saturate(140%); opacity: 1; }
+    </style>
+
+<link rel="stylesheet" href="/styles.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "groq-sdk": "https://esm.sh/groq-sdk@^0.37.0"
+  }
+}
+</script>
+  <script type="module" crossorigin="" src="/script.js"></script>
+</head>
+  <body class="text-white overflow-x-hidden selection:bg-emerald-500/30">
+    <div id="root"></div>
 </body>
 </html>
