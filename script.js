@@ -10754,7 +10754,7 @@ const ty = ({
 						className: "text-red-400 font-bold",
 						children: "Permission denied ig its a skill issue ngl"
 					}), u.jsx("div", {
-						children: "Nice try, but you're not root here nigga😏"
+						children: "Nice try, but"
 					}), u.jsx("div", {
 						className: "text-zinc-500",
 						children: "Hint: Maybe Try 'sudo hi'"
@@ -10764,7 +10764,7 @@ const ty = ({
 					children: [u.jsx("div", {
 						children: "bye"
 					}), u.jsx("div", {
-						children: "AND FUCK U🖕"
+						children: "AND"
 					})]
 				}),
 				matrix: () => (f(), u.jsx("div", {
@@ -10863,7 +10863,7 @@ const ty = ({
 					children: [u.jsx("span", {
 						className: "text-red-400",
 						children: "Error:"
-					}), " vim not found. Use VS Code lil nigga..."]
+					}), " vim not found. "]
 				})
 			},
 			J = async V => {
