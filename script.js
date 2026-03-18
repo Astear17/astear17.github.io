@@ -11975,6 +11975,104 @@ const ty = ({
 			})]
 		})]
 	})),
+	ry = Ml.memo(() => u.jsxs("section", {
+		className: "mb-24",
+		children: [u.jsx(Wl, {
+			children: u.jsxs("h2", {
+				className: "text-3xl font-bold mb-10 flex items-center gap-4",
+				children: [u.jsx("span", {
+					className: "w-12 h-[1px] bg-gradient-to-r from-emerald-500 to-emerald-500"
+				}), "Latest Updates"]
+			})
+		}), u.jsxs(Ya, {
+			className: "grid grid-cols-1 md:grid-cols-3 gap-6",
+			children: [u.jsx($e, {
+				className: "rounded-2xl",
+				children: u.jsxs("div", {
+					className: "glass p-6 rounded-2xl border border-transparent transition-all duration-500 group h-full",
+					children: [u.jsxs("div", {
+						className: "flex items-center gap-2 mb-4",
+						children: [u.jsx("span", {
+							className: "w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-emerald-500/20 transition-all duration-500",
+							children: u.jsx("i", {
+								className: "fas fa-rocket text-emerald-400 text-xs"
+							})
+						}), u.jsx("span", {
+							className: "text-[10px] font-bold text-emerald-400 uppercase tracking-widest",
+							children: "Status Update"
+						})]
+					}), u.jsx("h3", {
+						className: "font-bold mb-2 group-hover:text-emerald-400 transition-colors duration-300",
+						children: "Portfolio Updated"
+					}), u.jsx("p", {
+						className: "text-zinc-500 text-xs leading-relaxed group-hover:text-zinc-400 transition-colors",
+						children: "Completely redesigned"
+					}), u.jsxs("div", {
+						className: "mt-4 text-[10px] text-emerald-600 flex items-center gap-2",
+						children: [u.jsx("i", {
+							className: "far fa-calendar"
+						}), " 12/12/2025"]
+					})]
+				})
+			}), u.jsx($e, {
+				className: "rounded-2xl",
+				children: u.jsxs("div", {
+					className: "glass p-6 rounded-2xl border border-emerald-500/20 transition-all duration-500 group h-full",
+					children: [u.jsxs("div", {
+						className: "flex items-center gap-2 mb-4",
+						children: [u.jsx("span", {
+							className: "w-8 h-8 rounded-lg bg-yellow-500/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-yellow-500/20 transition-all duration-500",
+							children: u.jsx("i", {
+								className: "fas fa-book text-yellow-400 text-xs"
+							})
+						}), u.jsx("span", {
+							className: "text-[10px] font-bold text-yellow-400 uppercase tracking-widest",
+							children: "Nothing new bc i have exams😭😭🙏😔"
+						})]
+					}), u.jsx("h3", {
+						className: "font-bold mb-2 group-hover:text-emerald-400 transition-colors duration-300",
+						children: "Grinding studies"
+					}), u.jsx("p", {
+						className: "text-zinc-500 text-xs leading-relaxed group-hover:text-zinc-400 transition-colors",
+						children: "need to study"
+					}), u.jsxs("div", {
+						className: "mt-4 text-[10px] text-emerald-600 flex items-center gap-2",
+						children: [u.jsx("i", {
+							className: "far fa-calendar"
+						}), " Present"]
+					})]
+				})
+			}), u.jsx($e, {
+				className: "rounded-2xl",
+				children: u.jsxs("div", {
+					className: "glass p-6 rounded-2xl opacity-60 hover:opacity-100 transition-all duration-500 group border border-transparent h-full",
+					children: [u.jsxs("div", {
+						className: "flex items-center gap-2 mb-4",
+						children: [u.jsx("span", {
+							className: "w-8 h-8 rounded-lg bg-zinc-500/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-zinc-500/20 transition-all duration-500",
+							children: u.jsx("i", {
+								className: "fas fa-archive text-zinc-400 text-xs"
+							})
+						}), u.jsx("span", {
+							className: "text-[10px] font-bold text-zinc-500 uppercase tracking-widest",
+							children: "Archive"
+						})]
+					}), u.jsx("h3", {
+						className: "font-bold mb-2 group-hover:text-emerald-400 transition-colors duration-300",
+						children: "Many more pojects that didnt get published yet"
+					}), u.jsx("p", {
+						className: "text-zinc-500 text-xs leading-relaxed group-hover:text-zinc-400 transition-colors",
+						children: "Many project that havent touched the internet and only remained on my computer"
+					}), u.jsxs("div", {
+						className: "mt-4 text-[10px] text-zinc-600 flex items-center gap-2",
+						children: [u.jsx("i", {
+							className: "far fa-calendar"
+						}), " 2020-2025"]
+					})]
+				})
+			})]
+		})]
+	})),
 	fy = "1036621192515297322",
 	c0 = "$2a$10$HX4eBzR8o5ZgJ6wLurs.qOncb5QgAxXVRQ2TC8SMnkiXVRpGvmTaa",
 	r0 = "694dd7cc43b1c97be9054bdd",
