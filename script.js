@@ -10744,7 +10744,7 @@ const ty = ({
 						children: [u.jsx("span", {
 							className: "text-[#5865F2]",
 							children: "Discord"
-						}), "   → discord.com/users/1036621192515297322"]
+						}), "   → discord.com/users/732209394871173192"]
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
 							className: "text-[#0088cc]",
@@ -10755,6 +10755,24 @@ const ty = ({
 							className: "text-[#E4405F]",
 							children: "Instagram"
 						}), " → instagram.com/astear.17"]
+					})]
+				}),
+				sudo: () => u.jsxs("div", {
+					children: [u.jsx("div", {
+						className: "text-red-400 font-bold",
+						children: "Permission denied ig its a skill issue ngl"
+					}), u.jsx("div", {
+						children: "Nice try, but you're not root here nigga😏"
+					}), u.jsx("div", {
+						className: "text-zinc-500",
+						children: "Hint: Maybe Try 'sudo hi'"
+					})]
+				}),
+				"sudo hi": () => u.jsxs("div", {
+					children: [u.jsx("div", {
+						children: "bye"
+					}), u.jsx("div", {
+						children: "AND FUCK U🖕"
 					})]
 				}),
 				matrix: () => (f(), u.jsx("div", {
@@ -10800,7 +10818,7 @@ const ty = ({
 								children: "Theme:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Pure26"
+								children: "gitOS v2.67"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10808,12 +10826,20 @@ const ty = ({
 								children: "Power:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Powered by React/Vite"
+							children: "gitOS v2.67"
 							})]
 						})]
 					})]
 				}),
-
+				coffee: () => u.jsxs("div", {
+					children: [u.jsx("span", {
+						className: "text-yellow-600",
+						children: "gonna sleep"
+					}), u.jsx("br", {}), u.jsx("span", {
+						className: "text-emerald-400",
+						children: "needed that ngl"
+					})]
+				}),
 				ls: () => u.jsxs("div", {
 					className: "space-x-4",
 					children: [u.jsx("span", {
@@ -10838,8 +10864,13 @@ const ty = ({
 				}),
 				whoami: () => u.jsx("div", {
 					children: "u0_a153"
+				}),
+				vim: () => u.jsxs("div", {
+					children: [u.jsx("span", {
+						className: "text-red-400",
+						children: "Error:"
+					}), " vim not found. Use VS Code lil nigga..."]
 				})
-				
 			},
 			J = async V => {
 				if (V.key === "Enter") {
@@ -11508,7 +11539,7 @@ const ty = ({
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/1036621192515297322",
+						href: "https://discord.com/users/732209394871173192",
 						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
@@ -11562,7 +11593,7 @@ const ty = ({
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/1036621192515297322",
+						href: "https://discord.com/users/732209394871173192",
 						className: "block text-center bg-emerald-500 py-3 rounded-xl text-black font-bold hover:shadow-[0_0_30px_rgba(0,204,102,0.6)] hover:bg-emerald-400 transition-all duration-300 transform active:scale-95",
 						children: "Get Started"
 					})]
@@ -11608,7 +11639,7 @@ const ty = ({
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/1036621192515297322",
+						href: "https://discord.com/users/732209394871173192",
 						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-white font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
@@ -11990,7 +12021,7 @@ const ty = ({
 			})]
 		})]
 	})),
-	fy = "1036621192515297322",
+	fy = "732209394871173192",
 	c0 = "$2a$10$HX4eBzR8o5ZgJ6wLurs.qOncb5QgAxXVRQ2TC8SMnkiXVRpGvmTaa",
 	r0 = "694dd7cc43b1c97be9054bdd",
 	oy = "Astear17",
@@ -12293,7 +12324,7 @@ const ty = ({
 									name: "Discord",
 									icon: "fab fa-discord",
 									color: "#5865F2",
-									link: "https://discord.com/users/1036621192515297322"
+									link: "https://discord.com/users/732209394871173192"
 								}, {
 									name: "Telegram",
 									icon: "fab fa-telegram",
