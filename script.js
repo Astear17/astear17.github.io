@@ -10726,6 +10726,15 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["Discord: ", c ? "🟢 Online" : "⚫ Offline"]
 					})]
+					}), u.jsxs("div", {
+						children: ["GitHub: ", "🟢 Deployed successfully at Astear17/astear17.github.io"]
+					})]
+					}), u.jsxs("div", {
+						children: ["Vercel: ", "🟢 Deployment has completed at /astear17s-projects"]
+					})]
+					}), u.jsxs("div", {
+						children: ["Cloudflare: ", "🔴 No Workers Builds: astear17-site"]
+					})]
 				}),
 				socials: () => u.jsxs("div", {
 					children: [u.jsx("div", {
@@ -10735,58 +10744,38 @@ const ty = ({
 						children: [u.jsx("span", {
 							className: "text-[#5865F2]",
 							children: "Discord"
-						}), "   → discord.com/users/732209394871173192"]
+						}), "   → discord.com/users/1036621192515297322"]
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
 							className: "text-[#0088cc]",
 							children: "Telegram"
-						}), "  → t.me/Astear171o"]
+						}), "  → t.me/Astear17"]
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
 							className: "text-[#E4405F]",
 							children: "Instagram"
-						}), " → instagram.com/Astear171___"]
-					})]
-				}),
-				sudo: () => u.jsxs("div", {
-					children: [u.jsx("div", {
-						className: "text-red-400 font-bold",
-						children: "Permission denied ig its a skill issue ngl"
-					}), u.jsx("div", {
-						children: "Nice try, but you're not root here nigga😏"
-					}), u.jsx("div", {
-						className: "text-zinc-500",
-						children: "Hint: Maybe Try 'sudo hi'"
-					})]
-				}),
-				"sudo hi": () => u.jsxs("div", {
-					children: [u.jsx("div", {
-						children: "bye"
-					}), u.jsx("div", {
-						children: "AND FUCK U🖕"
+						}), " → instagram.com/astear.17"]
 					})]
 				}),
 				matrix: () => (f(), u.jsx("div", {
 					className: "text-emerald-400",
-					children: " Entering the Matrix..."
+					children: " Encoding the Matrix..."
 				})),
 				clear: () => (A([]), null),
 				neofetch: () => u.jsxs("div", {
 					className: "flex gap-4",
 					children: [u.jsx("div", {
-						className: "text-emerald-400 hidden sm:block whitespace-pre leading-none font-mono text-[10px]",
-						children: `⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⢠⣿⠛⠛⠻⢷⣤⣀⣤⣾⠟⠋⠙⣿⡄⠀⠀⠀⠀
-⠀⠀⠀⠀⢸⣏⠀⠀⠀⠀⣽⣿⣯⠀⠀⠀⠀⣹⡇⠀⠀⠀⠀
-⠀⠀⠀⠀⠸⣿⣀⣀⣤⣾⣿⣤⣽⣷⣤⣀⣀⣿⡇⠀⠀⠀⠀
-⠀⢀⣤⣶⠿⢿⡟⢩⣿⠋⠉⣉⠉⠙⢿⡍⢻⡿⠿⣶⣤⡀⠀
-⣴⡟⠉⠀⠀⠘⣿⡿⠁⢰⣿⣿⣿⡆⠈⢿⣿⠃⠀⠀⠉⢻⣦
-⠹⣧⣀⠀⠀⢠⣿⣷⡀⠸⣿⣿⣿⠇⢀⣾⣿⡄⠀⠀⣀⣼⠟
-⠀⠈⠛⠿⣶⣾⣧⣘⣿⣄⣀⣀⣀⣠⣿⣣⣼⣿⣶⠿⠛⠁⠀
-⠀⠀⠀⠀⢸⣿⠉⠉⠙⢿⣿⠛⣻⡿⠋⠉⠉⢿⡇⠀⠀⠀⠀
-⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⣹⣿⣟⠀⠀⠀⠀⣸⡇⠀⠀⠀⠀
-⠀⠀⠀⠀⠘⣿⣤⣤⣴⡺⠛⠉⠛⢿⣦⣤⣤⣿⠃⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀`
+						className: "text-emerald-400 hidden sm:block whitespace-pre leading-none font-mono text-[12px]",
+						children: `⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀
+⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀
+⠀⣰⣿⣿⣿⠀⠈⠉⠉⠉⠉⠉⠁⠀⣹⣿⣿⣆⠀
+⢀⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⡀
+⢸⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇
+⠈⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⠁
+⠀⠹⣿⣿⠻⣿⣶⡤⠀⠀⠀⢤⣶⣾⣿⣿⣿⠏⠀
+⠀⠀⠙⢿⣧⣈⣉⡁⠀⠀⠀⢸⣿⣿⣿⡿⠋⠀⠀
+⠀⠀⠀⠀⠙⠻⢿⠇⠀⠀⠀⠸⡿⠟⠋⠀⠀⠀⠀`
 					}), u.jsxs("div", {
 						className: "flex flex-col justify-center",
 						children: [u.jsxs("div", {
@@ -10795,7 +10784,7 @@ const ty = ({
 								children: "OS:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Astear17OS v2.0"
+								children: "gitOS v2.67"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10811,7 +10800,7 @@ const ty = ({
 								children: "Theme:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Astear17🥹"
+								children: "Pure26"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10819,51 +10808,38 @@ const ty = ({
 								children: "Power:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Powered by shear will"
+								children: "Powered by React/Vite"
 							})]
 						})]
 					})]
 				}),
-				coffee: () => u.jsxs("div", {
-					children: [u.jsx("span", {
-						className: "text-yellow-600",
-						children: "gonna sleep"
-					}), u.jsx("br", {}), u.jsx("span", {
-						className: "text-emerald-400",
-						children: "needed that ngl"
-					})]
-				}),
+
 				ls: () => u.jsxs("div", {
 					className: "space-x-4",
 					children: [u.jsx("span", {
-						className: "text-emerald-400",
-						children: "projects/"
+						className: "text-white",
+						children: "_config.yml"
 					}), " ", u.jsx("span", {
-						className: "text-emerald-400",
-						children: "skills/"
+						className: "text-white",
+						children: "index.html"
 					}), " ", u.jsx("span", {
-						className: "text-emerald-400",
-						children: "about.txt"
+						className: "text-white",
+						children: "script.js"
 					}), " ", u.jsx("span", {
-						className: "text-emerald-400",
-						children: "contact.md"
+						className: "text-white",
+						children: "wrangler.jsonc"
 					}), " ", u.jsx("span", {
-						className: "text-yellow-400",
-						children: "secrets/"
+						className: "text-white",
+						children: "92335C6B-5E4F-47E9-957C-61268AFFC276.jpeg"
 					})]
 				}),
 				pwd: () => u.jsx("div", {
-					children: "/home/Astear17/portfolio"
+					children: "/home/runner/work/astear17.github.io/astear17.github.io"
 				}),
 				whoami: () => u.jsx("div", {
-					children: "3mk"
-				}),
-				vim: () => u.jsxs("div", {
-					children: [u.jsx("span", {
-						className: "text-red-400",
-						children: "Error:"
-					}), " vim not found. Use VS Code lil nigga..."]
+					children: "u0_a153"
 				})
+				
 			},
 			J = async V => {
 				if (V.key === "Enter") {
@@ -11532,7 +11508,7 @@ const ty = ({
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/732209394871173192",
+						href: "https://discord.com/users/1036621192515297322",
 						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
@@ -11586,7 +11562,7 @@ const ty = ({
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/732209394871173192",
+						href: "https://discord.com/users/1036621192515297322",
 						className: "block text-center bg-emerald-500 py-3 rounded-xl text-black font-bold hover:shadow-[0_0_30px_rgba(0,204,102,0.6)] hover:bg-emerald-400 transition-all duration-300 transform active:scale-95",
 						children: "Get Started"
 					})]
@@ -11632,7 +11608,7 @@ const ty = ({
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/732209394871173192",
+						href: "https://discord.com/users/1036621192515297322",
 						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-white font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
@@ -12014,7 +11990,7 @@ const ty = ({
 			})]
 		})]
 	})),
-	fy = "732209394871173192",
+	fy = "1036621192515297322",
 	c0 = "$2a$10$HX4eBzR8o5ZgJ6wLurs.qOncb5QgAxXVRQ2TC8SMnkiXVRpGvmTaa",
 	r0 = "694dd7cc43b1c97be9054bdd",
 	oy = "Astear17",
@@ -12317,7 +12293,7 @@ const ty = ({
 									name: "Discord",
 									icon: "fab fa-discord",
 									color: "#5865F2",
-									link: "https://discord.com/users/732209394871173192"
+									link: "https://discord.com/users/1036621192515297322"
 								}, {
 									name: "Telegram",
 									icon: "fab fa-telegram",
