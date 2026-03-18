@@ -10607,6 +10607,21 @@ const ty = ({
 							children: "neofetch"
 						}), u.jsx("span", {
 							children: "System info"
+						}), u.jsx("span", {
+							className: "text-yellow-400",
+							children: "ls"
+						}), u.jsx("span", {
+							children: "Fetch files and directory"
+						}), u.jsx("span", {
+							className: "text-yellow-400",
+							children: "pwd"
+						}), u.jsx("span", {
+							children: "Print workflow path"
+						}), u.jsx("span", {
+							className: "text-yellow-400",
+							children: "whoami"
+						}), u.jsx("span", {
+							children: "Username"
 						})]
 					})]
 				}),
@@ -10807,39 +10822,36 @@ const ty = ({
 						})]
 					})]
 				}),
-				coffee: () => u.jsxs("div", {
-					children: [u.jsx("span", {
-						className: "text-yellow-600",
-						children: "gonna sleep"
-					}), u.jsx("br", {}), u.jsx("span", {
-						className: "text-emerald-400",
-						children: "needed that ngl"
-					})]
-				}),
 				ls: () => u.jsxs("div", {
 					className: "space-x-4",
 					children: [u.jsx("span", {
-						className: "text-emerald-400",
-						children: "projects/"
+						className: "text-white",
+						children: "_config.yml"
 					}), " ", u.jsx("span", {
-						className: "text-emerald-400",
-						children: "skills/"
+						className: "text-white",
+						children: "index.html"
 					}), " ", u.jsx("span", {
-						className: "text-emerald-400",
-						children: "about.txt"
+						className: "text-white",
+						children: "script.js"
 					}), " ", u.jsx("span", {
-						className: "text-emerald-400",
-						children: "contact.md"
+						className: "text-white",
+						children: "wrangler.jsonc"
 					}), " ", u.jsx("span", {
-						className: "text-yellow-400",
-						children: "secrets/"
+						className: "text-white",
+						children: "03583A8D-9731-4EDC-B72D-6773464445BA.jpeg"
+					}), " ", u.jsx("span", {
+						className: "text-white",
+						children: "241C5D78-FE97-4DBB-AC2F-F8DE2BC4A10D.png"
+					}), " ", u.jsx("span", {
+						className: "text-white",
+						children: "92335C6B-5E4F-47E9-957C-61268AFFC276.jpeg"
 					})]
 				}),
 				pwd: () => u.jsx("div", {
 					children: "/home/runner/work/astear17.github.io/astear17.github.io"
 				}),
 				whoami: () => u.jsx("div", {
-					children: "u0_a153"
+					children: "guest"
 				})
 			},
 			J = async V => {
