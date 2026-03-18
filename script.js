@@ -10672,25 +10672,30 @@ const ty = ({
 						className: "text-emerald-400 border-b border-emerald-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ Projects ━━━"
 					}), u.jsxs("div", {
-						children: ["🎮 ", u.jsx("span", {
+						children: [u.jsx("span", {
 							className: "text-white",
-							children: "Raven3x"
-						}), " - Minecraft hack Client"]
+							children: "iDevPatcher"
+						}), " - A summarized repository of useful iPA for sideloading on iOS"]
 					}), u.jsxs("div", {
-						children: ["📱 ", u.jsx("span", {
+						children: [u.jsx("span", {
 							className: "text-white",
-							children: "iOS Signer"
-						}), " - Certificate Tool"]
+							children: "aPatche"
+						}), " - A repository of useful Android/Google TV APK with tweaked tools"]
 					}), u.jsxs("div", {
-						children: ["🌐 ", u.jsx("span", {
+						children: [u.jsx("span", {
 							className: "text-white",
-							children: "Portfolio"
-						}), " - This website duh"]
+							children: "Pure26"
+						}), " - A SnowBoard theme redesigned of the iOS 26 style"]
 					}), u.jsxs("div", {
-						children: ["🤖 ", u.jsx("span", {
+						children: [u.jsx("span", {
 							className: "text-white",
-							children: "Discord Bot"
-						}), " - a bot that has no manners... but is useful somehow lol"]
+							children: "StandbyD"
+						}), " - Standby desk clock on browser, used for dummy phone with iframe player"]
+					}), u.jsxs("div", {
+						children: [u.jsx("span", {
+							className: "text-white",
+							children: "Console Tester"
+						}), " - A webapp to test gamepad/vibrator on gamepad via Gamepad API"]
 					})]
 				}),
 				contact: () => u.jsxs("div", {
@@ -10700,17 +10705,17 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["💬 Discord: ", u.jsx("span", {
 							className: "text-white",
-							children: "Astear171"
+							children: "@astear.17"
 						})]
 					}), u.jsxs("div", {
 						children: ["✈️ Telegram: ", u.jsx("span", {
 							className: "text-white",
-							children: "@Astear171o"
+							children: "@Astear17"
 						})]
 					}), u.jsxs("div", {
 						children: ["📷 Instagram: ", u.jsx("span", {
 							className: "text-white",
-							children: "@Astear171___"
+							children: "@astear.17"
 						})]
 					})]
 				}),
