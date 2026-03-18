@@ -9780,7 +9780,7 @@ const ty = ({
 				className: "mb-2",
 				children: [u.jsx("div", {
 					className: "text-emerald-500 font-mono",
-					children: "Welcome to Astear17's Terminal 🍃"
+					children: "Welcome to Terminee."
 				}), u.jsxs("div", {
 					className: "text-zinc-500 text-xs",
 					children: ["Type ", u.jsx("span", {
@@ -10166,7 +10166,7 @@ const ty = ({
 					})]
 				}), u.jsx("span", {
 					className: "text-zinc-500 ml-2",
-					children: "bash — portfolio"
+					children: "bash — terminee"
 				}), u.jsx("span", {
 					className: "ml-auto text-[10px] text-zinc-600",
 					children: "v2.67"
@@ -11324,7 +11324,7 @@ const ty = ({
 								})]
 							}), u.jsxs("p", {
 								className: "text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed",
-								children: ["A 17-year-old who is a ", u.jsx("span", {
+								children: ["A ", u.jsx("span", {
 									className: "text-white font-semibold border-r-2 border-emerald-500 pr-1",
 									children: ge
 								}), " building things for the web, games, and iOS. Currently Studying A-Levels while trying to be as productive as possible."]
@@ -11360,15 +11360,15 @@ const ty = ({
 									name: "Telegram",
 									icon: "fab fa-telegram",
 									color: "#0088cc",
-									link: "https://t.me/Astear171o"
+									link: "https://t.me/Astear17"
 								}, {
 									name: "Instagram",
 									icon: "fab fa-instagram",
 									color: "#E4405F",
-									link: "https://instagram.com/Astear171___/"
+									link: "https://instagram.com/astear.17"
 								}, {
-									name: "Minecraft",
-									icon: "fas fa-cube",
+									name: "GitHub",
+									icon: "fas fa-github",
 									color: "#6AA84F",
 									link: "https://namemc.com/profile/Astear171_.1"
 								}].map(j => u.jsxs("a", {
