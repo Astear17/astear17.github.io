@@ -10736,7 +10736,7 @@ const ty = ({
 						children: [u.jsx("span", {
 							className: "text-[#5865F2]",
 							children: "Discord"
-						}), "   → discord.com/users/732209394871173192"]
+						}), "   → discord.com/users/1036621192515297322"]
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
 							className: "text-[#0088cc]",
@@ -10796,7 +10796,7 @@ const ty = ({
 								children: "OS:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Astear17OS v2.0"
+								children: "reactOS v2.67"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10812,7 +10812,7 @@ const ty = ({
 								children: "Theme:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Astear17🥹"
+								children: "Pure26"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10820,7 +10820,7 @@ const ty = ({
 								children: "Power:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "Powered by shear will"
+								children: "Powered by React"
 							})]
 						})]
 					})]
@@ -10854,10 +10854,10 @@ const ty = ({
 					})]
 				}),
 				pwd: () => u.jsx("div", {
-					children: "/home/Astear17/portfolio"
+					children: "/home/runner/work/astear17.github.io/astear17.github.io"
 				}),
 				whoami: () => u.jsx("div", {
-					children: "3mk"
+					children: "u0_a153"
 				}),
 				vim: () => u.jsxs("div", {
 					children: [u.jsx("span", {
@@ -11408,9 +11408,7 @@ const ty = ({
 						}), u.jsx(Ge, {
 							children: "Java"
 						}), u.jsx(Ge, {
-							children: "C++"
-						}), u.jsx(Ge, {
-							children: "Lua"
+							children: "Pascal"
 						})]
 					})]
 				})
@@ -11434,9 +11432,9 @@ const ty = ({
 						}), u.jsx(Ge, {
 							children: "Tailwind"
 						}), u.jsx(Ge, {
-							children: "Git/Github"
+							children: "Git/GitHub"
 						}), u.jsx(Ge, {
-							children: "Boot Strap"
+							children: "Dopamine"
 						}), u.jsx(Ge, {
 							children: "React"
 						})]
@@ -11458,9 +11456,9 @@ const ty = ({
 					}), u.jsxs("div", {
 						className: "flex flex-wrap gap-3",
 						children: [u.jsx(Ge, {
-							children: "3D Modeling"
+							children: "Web Hosting"
 						}), u.jsx(Ge, {
-							children: "3D Printing"
+							children: "Filmer"
 						}), u.jsx(Ge, {
 							children: "PC Hardware"
 						}), u.jsx(Ge, {
@@ -11488,7 +11486,7 @@ const ty = ({
 				}), "iOS Certificates"]
 			}), u.jsx("p", {
 				className: "text-zinc-500 mb-10",
-				children: "Signing Ipas with ease without getting revoked! (Currently Out of stock)"
+				children: "Signing iPA(s) with ease without getting revoked with JIT Supported!"
 			})]
 		}), u.jsxs(Ya, {
 			className: "grid grid-cols-1 md:grid-cols-3 gap-6",
@@ -11502,10 +11500,10 @@ const ty = ({
 						className: "absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all duration-500"
 					}), u.jsx("div", {
 						className: "text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2",
-						children: "Iphone 48hrs"
+						children: "iPhone/iPad instant"
 					}), u.jsxs("div", {
 						className: "text-4xl font-bold mb-6",
-						children: ["$10 ", u.jsx("span", {
+						children: ["$4 ", u.jsx("span", {
 							className: "text-lg text-zinc-500 font-normal",
 							children: "/yr"
 						})]
@@ -11515,25 +11513,45 @@ const ty = ({
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " 300 days Warranty"]
+							}), " Valid up to 12 months"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " 24h Delivery"]
+							}), " No warranty"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " Revoke Protection"]
+							}), " Available for 1 device only"]
 						}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Supports bypassed / hidden iCloud devices"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " JIT (get-task-allow) not supported"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Support on: iPhone, iPad, Apple TV"]
+							}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
 							}), " Unlimited Sideloading apps"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Unlimited support"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/732209394871173192",
+						href: "https://muacert.com/dashboard",
 						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
@@ -11556,10 +11574,10 @@ const ty = ({
 						className: "absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all duration-500"
 					}), u.jsx("div", {
 						className: "text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2",
-						children: "Iphone Instant"
+						children: "iPhone/iPad instant"
 					}), u.jsxs("div", {
 						className: "text-4xl font-bold mb-6",
-						children: ["$15 ", u.jsx("span", {
+						children: ["$6 ", u.jsx("span", {
 							className: "text-lg text-zinc-500 font-normal",
 							children: "/yr"
 						})]
@@ -11569,27 +11587,47 @@ const ty = ({
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " 300 days Warranty"]
+							}), " Valid up to 12 months"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " Instant Delivery"]
+							}), " 40 days warranty"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " Revoke Protection"]
+							}), " Available for 1 device only"]
 						}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Supports bypassed / hidden iCloud devices"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " JIT (get-task-allow) not supported"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Support on: iPhone, iPad, Apple TV"]
+							}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
 							}), " Unlimited Sideloading apps"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Unlimited support"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/732209394871173192",
-						className: "block text-center bg-emerald-500 py-3 rounded-xl text-black font-bold hover:shadow-[0_0_30px_rgba(0,204,102,0.6)] hover:bg-emerald-400 transition-all duration-300 transform active:scale-95",
-						children: "Get Started"
+						href: "https://muacert.com/dashboard",
+						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
+						children: "Order Now"
 					})]
 				})
 			}), u.jsx($e, {
@@ -11602,10 +11640,10 @@ const ty = ({
 						className: "absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all duration-500"
 					}), u.jsx("div", {
 						className: "text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2",
-						children: "iPad 24hrs"
+						children: "iPhone/iPad instant"
 					}), u.jsxs("div", {
 						className: "text-4xl font-bold mb-6",
-						children: ["$12 ", u.jsx("span", {
+						children: ["$10 ", u.jsx("span", {
 							className: "text-lg text-zinc-500 font-normal",
 							children: "/yr"
 						})]
@@ -11615,26 +11653,46 @@ const ty = ({
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " 200 Warranty"]
+							}), " Valid up to 12 months"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " 24h Delivery"]
+							}), " 300 days warranty"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
-							}), " Revoke Protection"]
+							}), " Available for 1 device only"]
 						}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Supports bypassed / hidden iCloud devices"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " JIT (get-task-allow) supported"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Support on: iPhone, iPad, Apple TV"]
+							}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
 								className: "fas fa-check text-emerald-500"
 							}), " Unlimited Sideloading apps"]
+							}), u.jsxs("li", {
+							className: "flex items-center gap-2",
+							children: [u.jsx("i", {
+								className: "fas fa-check text-emerald-500"
+							}), " Unlimited support"]
 						})]
 					}), u.jsx("a", {
-						href: "https://discord.com/users/732209394871173192",
-						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-white font-bold transition-all duration-300 transform active:scale-95",
+						href: "https://muacert.com/dashboard",
+						className: "block text-center glass py-3 rounded-xl hover:bg-emerald-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
 				})
@@ -12015,7 +12073,7 @@ const ty = ({
 			})]
 		})]
 	})),
-	fy = "732209394871173192",
+	fy = "1036621192515297322",
 	c0 = "$2a$10$HX4eBzR8o5ZgJ6wLurs.qOncb5QgAxXVRQ2TC8SMnkiXVRpGvmTaa",
 	r0 = "694dd7cc43b1c97be9054bdd",
 	oy = "Astear17",
@@ -12318,7 +12376,7 @@ const ty = ({
 									name: "Discord",
 									icon: "fab fa-discord",
 									color: "#5865F2",
-									link: "https://discord.com/users/732209394871173192"
+									link: "https://discord.com/users/1036621192515297322"
 								}, {
 									name: "Telegram",
 									icon: "fab fa-telegram",
