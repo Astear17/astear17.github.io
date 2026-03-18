@@ -10749,24 +10749,6 @@ const ty = ({
 						}), " → instagram.com/Astear171___"]
 					})]
 				}),
-				sudo: () => u.jsxs("div", {
-					children: [u.jsx("div", {
-						className: "text-red-400 font-bold",
-						children: "Permission denied ig its a skill issue ngl"
-					}), u.jsx("div", {
-						children: "Nice try, but"
-					}), u.jsx("div", {
-						className: "text-zinc-500",
-						children: "Hint: Maybe Try 'sudo hi'"
-					})]
-				}),
-				"sudo hi": () => u.jsxs("div", {
-					children: [u.jsx("div", {
-						children: "bye"
-					}), u.jsx("div", {
-						children: "AND"
-					})]
-				}),
 				matrix: () => (f(), u.jsx("div", {
 					className: "text-emerald-400",
 					children: " Entering the Matrix..."
@@ -10858,12 +10840,6 @@ const ty = ({
 				}),
 				whoami: () => u.jsx("div", {
 					children: "u0_a153"
-				}),
-				vim: () => u.jsxs("div", {
-					children: [u.jsx("span", {
-						className: "text-red-400",
-						children: "Error:"
-					}), " vim not found. "]
 				})
 			},
 			J = async V => {
