@@ -10726,6 +10726,15 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["Discord: ", c ? "🟢 Online" : "⚫ Offline"]
 					})]
+					}), u.jsxs("div", {
+						children: ["GitHub: ", "🟢 Deployed successfully at Astear17/astear17.github.io"]
+					})]
+					}), u.jsxs("div", {
+						children: ["Vercel: ", "🟢 Deployment has completed at /astear17s-projects"]
+					})]
+					}), u.jsxs("div", {
+						children: ["Cloudflare: ", "🔴 No Workers Builds: astear17-site"]
+					})]
 				}),
 				socials: () => u.jsxs("div", {
 					children: [u.jsx("div", {
