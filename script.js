@@ -11346,29 +11346,7 @@ const ty = ({
 			})
 		})
 	},
-	ny = Ml.memo(() => u.jsx("section", {
-		className: "mb-24",
-		children: u.jsxs(Ya, {
-			className: "grid grid-cols-2 md:grid-cols-4 gap-6",
-			children: [u.jsx(au, {
-				target: 5,
-				suffix: "+",
-				label: "Years Coding"
-			}), u.jsx(au, {
-				target: 50,
-				suffix: "+",
-				label: "Projects"
-			}), u.jsx(au, {
-				target: 670,
-				suffix: " +",
-				label: "Hours of coding"
-			}), u.jsx(au, {
-				target: 999,
-				suffix: "",
-				label: "Passion"
-			})]
-		})
-	})),
+	
 	iy = Ml.memo(() => u.jsxs("section", {
 		className: "mb-24",
 		id: "skills",
