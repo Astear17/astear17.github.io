@@ -10753,12 +10753,12 @@ const ty = ({
 			content: u.jsxs("div", {
 				className: "mb-2",
 				children: [u.jsx("div", {
-					className: "text-green-500 font-mono",
+					className: "text-blue-500 font-mono",
 					children: "Welcome to Astear17's Terminal 🍃"
 				}), u.jsxs("div", {
 					className: "text-zinc-500 text-xs",
 					children: ["Type ", u.jsx("span", {
-						className: "text-green-400",
+						className: "text-blue-400",
 						children: "'help'"
 					}), " to see available commands."]
 				})]
@@ -10771,7 +10771,7 @@ const ty = ({
 				help: () => u.jsxs("div", {
 					className: "space-y-1",
 					children: [u.jsx("div", {
-						className: "text-green-400",
+						className: "text-blue-400",
 						children: "Available commands:"
 					}), u.jsxs("div", {
 						className: "grid grid-cols-[100px_1fr] gap-2",
@@ -10825,7 +10825,7 @@ const ty = ({
 				}),
 				about: () => u.jsxs("div", {
 					children: [u.jsx("div", {
-						className: "text-green-400 border-b border-green-500/30 mb-2 pb-1 inline-block",
+						className: "text-blue-400 border-b border-blue-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ About Me ━━━"
 					}), u.jsxs("div", {
 						children: ["👤 Name: ", u.jsx("span", {
@@ -10856,7 +10856,7 @@ const ty = ({
 				}),
 				skills: () => u.jsxs("div", {
 					children: [u.jsx("div", {
-						className: "text-green-400 border-b border-green-500/30 mb-2 pb-1 inline-block",
+						className: "text-blue-400 border-b border-blue-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ Tech Stack ━━━"
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
@@ -10882,7 +10882,7 @@ const ty = ({
 				}),
 				projects: () => u.jsxs("div", {
 					children: [u.jsx("div", {
-						className: "text-green-400 border-b border-green-500/30 mb-2 pb-1 inline-block",
+						className: "text-blue-400 border-b border-blue-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ Projects ━━━"
 					}), u.jsxs("div", {
 						children: ["🎮 ", u.jsx("span", {
@@ -10908,7 +10908,7 @@ const ty = ({
 				}),
 				contact: () => u.jsxs("div", {
 					children: [u.jsx("div", {
-						className: "text-green-400 border-b border-green-500/30 mb-2 pb-1 inline-block",
+						className: "text-blue-400 border-b border-blue-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ Contact ━━━"
 					}), u.jsxs("div", {
 						children: ["💬 Discord: ", u.jsx("span", {
@@ -10929,7 +10929,7 @@ const ty = ({
 				}),
 				status: () => u.jsxs("div", {
 					children: [u.jsx("div", {
-						className: "text-green-400 border-b border-green-500/30 mb-2 pb-1 inline-block",
+						className: "text-blue-400 border-b border-blue-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ Current Status ━━━"
 					}), u.jsxs("div", {
 						children: ["Discord: ", c ? "🟢 Online" : "⚫ Offline"]
@@ -10937,7 +10937,7 @@ const ty = ({
 				}),
 				socials: () => u.jsxs("div", {
 					children: [u.jsx("div", {
-						className: "text-green-400 border-b border-green-500/30 mb-2 pb-1 inline-block",
+						className: "text-blue-400 border-b border-blue-500/30 mb-2 pb-1 inline-block",
 						children: "━━━ Socials ━━━"
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
@@ -10975,14 +10975,14 @@ const ty = ({
 					})]
 				}),
 				matrix: () => (f(), u.jsx("div", {
-					className: "text-green-400",
+					className: "text-blue-400",
 					children: " Entering the Matrix..."
 				})),
 				clear: () => (A([]), null),
 				neofetch: () => u.jsxs("div", {
 					className: "flex gap-4",
 					children: [u.jsx("div", {
-						className: "text-green-400 hidden sm:block whitespace-pre leading-none font-mono text-[10px]",
+						className: "text-blue-400 hidden sm:block whitespace-pre leading-none font-mono text-[10px]",
 						children: `⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢠⣿⠛⠛⠻⢷⣤⣀⣤⣾⠟⠋⠙⣿⡄⠀⠀⠀⠀
 ⠀⠀⠀⠀⢸⣏⠀⠀⠀⠀⣽⣿⣯⠀⠀⠀⠀⣹⡇⠀⠀⠀⠀
@@ -11037,7 +11037,7 @@ const ty = ({
 						className: "text-yellow-600",
 						children: "gonna sleep"
 					}), u.jsx("br", {}), u.jsx("span", {
-						className: "text-green-400",
+						className: "text-blue-400",
 						children: "needed that ngl"
 					})]
 				}),
@@ -11050,10 +11050,10 @@ const ty = ({
 						className: "text-blue-400",
 						children: "skills/"
 					}), " ", u.jsx("span", {
-						className: "text-green-400",
+						className: "text-blue-400",
 						children: "about.txt"
 					}), " ", u.jsx("span", {
-						className: "text-green-400",
+						className: "text-blue-400",
 						children: "contact.md"
 					}), " ", u.jsx("span", {
 						className: "text-yellow-400",
@@ -11083,7 +11083,7 @@ const ty = ({
 						content: u.jsxs("div", {
 							className: "flex gap-2 items-center",
 							children: [u.jsx("span", {
-								className: "text-green-400",
+								className: "text-blue-400",
 								children: "guest@Astear17"
 							}), u.jsx("span", {
 								className: "text-zinc-500",
@@ -11132,7 +11132,7 @@ const ty = ({
 					preventScroll: !0
 				})
 			},
-			className: "glass refract terminal-blur p-6 rounded-3xl font-mono text-sm flex flex-col h-[380px] border-r-2 border-transparent hover:border-green-500 transition-all shadow-lg shadow-green-900/10 overscroll-contain",
+			className: "glass refract terminal-blur p-6 rounded-3xl font-mono text-sm flex flex-col h-[380px] border-r-2 border-transparent hover:border-blue-500 transition-all shadow-lg shadow-blue-900/10 overscroll-contain",
 			children: [u.jsxs("div", {
 				className: "flex items-center gap-2 mb-4 border-b border-white/5 pb-2",
 				children: [u.jsxs("div", {
@@ -11142,7 +11142,7 @@ const ty = ({
 					}), u.jsx("div", {
 						className: "w-3 h-3 rounded-full bg-yellow-500/50 hover:bg-yellow-500 transition-colors"
 					}), u.jsx("div", {
-						className: "w-3 h-3 rounded-full bg-green-500/50 hover:bg-green-500 transition-colors"
+						className: "w-3 h-3 rounded-full bg-blue-500/50 hover:bg-blue-500 transition-colors"
 					})]
 				}), u.jsx("span", {
 					className: "text-zinc-500 ml-2",
@@ -11161,7 +11161,7 @@ const ty = ({
 			}), u.jsxs("div", {
 				className: "flex items-center gap-2 border-t border-white/5 pt-3",
 				children: [u.jsx("span", {
-					className: "text-green-400 hidden sm:inline",
+					className: "text-blue-400 hidden sm:inline",
 					children: "guest@Astear17"
 				}), u.jsx("span", {
 					className: "text-zinc-500 hidden sm:inline",
@@ -11178,7 +11178,7 @@ const ty = ({
 					onChange: V => S(V.target.value),
 					onKeyDown: J,
 					ref: U,
-					className: "flex-1 bg-transparent border-none outline-none text-white caret-green-500",
+					className: "flex-1 bg-transparent border-none outline-none text-white caret-blue-500",
 					spellCheck: !1,
 					autoComplete: "off",
 					placeholder: "type a command..."
@@ -11222,7 +11222,7 @@ const ty = ({
 					v = A.timestamps.end - A.timestamps.start,
 					C = Math.min(E / v * 100, 100);
 				return u.jsxs("div", {
-					className: "bg-linear-to-br from-[#1ed760]/10 to-green-500/5 border border-[#1ed760]/20 rounded-2xl p-4 relative overflow-hidden group hover:border-[#1ed760]/50 hover:shadow-[0_10px_30px_-10px_rgba(30,215,96,0.2)] transition-all duration-500 hover:-translate-y-1 panel-blur terminal-blur",
+					className: "bg-linear-to-br from-[#1ed760]/10 to-blue-500/5 border border-[#1ed760]/20 rounded-2xl p-4 relative overflow-hidden group hover:border-[#1ed760]/50 hover:shadow-[0_10px_30px_-10px_rgba(30,215,96,0.2)] transition-all duration-500 hover:-translate-y-1 panel-blur terminal-blur",
 					children: [u.jsx("div", {
 						className: "absolute inset-0 bg-[#1DB954]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
 					}), u.jsxs("div", {
@@ -11303,7 +11303,7 @@ const ty = ({
 						X = K > 0 ? `${K}h ${pe}m` : `${pe}m`
 					}
 					return u.jsxs("div", {
-						className: "bg-linear-to-br from-[#5865F2]/10 to-green-500/5 border border-[#5865F2]/20 rounded-2xl p-4 relative overflow-hidden group hover:border-[#5865F2]/50 hover:shadow-[0_10px_30px_-10px_rgba(88,101,242,0.2)] transition-all duration-500 hover:-translate-y-1 panel-blur",
+						className: "bg-linear-to-br from-[#5865F2]/10 to-blue-500/5 border border-[#5865F2]/20 rounded-2xl p-4 relative overflow-hidden group hover:border-[#5865F2]/50 hover:shadow-[0_10px_30px_-10px_rgba(88,101,242,0.2)] transition-all duration-500 hover:-translate-y-1 panel-blur",
 						children: [u.jsx("div", {
 							className: "absolute top-3 left-3 w-36 h-36 pointer-events-none rounded-full",
 							style: {
@@ -11370,9 +11370,9 @@ const ty = ({
 		}) : u.jsxs("div", {
 			className: "border border-dashed border-white/10 rounded-2xl p-8 text-center bg-gradient-to-br from-white/5 to-transparent hover:border-white/20 hover:bg-white/5 transition-all duration-500 group panel-blur",
 			children: [u.jsx("div", {
-				className: "w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-4 animate-float group-hover:scale-110 transition-transform duration-500 group-hover:bg-green-500/10 group-hover:text-green-400",
+				className: "w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-4 animate-float group-hover:scale-110 transition-transform duration-500 group-hover:bg-blue-500/10 group-hover:text-blue-400",
 				children: u.jsx("i", {
-					className: "fas fa-moon text-xl text-zinc-500 group-hover:text-green-400 transition-colors"
+					className: "fas fa-moon text-xl text-zinc-500 group-hover:text-blue-400 transition-colors"
 				})
 			}), u.jsx("div", {
 				className: "text-zinc-500 text-sm font-medium group-hover:text-zinc-400 transition-colors",
@@ -11508,9 +11508,9 @@ const ty = ({
 	Ge = ({
 		children: f
 	}) => u.jsxs("span", {
-		className: "px-4 py-2.5 rounded-xl text-sm font-medium text-green-300 hover:text-white bg-gradient-to-br from-green-500/10 to-green-500/5 border border-green-500/15 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40 hover:shadow-[0_8px_20px_rgba(0,255,136,0.15)] hover:bg-green-500/20 relative overflow-hidden group cursor-default",
+		className: "px-4 py-2.5 rounded-xl text-sm font-medium text-blue-300 hover:text-white bg-gradient-to-br from-blue-500/10 to-blue-500/5 border border-blue-500/15 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:shadow-[0_8px_20px_rgba(0,255,136,0.15)] hover:bg-blue-500/20 relative overflow-hidden group cursor-default",
 		children: [u.jsx("span", {
-			className: "absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-green-500/10 to-transparent group-hover:left-[100%] transition-[left] duration-700 ease-in-out"
+			className: "absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-blue-500/10 to-transparent group-hover:left-[100%] transition-[left] duration-700 ease-in-out"
 		}), f]
 	}),
 	au = ({
@@ -11542,12 +11542,12 @@ const ty = ({
 			scale: 1.05,
 			children: u.jsxs("div", {
 				ref: A,
-				className: "glass refract p-6 rounded-2xl text-center hover:bg-green-500/10 transition-all duration-500 group border border-transparent hover:border-green-500/20 h-full flex flex-col justify-center",
+				className: "glass refract p-6 rounded-2xl text-center hover:bg-blue-500/10 transition-all duration-500 group border border-transparent hover:border-blue-500/20 h-full flex flex-col justify-center",
 				children: [u.jsx("div", {
-					className: "text-3xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent mb-1 group-hover:scale-110 transition-transform duration-500 inline-block",
+					className: "text-3xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent mb-1 group-hover:scale-110 transition-transform duration-500 inline-block",
 					children: f === 999 ? "∞" : `${d}${c}`
 				}), u.jsx("div", {
-					className: "text-xs text-zinc-500 uppercase tracking-widest group-hover:text-green-400 transition-colors duration-300",
+					className: "text-xs text-zinc-500 uppercase tracking-widest group-hover:text-blue-400 transition-colors duration-300",
 					children: o
 				})]
 			})
@@ -11583,9 +11583,9 @@ const ty = ({
 			children: u.jsxs("h2", {
 				className: "text-3xl font-bold mb-10 flex items-center gap-4",
 				children: [u.jsx("span", {
-					className: "w-12 h-[1px] bg-gradient-to-r from-green-500 to-green-500"
+					className: "w-12 h-[1px] bg-gradient-to-r from-blue-500 to-blue-500"
 				}), u.jsx("span", {
-					className: "bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent",
+					className: "bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent",
 					children: "Tools & Skills"
 				})]
 			})
@@ -11595,14 +11595,14 @@ const ty = ({
 				className: "rounded-3xl",
 				glareColor: "00ff88",
 				children: u.jsxs("div", {
-					className: "glass p-6 rounded-3xl border border-green-500/10 group h-full",
+					className: "glass p-6 rounded-3xl border border-blue-500/10 group h-full",
 					children: [u.jsx("div", {
-						className: "w-14 h-14 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+						className: "w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 						children: u.jsx("i", {
-							className: "fas fa-code text-2xl text-green-400"
+							className: "fas fa-code text-2xl text-blue-400"
 						})
 					}), u.jsx("h3", {
-						className: "text-xl font-bold text-white mb-6 group-hover:text-green-300 transition-colors",
+						className: "text-xl font-bold text-white mb-6 group-hover:text-blue-300 transition-colors",
 						children: "Languages"
 					}), u.jsxs("div", {
 						className: "flex flex-wrap gap-3",
@@ -11625,14 +11625,14 @@ const ty = ({
 				className: "rounded-3xl",
 				glareColor: "00ff88",
 				children: u.jsxs("div", {
-					className: "glass p-6 rounded-3xl border border-green-500/10 group h-full",
+					className: "glass p-6 rounded-3xl border border-blue-500/10 group h-full",
 					children: [u.jsx("div", {
-						className: "w-14 h-14 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+						className: "w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 						children: u.jsx("i", {
-							className: "fas fa-layer-group text-2xl text-green-400"
+							className: "fas fa-layer-group text-2xl text-blue-400"
 						})
 					}), u.jsx("h3", {
-						className: "text-xl font-bold text-white mb-6 group-hover:text-green-300 transition-colors",
+						className: "text-xl font-bold text-white mb-6 group-hover:text-blue-300 transition-colors",
 						children: "Frameworks & Tech"
 					}), u.jsxs("div", {
 						className: "flex flex-wrap gap-3",
@@ -11653,14 +11653,14 @@ const ty = ({
 				className: "rounded-3xl",
 				glareColor: "00ff88",
 				children: u.jsxs("div", {
-					className: "glass p-6 rounded-3xl border border-green-500/10 group h-full",
+					className: "glass p-6 rounded-3xl border border-blue-500/10 group h-full",
 					children: [u.jsx("div", {
-						className: "w-14 h-14 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+						className: "w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 						children: u.jsx("i", {
-							className: "fas fa-heart text-2xl text-green-400"
+							className: "fas fa-heart text-2xl text-blue-400"
 						})
 					}), u.jsx("h3", {
-						className: "text-xl font-bold text-white mb-6 group-hover:text-green-300 transition-colors",
+						className: "text-xl font-bold text-white mb-6 group-hover:text-blue-300 transition-colors",
 						children: "Hobbies"
 					}), u.jsxs("div", {
 						className: "flex flex-wrap gap-3",
@@ -11691,7 +11691,7 @@ const ty = ({
 			children: [u.jsxs("h2", {
 				className: "text-3xl font-bold mb-4 flex items-center gap-4",
 				children: [u.jsx("span", {
-					className: "w-12 h-[1px] bg-gradient-to-r from-green-500 to-green-500"
+					className: "w-12 h-[1px] bg-gradient-to-r from-blue-500 to-blue-500"
 				}), "iOS Certificates"]
 			}), u.jsx("p", {
 				className: "text-zinc-500 mb-10",
@@ -11704,11 +11704,11 @@ const ty = ({
 				tiltMaxAngleX: 7,
 				tiltMaxAngleY: 7,
 				children: u.jsxs("div", {
-					className: "glass p-8 rounded-3xl border-t-4 border-green-500 relative group overflow-hidden h-full",
+					className: "glass p-8 rounded-3xl border-t-4 border-blue-500 relative group overflow-hidden h-full",
 					children: [u.jsx("div", {
-						className: "absolute -right-4 -top-4 w-24 h-24 bg-green-500/10 rounded-full blur-2xl group-hover:bg-green-500/20 transition-all duration-500"
+						className: "absolute -right-4 -top-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-500"
 					}), u.jsx("div", {
-						className: "text-green-400 text-xs font-bold uppercase tracking-widest mb-2",
+						className: "text-blue-400 text-xs font-bold uppercase tracking-widest mb-2",
 						children: "Iphone 48hrs"
 					}), u.jsxs("div", {
 						className: "text-4xl font-bold mb-6",
@@ -11721,27 +11721,27 @@ const ty = ({
 						children: [u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " 300 days Warranty"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " 24h Delivery"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Revoke Protection"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
 						href: "https://discord.com/users/732209394871173192",
-						className: "block text-center glass py-3 rounded-xl hover:bg-green-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
+						className: "block text-center glass py-3 rounded-xl hover:bg-blue-500 hover:text-black font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
 				})
@@ -11752,17 +11752,17 @@ const ty = ({
 				tiltMaxAngleY: 7,
 				glareColor: "00cc66",
 				children: u.jsxs("div", {
-					className: "glass p-8 rounded-3xl border-t-4 border-green-500 relative group overflow-hidden shadow-2xl z-10 h-full",
+					className: "glass p-8 rounded-3xl border-t-4 border-blue-500 relative group overflow-hidden shadow-2xl z-10 h-full",
 					children: [u.jsx("div", {
 						className: "absolute top-0 right-0",
 						children: u.jsx("div", {
-							className: "bg-gradient-to-br from-green-400 to-green-600 text-black text-[10px] font-bold px-8 py-1 rotate-45 translate-x-[30%] translate-y-[50%] shadow-lg",
+							className: "bg-gradient-to-br from-blue-400 to-blue-600 text-black text-[10px] font-bold px-8 py-1 rotate-45 translate-x-[30%] translate-y-[50%] shadow-lg",
 							children: "POPULAR"
 						})
 					}), u.jsx("div", {
-						className: "absolute -right-4 -top-4 w-24 h-24 bg-green-500/10 rounded-full blur-2xl group-hover:bg-green-500/20 transition-all duration-500"
+						className: "absolute -right-4 -top-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-500"
 					}), u.jsx("div", {
-						className: "text-green-400 text-xs font-bold uppercase tracking-widest mb-2",
+						className: "text-blue-400 text-xs font-bold uppercase tracking-widest mb-2",
 						children: "Iphone Instant"
 					}), u.jsxs("div", {
 						className: "text-4xl font-bold mb-6",
@@ -11775,27 +11775,27 @@ const ty = ({
 						children: [u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " 300 days Warranty"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Instant Delivery"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Revoke Protection"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
 						href: "https://discord.com/users/732209394871173192",
-						className: "block text-center bg-green-500 py-3 rounded-xl text-black font-bold hover:shadow-[0_0_30px_rgba(0,204,102,0.6)] hover:bg-green-400 transition-all duration-300 transform active:scale-95",
+						className: "block text-center bg-blue-500 py-3 rounded-xl text-black font-bold hover:shadow-[0_0_30px_rgba(0,204,102,0.6)] hover:bg-blue-400 transition-all duration-300 transform active:scale-95",
 						children: "Get Started"
 					})]
 				})
@@ -11804,11 +11804,11 @@ const ty = ({
 				tiltMaxAngleX: 7,
 				tiltMaxAngleY: 7,
 				children: u.jsxs("div", {
-					className: "glass p-8 rounded-3xl border-t-4 border-green-500 relative group overflow-hidden h-full",
+					className: "glass p-8 rounded-3xl border-t-4 border-blue-500 relative group overflow-hidden h-full",
 					children: [u.jsx("div", {
-						className: "absolute -right-4 -top-4 w-24 h-24 bg-green-500/10 rounded-full blur-2xl group-hover:bg-green-500/20 transition-all duration-500"
+						className: "absolute -right-4 -top-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all duration-500"
 					}), u.jsx("div", {
-						className: "text-green-400 text-xs font-bold uppercase tracking-widest mb-2",
+						className: "text-blue-400 text-xs font-bold uppercase tracking-widest mb-2",
 						children: "iPad 24hrs"
 					}), u.jsxs("div", {
 						className: "text-4xl font-bold mb-6",
@@ -11821,27 +11821,27 @@ const ty = ({
 						children: [u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " 200 Warranty"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " 24h Delivery"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Revoke Protection"]
 						}), u.jsxs("li", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("i", {
-								className: "fas fa-check text-green-500"
+								className: "fas fa-check text-blue-500"
 							}), " Unlimited Sideloading apps"]
 						})]
 					}), u.jsx("a", {
 						href: "https://discord.com/users/732209394871173192",
-						className: "block text-center glass py-3 rounded-xl hover:bg-green-500 hover:text-white font-bold transition-all duration-300 transform active:scale-95",
+						className: "block text-center glass py-3 rounded-xl hover:bg-blue-500 hover:text-white font-bold transition-all duration-300 transform active:scale-95",
 						children: "Order Now"
 					})]
 				})
@@ -11855,7 +11855,7 @@ const ty = ({
 			children: u.jsxs("h2", {
 				className: "text-3xl font-bold mb-10 flex items-center gap-4",
 				children: [u.jsx("span", {
-					className: "w-12 h-[1px] bg-gradient-to-r from-green-500 to-green-500"
+					className: "w-12 h-[1px] bg-gradient-to-r from-blue-500 to-blue-500"
 				}), "Academic Journey"]
 			})
 		}), u.jsxs(Ya, {
@@ -11863,27 +11863,27 @@ const ty = ({
 			children: [u.jsx($e, {
 				className: "rounded-[2rem]",
 				children: u.jsxs("div", {
-					className: "glass p-8 rounded-[2rem] relative group border border-green-500/10 hover:border-green-500/40 hover:bg-green-500/5 h-full",
+					className: "glass p-8 rounded-[2rem] relative group border border-blue-500/10 hover:border-blue-500/40 hover:bg-blue-500/5 h-full",
 					children: [u.jsxs("div", {
 						className: "flex justify-between items-start mb-8",
 						children: [u.jsxs("div", {
 							className: "relative group-hover:scale-110 transition-transform duration-500",
 							children: [u.jsx("div", {
-								className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500/20 to-green-500/5 flex items-center justify-center border border-green-500/10",
+								className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 flex items-center justify-center border border-blue-500/10",
 								children: u.jsx("i", {
 									
-									className: "fas fa-graduation-cap text-2xl text-green-400"
+									className: "fas fa-graduation-cap text-2xl text-blue-400"
 								})
 							}), u.jsx("div", {
-								className: "absolute -top-2 -right-2 w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center border border-green-500/10 shadow-lg",
+								className: "absolute -top-2 -right-2 w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center border border-blue-500/10 shadow-lg",
 								children: u.jsx("i", {
-									className: "fas fa-check text-xs text-green-400"
+									className: "fas fa-check text-xs text-blue-400"
 								})
 							})]
 						}), u.jsxs("div", {
 							className: "text-right",
 							children: [u.jsx("span", {
-								className: "text-[10px] font-bold text-green-400 uppercase tracking-widest bg-green-500/10 px-3 py-1 rounded-full group-hover:bg-green-500/20 transition-colors",
+								className: "text-[10px] font-bold text-blue-400 uppercase tracking-widest bg-blue-500/10 px-3 py-1 rounded-full group-hover:bg-blue-500/20 transition-colors",
 								children: "Completed"
 							}), u.jsx("div", {
 								className: "text-[10px] text-zinc-500 mt-1 font-medium",
@@ -11891,22 +11891,22 @@ const ty = ({
 							})]
 						})]
 					}), u.jsx("h3", {
-						className: "text-2xl font-bold mb-4 text-white group-hover:text-green-300 transition-colors duration-300",
+						className: "text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300",
 						children: "IGCSE"
 					}), u.jsxs("div", {
 						className: "space-y-4",
 						children: [u.jsxs("div", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("span", {
-								className: "w-2 h-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"
+								className: "w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"
 							}), u.jsx("span", {
-								className: "text-xs font-bold text-green-300 uppercase tracking-wider",
+								className: "text-xs font-bold text-blue-300 uppercase tracking-wider",
 								children: "Subjects Completed"
 							})]
 						}), u.jsx("div", {
 							className: "flex flex-wrap gap-3",
 							children: ["Biology", "Chemistry", "Physics", "Combined Science", "Mathematics"].map(f => u.jsxs("span", {
-								className: "px-4 py-2 rounded-xl text-sm font-semibold text-green-300 bg-green-500/10 border border-green-500/20 hover:scale-105 hover:bg-green-500/20 hover:border-green-500/40 transition-all duration-300 cursor-default",
+								className: "px-4 py-2 rounded-xl text-sm font-semibold text-blue-300 bg-blue-500/10 border border-blue-500/20 hover:scale-105 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-300 cursor-default",
 								children: [u.jsx("i", {
 									className: "fas fa-check mr-2 text-xs"
 								}), f]
@@ -11917,26 +11917,26 @@ const ty = ({
 			}), u.jsx($e, {
 				className: "rounded-[2rem]",
 				children: u.jsxs("div", {
-					className: "glass p-8 rounded-[2rem] relative group border border-green-500/10 hover:border-green-500/40 hover:bg-green-500/5 h-full",
+					className: "glass p-8 rounded-[2rem] relative group border border-blue-500/10 hover:border-blue-500/40 hover:bg-blue-500/5 h-full",
 					children: [u.jsxs("div", {
 						className: "flex justify-between items-start mb-8",
 						children: [u.jsxs("div", {
 							className: "relative group-hover:scale-110 transition-transform duration-500",
 							children: [u.jsx("div", {
-								className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500/20 to-green-500/5 flex items-center justify-center border border-green-500/10",
+								className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 flex items-center justify-center border border-blue-500/10",
 								children: u.jsx("i", {
-									className: "fas fa-user-graduate text-2xl text-green-400"
+									className: "fas fa-user-graduate text-2xl text-blue-400"
 								})
 							}), u.jsx("div", {
-								className: "absolute -top-2 -right-2 w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center border border-green-500/10 shadow-lg",
+								className: "absolute -top-2 -right-2 w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center border border-blue-500/10 shadow-lg",
 								children: u.jsx("i", {
-									className: "fas fa-sync-alt text-xs text-green-400 animate-spin"
+									className: "fas fa-sync-alt text-xs text-blue-400 animate-spin"
 								})
 							})]
 						}), u.jsxs("div", {
 							className: "text-right",
 							children: [u.jsx("span", {
-								className: "text-[10px] font-bold text-green-400 uppercase tracking-widest bg-green-500/10 px-3 py-1 rounded-full group-hover:bg-green-500/20 transition-colors",
+								className: "text-[10px] font-bold text-blue-400 uppercase tracking-widest bg-blue-500/10 px-3 py-1 rounded-full group-hover:bg-blue-500/20 transition-colors",
 								children: "In Progress"
 							}), u.jsx("div", {
 								className: "text-[10px] text-zinc-500 mt-1 font-medium",
@@ -11944,27 +11944,27 @@ const ty = ({
 							})]
 						})]
 					}), u.jsx("h3", {
-						className: "text-2xl font-bold mb-4 text-white group-hover:text-green-300 transition-colors duration-300",
+						className: "text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300",
 						children: "A-Levels"
 					}), u.jsxs("div", {
 						className: "space-y-4",
 						children: [u.jsxs("div", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("span", {
-								className: "w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]"
+								className: "w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]"
 							}), u.jsx("span", {
-								className: "text-xs font-bold text-green-300 uppercase tracking-wider",
+								className: "text-xs font-bold text-blue-300 uppercase tracking-wider",
 								children: "Current Subjects"
 							})]
 						}), u.jsxs("div", {
 							className: "flex flex-wrap gap-3",
 							children: [u.jsxs("span", {
-								className: "px-4 py-2 rounded-xl text-sm font-semibold text-green-300 bg-green-500/10 border border-green-500/20 hover:scale-105 hover:bg-green-500/20 hover:border-green-500/40 transition-all duration-300 cursor-default",
+								className: "px-4 py-2 rounded-xl text-sm font-semibold text-blue-300 bg-blue-500/10 border border-blue-500/20 hover:scale-105 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-300 cursor-default",
 								children: [u.jsx("i", {
 									className: "fas fa-dna mr-2 text-xs"
 								}), "Biology A-Level"]
 							}), u.jsxs("span", {
-								className: "px-4 py-2 rounded-xl text-sm font-semibold text-green-300 bg-green-500/10 border border-green-500/20 hover:scale-105 hover:bg-green-500/20 hover:border-green-500/40 transition-all duration-300 cursor-default",
+								className: "px-4 py-2 rounded-xl text-sm font-semibold text-blue-300 bg-blue-500/10 border border-blue-500/20 hover:scale-105 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-300 cursor-default",
 								children: [u.jsx("i", {
 									className: "fas fa-flask mr-2 text-xs"
 								}), "Chemistry A-Level"]
@@ -11982,7 +11982,7 @@ const ty = ({
 			children: u.jsxs("h2", {
 				className: "text-3xl font-bold mb-10 flex items-center gap-4",
 				children: [u.jsx("span", {
-					className: "w-12 h-[1px] bg-gradient-to-r from-green-500 to-green-500"
+					className: "w-12 h-[1px] bg-gradient-to-r from-blue-500 to-blue-500"
 				}), "Featured Projects"]
 			})
 		}), u.jsxs(Ya, {
@@ -11994,22 +11994,22 @@ const ty = ({
 					children: [u.jsxs("div", {
 						className: "flex justify-between items-start mb-4",
 						children: [u.jsx("div", {
-							className: "w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+							className: "w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 							children: u.jsx("i", {
 								className: "fas fa-shield-virus text-xl"
 							})
 						}), u.jsxs("div", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("span", {
-								className: "text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded-md font-bold uppercase",
+								className: "text-[10px] bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md font-bold uppercase",
 								children: "Minecraft"
 							}), u.jsx("span", {
-								className: "w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]",
+								className: "w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]",
 								title: "Active Development"
 							})]
 						})]
 					}), u.jsx("h3", {
-						className: "text-xl font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "Raven3x"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-sm mb-6 group-hover:text-zinc-400 transition-colors",
@@ -12017,7 +12017,7 @@ const ty = ({
 					}), u.jsx("div", {
 						className: "flex gap-2 flex-wrap",
 						children: ["#Java", "#OpenGL", "#Mixins"].map(f => u.jsx("span", {
-							className: "px-3 py-1 rounded-full bg-green-500/5 border border-green-500/10 text-[10px] text-green-300 group-hover:border-green-500/30 transition-colors",
+							className: "px-3 py-1 rounded-full bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-300 group-hover:border-blue-500/30 transition-colors",
 							children: f
 						}, f))
 					})]
@@ -12029,22 +12029,22 @@ const ty = ({
 					children: [u.jsxs("div", {
 						className: "flex justify-between items-start mb-4",
 						children: [u.jsx("div", {
-							className: "w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+							className: "w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 							children: u.jsx("i", {
 								className: "fab fa-apple text-xl"
 							})
 						}), u.jsxs("div", {
 							className: "flex items-center gap-2",
 							children: [u.jsx("span", {
-								className: "text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded-md font-bold uppercase",
+								className: "text-[10px] bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md font-bold uppercase",
 								children: "iOS"
 							}), u.jsx("span", {
-								className: "w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]",
+								className: "w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]",
 								title: "Active Development"
 							})]
 						})]
 					}), u.jsx("h3", {
-						className: "text-xl font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "Online Ipa signer(Retired)"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-sm mb-6 group-hover:text-zinc-400 transition-colors",
@@ -12052,7 +12052,7 @@ const ty = ({
 					}), u.jsx("div", {
 						className: "flex gap-2 flex-wrap",
 						children: ["#Node.js", "#SwiftUI", "#CLI"].map(f => u.jsx("span", {
-							className: "px-3 py-1 rounded-full bg-green-500/5 border border-green-500/10 text-[10px] text-green-300 group-hover:border-green-500/30 transition-colors",
+							className: "px-3 py-1 rounded-full bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-300 group-hover:border-blue-500/30 transition-colors",
 							children: f
 						}, f))
 					})]
@@ -12064,19 +12064,19 @@ const ty = ({
 					children: [u.jsxs("div", {
 						className: "flex justify-between items-start mb-4",
 						children: [u.jsx("div", {
-							className: "w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+							className: "w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 							children: u.jsx("i", {
 								className: "fas fa-globe text-xl"
 							})
 						}), u.jsx("div", {
 							className: "flex items-center gap-2",
 							children: u.jsx("span", {
-								className: "text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded-md font-bold uppercase",
+								className: "text-[10px] bg-blue-500/20 text-blue-400 px-2 py-1 rounded-md font-bold uppercase",
 								children: "Web"
 							})
 						})]
 					}), u.jsx("h3", {
-						className: "text-xl font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "This Portfolio"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-sm mb-6 group-hover:text-zinc-400 transition-colors",
@@ -12084,7 +12084,7 @@ const ty = ({
 					}), u.jsx("div", {
 						className: "flex gap-2 flex-wrap",
 						children: ["#HTML", "#CSS", "#JS"].map(f => u.jsx("span", {
-							className: "px-3 py-1 rounded-full bg-green-500/5 border border-green-500/10 text-[10px] text-green-300 group-hover:border-green-500/30 transition-colors",
+							className: "px-3 py-1 rounded-full bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-300 group-hover:border-blue-500/30 transition-colors",
 							children: f
 						}, f))
 					})]
@@ -12096,7 +12096,7 @@ const ty = ({
 					children: [u.jsxs("div", {
 						className: "flex justify-between items-start mb-4",
 						children: [u.jsx("div", {
-							className: "w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+							className: "w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 							children: u.jsx("i", {
 								className: "fab fa-discord text-xl"
 							})
@@ -12108,7 +12108,7 @@ const ty = ({
 							})
 						})]
 					}), u.jsx("h3", {
-						className: "text-xl font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "Discord Bot with no manners"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-sm mb-6 group-hover:text-zinc-400 transition-colors",
@@ -12116,7 +12116,7 @@ const ty = ({
 					}), u.jsx("div", {
 						className: "flex gap-2 flex-wrap",
 						children: ["#Python", "#My pure skill(ᵗʳᵘˢᵗ)"].map(f => u.jsx("span", {
-							className: "px-3 py-1 rounded-full bg-green-500/5 border border-green-500/10 text-[10px] text-green-300 group-hover:border-green-500/30 transition-colors",
+							className: "px-3 py-1 rounded-full bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-300 group-hover:border-blue-500/30 transition-colors",
 							children: f
 						}, f))
 					})]
@@ -12130,7 +12130,7 @@ const ty = ({
 			children: u.jsxs("h2", {
 				className: "text-3xl font-bold mb-10 flex items-center gap-4",
 				children: [u.jsx("span", {
-					className: "w-12 h-[1px] bg-gradient-to-r from-green-500 to-green-500"
+					className: "w-12 h-[1px] bg-gradient-to-r from-blue-500 to-blue-500"
 				}), "Latest Updates"]
 			})
 		}), u.jsxs(Ya, {
@@ -12142,22 +12142,22 @@ const ty = ({
 					children: [u.jsxs("div", {
 						className: "flex items-center gap-2 mb-4",
 						children: [u.jsx("span", {
-							className: "w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500",
+							className: "w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-blue-500/20 transition-all duration-500",
 							children: u.jsx("i", {
-								className: "fas fa-rocket text-green-400 text-xs"
+								className: "fas fa-rocket text-blue-400 text-xs"
 							})
 						}), u.jsx("span", {
-							className: "text-[10px] font-bold text-green-400 uppercase tracking-widest",
+							className: "text-[10px] font-bold text-blue-400 uppercase tracking-widest",
 							children: "Status Update"
 						})]
 					}), u.jsx("h3", {
-						className: "font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "Portfolio Updated"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-xs leading-relaxed group-hover:text-zinc-400 transition-colors",
 						children: "Completely redesigned"
 					}), u.jsxs("div", {
-						className: "mt-4 text-[10px] text-green-600 flex items-center gap-2",
+						className: "mt-4 text-[10px] text-blue-600 flex items-center gap-2",
 						children: [u.jsx("i", {
 							className: "far fa-calendar"
 						}), " 12/12/2025"]
@@ -12166,7 +12166,7 @@ const ty = ({
 			}), u.jsx($e, {
 				className: "rounded-2xl",
 				children: u.jsxs("div", {
-					className: "glass p-6 rounded-2xl border border-green-500/20 transition-all duration-500 group h-full",
+					className: "glass p-6 rounded-2xl border border-blue-500/20 transition-all duration-500 group h-full",
 					children: [u.jsxs("div", {
 						className: "flex items-center gap-2 mb-4",
 						children: [u.jsx("span", {
@@ -12179,13 +12179,13 @@ const ty = ({
 							children: "Nothing new bc i have exams😭😭🙏😔"
 						})]
 					}), u.jsx("h3", {
-						className: "font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "Grinding studies"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-xs leading-relaxed group-hover:text-zinc-400 transition-colors",
 						children: "need to study"
 					}), u.jsxs("div", {
-						className: "mt-4 text-[10px] text-green-600 flex items-center gap-2",
+						className: "mt-4 text-[10px] text-blue-600 flex items-center gap-2",
 						children: [u.jsx("i", {
 							className: "far fa-calendar"
 						}), " Present"]
@@ -12207,7 +12207,7 @@ const ty = ({
 							children: "Archive"
 						})]
 					}), u.jsx("h3", {
-						className: "font-bold mb-2 group-hover:text-green-400 transition-colors duration-300",
+						className: "font-bold mb-2 group-hover:text-blue-400 transition-colors duration-300",
 						children: "Many more pojects that didnt get published yet"
 					}), u.jsx("p", {
 						className: "text-zinc-500 text-xs leading-relaxed group-hover:text-zinc-400 transition-colors",
@@ -12326,7 +12326,7 @@ const ty = ({
 				if (D.key === V[J.current]) {
 					if (J.current++, J.current === V.length) {
 						const H = document.createElement("div");
-						H.innerText = "Secret Unlocked!", H.className = "fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-green-500 to-green-600 text-black font-bold text-2xl p-8 rounded-2xl z-[100] animate-bounce shadow-[0_0_50px_rgba(0,255,136,0.6)]", document.body.appendChild(H), document.body.style.animation = "rainbow 2s linear infinite";
+						H.innerText = "Secret Unlocked!", H.className = "fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-blue-500 to-blue-600 text-black font-bold text-2xl p-8 rounded-2xl z-[100] animate-bounce shadow-[0_0_50px_rgba(0,255,136,0.6)]", document.body.appendChild(H), document.body.style.animation = "rainbow 2s linear infinite";
 						const Z = document.createElement("style");
 						Z.innerHTML = "@keyframes rainbow { 0% { filter: hue-rotate(0deg); } 100% { filter: hue-rotate(360deg); } }", document.head.appendChild(Z), setTimeout(() => {
 							H.remove(), document.body.style.animation = "", Z.remove()
@@ -12374,7 +12374,7 @@ const ty = ({
 			qe = (pt = o == null ? void 0 : o.activities) == null ? void 0 : pt.find(j => j.type === 4),
 			Yt = Qe === "offline" ? "ZZZzzzzzz.." : (qe == null ? void 0 : qe.state) || "Chilling...";
 		return u.jsxs("div", {
-			className: "relative min-h-screen text-white font-sans selection:bg-green-500/30",
+			className: "relative min-h-screen text-white font-sans selection:bg-blue-500/30",
 			children: [u.jsx("div", {
 				className: "fixed inset-0 z-[50] pointer-events-none opacity-[0.03] mix-blend-overlay",
 				style: {
@@ -12385,17 +12385,17 @@ const ty = ({
 				children: [u.jsx("div", {
 					className: "relative",
 					children: u.jsx("div", {
-						className: "font-mono text-5xl font-bold text-green-400 animate-pulse tracking-tighter drop-shadow-[0_0_40px_rgba(0,255,136,1)]",
+						className: "font-mono text-5xl font-bold text-blue-400 animate-pulse tracking-tighter drop-shadow-[0_0_40px_rgba(0,255,136,1)]",
 						children: "Astear17"
 					})
 				}), u.jsxs("div", {
 					className: "flex gap-2",
 					children: [u.jsx("div", {
-						className: "w-3 h-3 bg-green-500 rounded-full animate-bounce-high [animation-delay:0s]"
+						className: "w-3 h-3 bg-blue-500 rounded-full animate-bounce-high [animation-delay:0s]"
 					}), u.jsx("div", {
-						className: "w-3 h-3 bg-green-500 rounded-full animate-bounce-high [animation-delay:0.15s]"
+						className: "w-3 h-3 bg-blue-500 rounded-full animate-bounce-high [animation-delay:0.15s]"
 					}), u.jsx("div", {
-						className: "w-3 h-3 bg-green-500 rounded-full animate-bounce-high [animation-delay:0.3s]"
+						className: "w-3 h-3 bg-blue-500 rounded-full animate-bounce-high [animation-delay:0.3s]"
 					})]
 				}), u.jsx("div", {
 					className: "font-mono text-xs text-white/50 tracking-[0.3em] uppercase",
@@ -12406,41 +12406,41 @@ const ty = ({
 			}), u.jsx("div", {
 				className: "fixed top-4 right-4 md:top-8 md:right-8 z-40 group cursor-default",
 				children: u.jsxs("div", {
-					className: "glass px-2 py-1 md:px-5 md:py-3 rounded-2xl flex flex-col items-end border-white/10 hover:border-green-500/30 transition-all duration-300 hover:scale-105 relative overflow-hidden backdrop-blur-md shadow-[0_8px_32px_-8px_rgba(0,255,136,0.1)]",
+					className: "glass px-2 py-1 md:px-5 md:py-3 rounded-2xl flex flex-col items-end border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:scale-105 relative overflow-hidden backdrop-blur-md shadow-[0_8px_32px_-8px_rgba(0,255,136,0.1)]",
 					children: [u.jsx("div", {
-						className: "absolute inset-0 bg-gradient-to-r from-green-500/0 via-green-500/5 to-green-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+						className: "absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
 					}), u.jsxs("div", {
 						className: "flex items-baseline gap-1 relative z-10",
 						children: [u.jsx("span", {
-							className: "font-mono text-green-400 text-sm md:text-2xl font-bold tracking-tighter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)]",
+							className: "font-mono text-blue-400 text-sm md:text-2xl font-bold tracking-tighter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)]",
 							children: Te
 						}), u.jsx("span", {
-							className: "font-mono text-green-500 text-xs md:text-lg animate-pulse",
+							className: "font-mono text-blue-500 text-xs md:text-lg animate-pulse",
 							children: ":"
 						}), u.jsx("span", {
-							className: "font-mono text-green-400 text-sm md:text-2xl font-bold tracking-tighter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)]",
+							className: "font-mono text-blue-400 text-sm md:text-2xl font-bold tracking-tighter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)]",
 							children: Ee
 						}), u.jsx("span", {
-							className: "font-mono text-green-500 text-xs md:text-lg",
+							className: "font-mono text-blue-500 text-xs md:text-lg",
 							children: ":"
 						}), u.jsx("span", {
-							className: "font-mono text-green-400 text-sm md:text-2xl font-bold tracking-tighter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)] w-[2ch] text-right tabular-nums",
+							className: "font-mono text-blue-400 text-sm md:text-2xl font-bold tracking-tighter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)] w-[2ch] text-right tabular-nums",
 							children: _e
 						}), u.jsx("span", {
-							className: "font-mono text-green-300 text-[9px] md:text-xs font-medium ml-1",
+							className: "font-mono text-blue-300 text-[9px] md:text-xs font-medium ml-1",
 							children: $
 						})]
 					}), u.jsxs("div", {
 						className: "flex items-center gap-2 mt-1 relative z-10",
 						children: [u.jsxs("span", {
-							className: "text-[9px] uppercase tracking-wider text-green-300/80 font-semibold flex items-center gap-1",
+							className: "text-[9px] uppercase tracking-wider text-blue-300/80 font-semibold flex items-center gap-1",
 							children: [u.jsx("i", {
 								className: "fas fa-calendar-day text-[8px]"
 							}), u.jsx("span", {
 								children: Me
 							})]
 						}), u.jsx("span", {
-							className: "w-1 h-1 rounded-full bg-green-500/40"
+							className: "w-1 h-1 rounded-full bg-blue-500/40"
 						}), u.jsxs("span", {
 							className: "text-[9px] text-zinc-500 font-medium flex items-center gap-1",
 							children: [u.jsx("i", {
@@ -12470,13 +12470,13 @@ const ty = ({
 									className: "absolute top-[70%] right-[-30px] w-2.5 h-2.5 bg-white border-[2px] border-[#050505] rounded-full"
 								})]
 							}), u.jsx("div", {
-								className: "absolute -inset-2 bg-gradient-to-r from-green-500 to-green-500 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"
+								className: "absolute -inset-2 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"
 							}), u.jsxs("div", {
 								className: "relative w-32 h-32 md:w-44 md:h-44",
 								children: [u.jsx("img", {
 									src: (et = o == null ? void 0 : o.discord_user) != null && et.avatar ? `https://cdn.discordapp.com/avatars/${o.discord_user.id}/${o.discord_user.avatar}.png?size=256` : "https://via.placeholder.com/150",
 									alt: "Astear17",
-									className: "w-full h-full rounded-full border-2 border-green-500/50 object-cover shadow-2xl z-10 hover:scale-105 transition-transform duration-500 relative bg-[#050505]"
+									className: "w-full h-full rounded-full border-2 border-blue-500/50 object-cover shadow-2xl z-10 hover:scale-105 transition-transform duration-500 relative bg-[#050505]"
 								}), u.jsx("div", {
 									className: "absolute bottom-2 right-2 md:bottom-4 md:right-4 w-6 h-6 md:w-8 md:h-8 rounded-full border-4 border-[#050505] shadow-lg z-20",
 									style: {
@@ -12489,34 +12489,34 @@ const ty = ({
 							children: [u.jsxs("h1", {
 								className: "text-5xl md:text-7xl font-bold mb-4 tracking-tight",
 								children: ["Hi, I'm ", u.jsx("span", {
-									className: "text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-green-400 bg-300% animate-shimmer [filter:drop-shadow(0_0_10px_rgba(0,255,136,0.9))_drop-shadow(0_0_25px_rgba(0,255,136,0.5))_drop-shadow(0_0_50px_rgba(0,255,136,0.3))]",
+									className: "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-blue-400 bg-300% animate-shimmer [filter:drop-shadow(0_0_10px_rgba(0,255,136,0.9))_drop-shadow(0_0_25px_rgba(0,255,136,0.5))_drop-shadow(0_0_50px_rgba(0,255,136,0.3))]",
 									children: "Astear17"
 								})]
 							}), u.jsxs("p", {
 								className: "text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed",
 								children: ["A 17-year-old who is a ", u.jsx("span", {
-									className: "text-white font-semibold border-r-2 border-green-500 pr-1",
+									className: "text-white font-semibold border-r-2 border-blue-500 pr-1",
 									children: ge
 								}), " building things for the web, games, and iOS. Currently Studying A-Levels while trying to be as productive as possible."]
 							}), Qe === "offline" && C && u.jsx("div", {
 								className: "mt-6 mb-4 flex justify-center md:justify-start animate-in fade-in slide-in-from-bottom-2 duration-700",
 								children: u.jsxs("div", {
-									className: "glass px-5 py-2 rounded-full flex items-center gap-3 border border-green-500/10 hover:border-green-500/30 transition-all group hover:bg-green-500/5",
+									className: "glass px-5 py-2 rounded-full flex items-center gap-3 border border-blue-500/10 hover:border-blue-500/30 transition-all group hover:bg-blue-500/5",
 									children: [u.jsxs("div", {
 										className: "relative",
 										children: [u.jsx("div", {
-											className: "w-2.5 h-2.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(0,255,136,0.5)]"
+											className: "w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(0,255,136,0.5)]"
 										}), u.jsx("div", {
-											className: "absolute inset-0 rounded-full bg-green-500 animate-ping opacity-50"
+											className: "absolute inset-0 rounded-full bg-blue-500 animate-ping opacity-50"
 										})]
 									}), u.jsxs("span", {
 										className: "text-zinc-400 text-sm font-medium",
 										children: ["Last seen ", u.jsx("span", {
-											className: "text-green-400 font-bold ml-1",
+											className: "text-blue-400 font-bold ml-1",
 											children: C
 										})]
 									}), u.jsx("i", {
-										className: "fas fa-clock text-green-500/50 text-xs ml-1"
+										className: "fas fa-clock text-blue-500/50 text-xs ml-1"
 									})]
 								})
 							}), u.jsx("div", {
@@ -12545,7 +12545,7 @@ const ty = ({
 									href: j.link,
 									target: "_blank",
 									rel: "noreferrer",
-									className: "glass px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 active:scale-95 hover:bg-green-500/10 transition-all group",
+									className: "glass px-6 py-3 rounded-full flex items-center gap-2 hover:scale-105 active:scale-95 hover:bg-blue-500/10 transition-all group",
 									children: [u.jsx("i", {
 										className: `${j.icon}`,
 										style: {
@@ -12566,13 +12566,13 @@ const ty = ({
 						children: [u.jsx($e, {
 							className: "rounded-3xl h-full",
 							children: u.jsxs("div", {
-								className: "glass refract p-6 rounded-3xl relative overflow-hidden group border-l-2 border-transparent hover:border-green-500 transition-all flex flex-col h-full shadow-lg shadow-green-900/5 hover:shadow-green-900/10",
+								className: "glass refract p-6 rounded-3xl relative overflow-hidden group border-l-2 border-transparent hover:border-blue-500 transition-all flex flex-col h-full shadow-lg shadow-blue-900/5 hover:shadow-blue-900/10",
 								children: [u.jsx("div", {
 									className: "flex items-center justify-between mb-6",
 									children: u.jsxs("h3", {
 										className: "text-xs uppercase tracking-widest text-zinc-400 font-bold flex items-center gap-2",
 										children: [u.jsx("span", {
-											className: "w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"
+											className: "w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"
 										}), "Real-time Activity"]
 									})
 								}), u.jsx("div", {
@@ -12585,7 +12585,7 @@ const ty = ({
 									children: [u.jsxs("div", {
 										className: "flex items-center gap-2",
 										children: [u.jsx("div", {
-											className: `w-2 h-2 rounded-full ${Qe==="offline"?"bg-zinc-500":"bg-green-500 animate-pulse"}`
+											className: `w-2 h-2 rounded-full ${Qe==="offline"?"bg-zinc-500":"bg-blue-500 animate-pulse"}`
 										}), u.jsx("span", {
 											className: "text-[10px] text-zinc-500 font-medium uppercase tracking-wider",
 											children: Qe === "offline" ? "Offline" : "Live Status"
@@ -12593,9 +12593,9 @@ const ty = ({
 									}), u.jsxs("div", {
 										className: "flex items-center gap-1.5",
 										children: [u.jsx("i", {
-											className: "fas fa-clock text-[9px] text-green-500/60"
+											className: "fas fa-clock text-[9px] text-blue-500/60"
 										}), u.jsx("span", {
-											className: "text-[10px] text-green-400 font-bold",
+											className: "text-[10px] text-blue-400 font-bold",
 											children: Qe === "offline" ? E ? `Last active • ${pe(E)}` : "Last Seen Recently" : "Active Now"
 										})]
 									})]
@@ -12610,7 +12610,7 @@ const ty = ({
 			}), u.jsxs("footer", {
 				className: "relative border-t border-white/5 py-12 mt-12 overflow-hidden z-10 pb-32",
 				children: [u.jsx("div", {
-					className: "absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-24 bg-green-500/10 blur-[80px] pointer-events-none"
+					className: "absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-24 bg-blue-500/10 blur-[80px] pointer-events-none"
 				}), u.jsxs("div", {
 					className: "container mx-auto px-6 relative z-10 flex flex-col items-center",
 					children: [u.jsx("div", {
@@ -12621,23 +12621,23 @@ const ty = ({
 							className: "h-5"
 						})
 					}), u.jsx("div", {
-						className: "text-2xl font-mono font-bold text-green-400 mb-6 drop-shadow-[0_0_25px_rgba(0,255,136,0.8)] hover:scale-110 transition-transform cursor-pointer",
+						className: "text-2xl font-mono font-bold text-blue-400 mb-6 drop-shadow-[0_0_25px_rgba(0,255,136,0.8)] hover:scale-110 transition-transform cursor-pointer",
 						children: "<Astear17 />"
 					}), u.jsxs("div", {
 						className: "flex items-center justify-center gap-3 mb-5 w-full max-w-xs",
 						children: [u.jsx("div", {
-							className: "h-px bg-gradient-to-r from-transparent to-green-500/40 flex-1"
+							className: "h-px bg-gradient-to-r from-transparent to-blue-500/40 flex-1"
 						}), u.jsx("div", {
-							className: "w-1.5 h-1.5 rounded-full bg-green-500/40"
+							className: "w-1.5 h-1.5 rounded-full bg-blue-500/40"
 						}), u.jsx("div", {
-							className: "h-px bg-gradient-to-l from-transparent to-green-500/40 flex-1"
+							className: "h-px bg-gradient-to-l from-transparent to-blue-500/40 flex-1"
 						})]
 					}), u.jsxs("p", {
 						className: "text-zinc-600 text-xs text-center flex items-center justify-center gap-2",
 						children: [u.jsx("span", {
 							children: "© 2025"
 						}), u.jsx("span", {
-							className: "font-semibold text-green-500",
+							className: "font-semibold text-blue-500",
 							children: "Astear17"
 						}), u.jsx("span", {
 							children: "•"
