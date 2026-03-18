@@ -10726,15 +10726,6 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["Discord: ", c ? "🟢 Online" : "⚫ Offline"]
 					})]
-					}), u.jsxs("div", {
-						children: ["GitHub: ", "🟢 Deployed successfully at Astear17/astear17.github.io"]
-					})]
-					}), u.jsxs("div", {
-						children: ["Vercel: ", "🟢 Deployment has completed at /astear17s-projects"]
-					})]
-					}), u.jsxs("div", {
-						children: ["Cloudflare: ", "🔴 No Workers Builds: astear17-site"]
-					})]
 				}),
 				socials: () => u.jsxs("div", {
 					children: [u.jsx("div", {
@@ -10749,12 +10740,12 @@ const ty = ({
 						children: [u.jsx("span", {
 							className: "text-[#0088cc]",
 							children: "Telegram"
-						}), "  → t.me/Astear17"]
+						}), "  → t.me/Astear171o"]
 					}), u.jsxs("div", {
 						children: [u.jsx("span", {
 							className: "text-[#E4405F]",
 							children: "Instagram"
-						}), " → instagram.com/astear.17"]
+						}), " → instagram.com/Astear171___"]
 					})]
 				}),
 				sudo: () => u.jsxs("div", {
@@ -10777,23 +10768,25 @@ const ty = ({
 				}),
 				matrix: () => (f(), u.jsx("div", {
 					className: "text-emerald-400",
-					children: " Encoding the Matrix..."
+					children: " Entering the Matrix..."
 				})),
 				clear: () => (A([]), null),
 				neofetch: () => u.jsxs("div", {
 					className: "flex gap-4",
 					children: [u.jsx("div", {
-						className: "text-emerald-400 hidden sm:block whitespace-pre leading-none font-mono text-[12px]",
-						children: `⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣿⣷⣦⣄⠀⠀⠀⠀
-⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀
-⠀⣰⣿⣿⣿⠀⠈⠉⠉⠉⠉⠉⠁⠀⣹⣿⣿⣆⠀
-⢀⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⡀
-⢸⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇
-⠈⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⠁
-⠀⠹⣿⣿⠻⣿⣶⡤⠀⠀⠀⢤⣶⣾⣿⣿⣿⠏⠀
-⠀⠀⠙⢿⣧⣈⣉⡁⠀⠀⠀⢸⣿⣿⣿⡿⠋⠀⠀
-⠀⠀⠀⠀⠙⠻⢿⠇⠀⠀⠀⠸⡿⠟⠋⠀⠀⠀⠀`
+						className: "text-emerald-400 hidden sm:block whitespace-pre leading-none font-mono text-[10px]",
+						children: `⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢠⣿⠛⠛⠻⢷⣤⣀⣤⣾⠟⠋⠙⣿⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣏⠀⠀⠀⠀⣽⣿⣯⠀⠀⠀⠀⣹⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⠸⣿⣀⣀⣤⣾⣿⣤⣽⣷⣤⣀⣀⣿⡇⠀⠀⠀⠀
+⠀⢀⣤⣶⠿⢿⡟⢩⣿⠋⠉⣉⠉⠙⢿⡍⢻⡿⠿⣶⣤⡀⠀
+⣴⡟⠉⠀⠀⠘⣿⡿⠁⢰⣿⣿⣿⡆⠈⢿⣿⠃⠀⠀⠉⢻⣦
+⠹⣧⣀⠀⠀⢠⣿⣷⡀⠸⣿⣿⣿⠇⢀⣾⣿⡄⠀⠀⣀⣼⠟
+⠀⠈⠛⠿⣶⣾⣧⣘⣿⣄⣀⣀⣀⣠⣿⣣⣼⣿⣶⠿⠛⠁⠀
+⠀⠀⠀⠀⢸⣿⠉⠉⠙⢿⣿⠛⣻⡿⠋⠉⠉⢿⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⣹⣿⣟⠀⠀⠀⠀⣸⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⠘⣿⣤⣤⣴⡺⠛⠉⠛⢿⣦⣤⣤⣿⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀`
 					}), u.jsxs("div", {
 						className: "flex flex-col justify-center",
 						children: [u.jsxs("div", {
@@ -10802,7 +10795,7 @@ const ty = ({
 								children: "OS:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "gitOS v2.67"
+								children: "Astear17OS v2.0"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10818,7 +10811,7 @@ const ty = ({
 								children: "Theme:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-								children: "gitOS v2.67"
+								children: "Astear17🥹"
 							})]
 						}), u.jsxs("div", {
 							children: [u.jsx("span", {
@@ -10826,7 +10819,7 @@ const ty = ({
 								children: "Power:"
 							}), " ", u.jsx("span", {
 								className: "text-white",
-							children: "gitOS v2.67"
+								children: "Powered by shear will"
 							})]
 						})]
 					})]
@@ -10843,27 +10836,27 @@ const ty = ({
 				ls: () => u.jsxs("div", {
 					className: "space-x-4",
 					children: [u.jsx("span", {
-						className: "text-white",
-						children: "_config.yml"
+						className: "text-emerald-400",
+						children: "projects/"
 					}), " ", u.jsx("span", {
-						className: "text-white",
-						children: "index.html"
+						className: "text-emerald-400",
+						children: "skills/"
 					}), " ", u.jsx("span", {
-						className: "text-white",
-						children: "script.js"
+						className: "text-emerald-400",
+						children: "about.txt"
 					}), " ", u.jsx("span", {
-						className: "text-white",
-						children: "wrangler.jsonc"
+						className: "text-emerald-400",
+						children: "contact.md"
 					}), " ", u.jsx("span", {
-						className: "text-white",
-						children: "92335C6B-5E4F-47E9-957C-61268AFFC276.jpeg"
+						className: "text-yellow-400",
+						children: "secrets/"
 					})]
 				}),
 				pwd: () => u.jsx("div", {
-					children: "/home/runner/work/astear17.github.io/astear17.github.io"
+					children: "/home/Astear17/portfolio"
 				}),
 				whoami: () => u.jsx("div", {
-					children: "u0_a153"
+					children: "3mk"
 				}),
 				vim: () => u.jsxs("div", {
 					children: [u.jsx("span", {
