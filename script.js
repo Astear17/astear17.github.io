@@ -10719,26 +10719,48 @@ const ty = ({
 						})]
 					})]
 				}),
-				status: () => u.jsxs("div", {
-					children: [u.jsx("div", {
-						className: "text-emerald-400 border-b border-emerald-500/30 mb-2 pb-1 inline-block",
-						children: "━━━ Current Status ━━━"
-					}), u.jsxs("div", {
-						children: [["Discord: ", c ? "🟢 Online" : "⚫ Offline", u.jsx("span", {
-							className: "text-white",
-							children: "@astear.17"
-						})]
-					}), u.jsxs("div", {
-						children: ["Vercel: ", u.jsx("span", {
-							className: "text-white",
-							children: "@astear.17"
-						})]
-					}), u.jsxs("div", {
-						children: ["Cloudflare: ", u.jsx("span", {
-							className: "text-white",
-							children: "@astear.17"
-						})]
-				}),
+				status: () =>
+  u.jsxs("div", {
+    children: [
+      u.jsx("div", {
+        className:
+          "text-emerald-400 border-b border-emerald-500/30 mb-2 pb-1 inline-block",
+        children: "━━━ Current Status ━━━",
+      }),
+
+      u.jsxs("div", {
+        children: [
+          "Discord: ",
+          c ? "🟢 Online" : "⚫ Offline",
+          u.jsx("span", {
+            className: "text-white",
+            children: "@astear.17",
+          }),
+        ],
+      }),
+
+      u.jsxs("div", {
+        children: [
+          "Vercel: ",
+          u.jsx("span", {
+            className: "text-white",
+            children: "@astear.17",
+          }),
+        ],
+      }),
+
+      u.jsxs("div", {
+        children: [
+          "Cloudflare: ",
+          u.jsx("span", {
+            className: "text-white",
+            children: "@astear.17",
+          }),
+        ],
+      }),
+    ],
+  });
+
 				socials: () => u.jsxs("div", {
 					children: [u.jsx("div", {
 						className: "text-emerald-400 border-b border-emerald-500/30 mb-2 pb-1 inline-block",
