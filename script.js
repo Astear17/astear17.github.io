@@ -10840,17 +10840,12 @@ const ty = ({
 					}), u.jsxs("div", {
 						children: ["📍 Location: ", u.jsx("span", {
 							className: "text-white",
-							children: "Earth"
+							children: "Phu My Dong, Gia Lai, Vietnam,"
 						})]
 					}), u.jsxs("div", {
-						children: ["💻 Focus: ", u.jsx("span", {
+						children: ["💻 Focus on: ", u.jsx("span", {
 							className: "text-white",
-							children: "Web, Games, Studying"
-						})]
-					}), u.jsxs("div", {
-						children: ["🎓 Education: ", u.jsx("span", {
-							className: "text-white",
-							children: "A-Levels (Biology, Chem)"
+							children: "Vibecoding, Games, Studying"
 						})]
 					})]
 				}),
