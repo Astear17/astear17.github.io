@@ -12457,7 +12457,7 @@ const ty = ({
 							isOnline: Qe === "online"
 						})]
 					})
-				}), u.jsx(ny, {}), u.jsx(iy, {}), u.jsx(uy, {}), u.jsx(sy, {}), u.jsx(cy, {}), u.jsx(ry, {})]
+				}), u.jsx(ny, {}), u.jsx(iy, {}), u.jsx(uy, {})]
 			}), u.jsxs("footer", {
 				className: "relative border-t border-white/5 py-12 mt-12 overflow-hidden z-10 pb-32",
 				children: [u.jsx("div", {
