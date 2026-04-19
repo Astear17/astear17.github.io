@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="Know things about me on GitHub, first portfolio about myself." />
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Astear17/astear17.github.io/refs/heads/main/embed.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Syne:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
 :root {
@@ -66,7 +66,6 @@ body::before {
 main { position: relative; z-index: 2; }
 .container { width: min(1100px, 92vw); margin-inline: auto; }
 
-/* ─── Boot overlay ─────────────────────────────────────────── */
 #boot {
   position: fixed; inset: 0; z-index: 9999;
   background: #04080c; color: var(--em);
@@ -94,7 +93,6 @@ main { position: relative; z-index: 2; }
 }
 .boot-skip:hover { color: var(--em); border-color: var(--em); }
 
-/* ─── Nav ──────────────────────────────────────────────────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   padding: 20px 0;
@@ -124,7 +122,6 @@ nav {
 .nav-links a:hover { color: var(--em); }
 .nav-links a:hover::after { width: 100%; }
 
-/* ─── Hero ─────────────────────────────────────────────────── */
 #hero {
   padding: 120px 0 80px; position: relative;
   overflow: hidden; min-height: 100vh; display: flex; align-items: center;
@@ -186,7 +183,6 @@ h1.hero-name .em { color: var(--em); }
   letter-spacing: .05em; z-index: 20;
 }
 
-/* ─── Section headers ──────────────────────────────────────── */
 section { padding: 96px 0; position: relative; }
 .sh-eye {
   font-family: var(--mono); font-size: .68rem; color: var(--em3);
@@ -199,7 +195,6 @@ section { padding: 96px 0; position: relative; }
 .divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(52,211,153,.25), transparent); position: relative; z-index: 2; }
 .alt-bg { background: rgba(6,14,10,.75); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
-/* ─── Skills ───────────────────────────────────────────────── */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 .sk-card, .pj-card {
   background: var(--surface); position: relative; overflow: hidden;
@@ -224,7 +219,6 @@ section { padding: 96px 0; position: relative; }
 .sk-bar { height: 3px; background: rgba(52,211,153,.12); border-radius: 99px; overflow: hidden; }
 .sk-fill { height: 100%; background: linear-gradient(90deg, var(--em3), var(--em2)); border-radius: 99px; width: 0; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
 
-/* ─── Projects ─────────────────────────────────────────────── */
 .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
 .pj-card { padding: 32px; display: flex; flex-direction: column; }
 .pj-num { font-family: var(--mono); font-size: .65rem; color: var(--em3); letter-spacing: .2em; margin-bottom: 16px; }
@@ -242,7 +236,6 @@ section { padding: 96px 0; position: relative; }
 }
 .pj-link:hover { gap: 12px; }
 
-/* ─── Activity section (merged GitHub + Discord) ───────────── */
 .act-sub-head {
   display: flex; align-items: center; gap: 10px;
   margin-bottom: 28px;
@@ -254,7 +247,6 @@ section { padding: 96px 0; position: relative; }
 .act-sub-head + .dc-outer { margin-top: 0; }
 .act-github { margin-bottom: 64px; }
 
-/* ─── GitHub stats ─────────────────────────────────────────── */
 .gh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
 .gh-card {
   background: var(--surface); border: 1px solid var(--border);
@@ -266,7 +258,6 @@ section { padding: 96px 0; position: relative; }
 .gh-streak { grid-column: 1 / -1; }
 @media(max-width:760px) { .gh-grid { grid-template-columns: 1fr; } }
 
-/* ─── Discord Card (Discord-aesthetic, purple) ─────────────── */
 .dc-outer {
   max-width: 780px;
   border-radius: 10px;
@@ -340,7 +331,6 @@ section { padding: 96px 0; position: relative; }
 .dc-status-dot[data-status="dnd"]     { background: #ef4444; }
 .dc-status-dot[data-status="offline"] { background: #6b7280; }
 
-/* Gradient animated name — like Discord's "Chuyển Màu" */
 .dc-gradient-name {
   font-family: var(--sans); font-size: 1.25rem; font-weight: 800;
   background: linear-gradient(90deg, #34d399 0%, #6ee7b7 20%, #818cf8 45%, #a78bfa 65%, #f472b6 85%, #34d399 100%);
@@ -362,7 +352,6 @@ section { padding: 96px 0; position: relative; }
 }
 .dc-since i { color: rgba(139,92,246,.7); }
 
-/* Divider inside left panel */
 .dc-left-divider {
   width: 100%; height: 1px;
   background: rgba(255,255,255,.07);
@@ -377,7 +366,6 @@ section { padding: 96px 0; position: relative; }
 .dc-bio-links a { color: rgba(139,92,246,.9); text-decoration: none; }
 .dc-bio-links a:hover { color: var(--em); }
 
-/* RIGHT: Activities panel */
 .dc-right {
   padding: 20px 22px;
   background: rgba(0,0,0,.3);
@@ -447,7 +435,6 @@ section { padding: 96px 0; position: relative; }
   .dc-outer { border-radius: 8px; }
 }
 
-/* ─── Academic Journey ─────────────────────────────────────── */
 .ac-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -541,7 +528,6 @@ section { padding: 96px 0; position: relative; }
 }
 .ac-chip i { font-size: .6rem; }
 
-/* ─── Stats row & terminal ─────────────────────────────────── */
 .stats-row { display: flex; gap: 0; border: 1px solid var(--border); overflow: hidden; margin-bottom: 56px; }
 .stat-box { flex: 1; padding: 28px 24px; border-right: 1px solid var(--border); text-align: center; }
 .stat-box:last-child { border-right: none; }
@@ -566,7 +552,6 @@ section { padding: 96px 0; position: relative; }
 .t-p { color: var(--em); } .t-c { color: #fff; } .t-s { color: #fbbf24; } .t-k { color: var(--em2); } .t-v { color: #93c5fd; } .t-dim { color: var(--muted); }
 .t-cur { display: inline-block; width: 8px; height: 16px; background: var(--em); vertical-align: middle; animation: blink .9s step-end infinite; }
 
-/* ─── Latest Updates (blog) ────────────────────────────────── */
 .upd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
 .upd-card {
   background: var(--surface);
@@ -592,7 +577,6 @@ section { padding: 96px 0; position: relative; }
 .upd-content { font-size: .78rem; color: var(--muted); line-height: 1.6; font-family: var(--mono); border-top: 1px dashed var(--border); padding-top: 10px; margin-top: 6px; }
 .upd-empty { font-family: var(--mono); color: var(--muted); font-size: .8rem; }
 
-/* ─── Social ───────────────────────────────────────────────── */
 .soc-grid { display: flex; flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
 .soc-card {
   display: flex; align-items: center; gap: 14px;
@@ -605,8 +589,6 @@ section { padding: 96px 0; position: relative; }
 .soc-ic { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: rgba(52,211,153,.1); border: 1px solid rgba(52,211,153,.2); border-radius: 4px; font-size: 1rem; flex-shrink: 0; color: var(--em); }
 .soc-plat { font-family: var(--mono); font-size: .6rem; color: var(--em3); letter-spacing: .15em; text-transform: uppercase; }
 .soc-handle { font-family: var(--terminal); font-size: .8rem; font-weight: 600; color: #e5e7eb; white-space: nowrap; }
-
-/* ─── Support ──────────────────────────────────────────────── */
 .support-card {
   max-width: 420px; margin: 0 auto; text-align: center;
   background: var(--surface); border: 1px solid var(--border);
@@ -620,7 +602,6 @@ section { padding: 96px 0; position: relative; }
 .bank-row span.t-sep { font-family: var(--terminal); color: var(--em); font-weight: bold; margin: 0 2px; }
 .bank-id { font-family: var(--terminal); color: #e5e7eb; }
 
-/* ─── Clock widget ─────────────────────────────────────────── */
 #clock-widget {
   position: fixed; top: 90px; right: 24px;
   background: var(--surface); border: 1px solid var(--border);
@@ -631,7 +612,6 @@ section { padding: 96px 0; position: relative; }
 #clock-time { font-family: var(--clock-font); color: var(--em); font-size: 1.25rem; font-weight: 700; display: block; letter-spacing: .05em; }
 #clock-date { font-family: var(--mono); color: var(--muted); font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; display: block; margin-top: 2px; }
 
-/* ─── Easter egg ───────────────────────────────────────────── */
 #easter {
   position: fixed; inset: 0; z-index: 9998;
   background: rgba(4,8,12,.88); backdrop-filter: blur(6px);
@@ -654,8 +634,6 @@ section { padding: 96px 0; position: relative; }
   font-size: .88rem; line-height: 1.95; color: #9ca3af; min-height: 280px;
 }
 .easter-body .line { white-space: pre-wrap; }
-
-/* ─── Egg toast notification ───────────────────────────────── */
 #egg-toast {
   position: fixed;
   bottom: 72px; left: 50%;
@@ -680,18 +658,15 @@ section { padding: 96px 0; position: relative; }
   transform: translateX(-50%) translateY(0);
 }
 
-/* ─── Footer ───────────────────────────────────────────────── */
 footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40px 0; text-align: center; position: relative; z-index: 2; }
 .ft-sig { font-family: var(--mono); font-size: .75rem; color: var(--muted); letter-spacing: .1em; }
 .ft-sig a { color: var(--em); text-decoration: none; }
 .ft-sig a:hover { text-decoration: underline; }
 .ft-hint { font-family: var(--mono); font-size: .65rem; color: var(--muted); letter-spacing: .12em; margin-top: 10px; opacity: .5; }
 
-/* ─── Fade-in reveal ───────────────────────────────────────── */
 .fade { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .fade.in { opacity: 1; transform: none; }
 
-/* ─── Responsive ───────────────────────────────────────────── */
 @media(max-width:760px) {
   .hero-grid { grid-template-columns: 1fr; }
   .av-wrap { justify-self: center; }
@@ -706,7 +681,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 </head>
 <body>
 
-<!-- ─── Boot overlay ──────────────────────────────────────── -->
 <div id="boot" role="dialog" aria-label="System boot">
   <div class="boot-hdr">astear17.sys <span class="boot-ver">v2.5.0</span> — booting portfolio kernel…</div>
   <div id="boot-log"></div>
@@ -720,7 +694,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
   <span id="clock-date">loading...</span>
 </div>
 
-<!-- ─── Navigation ───────────────────────────────────────── -->
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="#hero"><span>~/</span>astear17</a>
@@ -738,7 +711,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 
 <main>
 
-<!-- ─── HERO ────────────────────────────────────────────── -->
 <section id="hero">
   <canvas id="mc"></canvas>
   <div class="hero-glow"></div>
@@ -768,7 +740,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 
 <div class="divider"></div>
 
-<!-- ─── SKILLS ──────────────────────────────────────────── -->
 <section id="skills" class="alt-bg">
   <div class="container">
     <div class="sh-eye">Tech Stack</div>
@@ -816,7 +787,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 
 <div class="divider"></div>
 
-<!-- ─── PROJECTS ────────────────────────────────────────── -->
 <section id="projects">
   <div class="container">
     <div class="sh-eye">My Works</div>
@@ -900,38 +870,33 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 </section>
 
 <div class="divider"></div>
-
-<!-- ─── ACTIVITY (GitHub + Discord merged) ───────────────── -->
 <section id="activity" class="alt-bg">
   <div class="container">
     <div class="sh-eye">Live Metrics</div>
     <h2 class="sh-title"><span>Activity</span></h2>
 
-    <!-- GitHub Stats -->
     <div class="act-github">
       <div class="act-sub-head"><i class="fab fa-github"></i> GitHub Stats</div>
       <div class="gh-grid fade">
         <div class="gh-card">
           <img loading="lazy" alt="Astear17 GitHub Stats"
-            src="https://github-readme-stats.vercel.app/api?username=Astear17&theme=nord&show_icons=true&hide_border=true&count_private=true&bg_color=0D1117&title_color=34d399&icon_color=34d399&text_color=c8ffe8&ring_color=34d399">
+            src="https://github-readme-stats.vercel.app/api?username=Astear17&amp;theme=nord&amp;show_icons=true&amp;hide_border=true&amp;count_private=true&amp;bg_color=0D1117&amp;title_color=34d399&amp;icon_color=34d399&amp;text_color=c8ffe8&amp;ring_color=34d399">
         </div>
         <div class="gh-card">
           <img loading="lazy" alt="Astear17 Top Languages"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Astear17&theme=nord&show_icons=true&hide_border=true&layout=compact&bg_color=0D1117&title_color=34d399&text_color=c8ffe8">
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Astear17&amp;theme=nord&amp;show_icons=true&amp;hide_border=true&amp;layout=compact&amp;bg_color=0D1117&amp;title_color=34d399&amp;text_color=c8ffe8">
         </div>
         <div class="gh-card gh-streak">
           <img loading="lazy" alt="Astear17 Streak"
-            src="https://streak-stats.demolab.com?user=Astear17&theme=nord&hide_border=true&background=0D1117&stroke=34d399&ring=34d399&fire=34d399&currStreakLabel=34d399&sideLabels=c8ffe8&dates=9ca3af&sideNums=c8ffe8&currStreakNum=c8ffe8">
+            src="https://streak-stats.demolab.com?user=Astear17&amp;theme=nord&amp;hide_border=true&amp;background=0D1117&amp;stroke=34d399&amp;ring=34d399&amp;fire=34d399&amp;currStreakLabel=34d399&amp;sideLabels=c8ffe8&amp;dates=9ca3af&amp;sideNums=c8ffe8&amp;currStreakNum=c8ffe8">
         </div>
       </div>
     </div>
 
-    <!-- Discord Presence -->
     <div class="act-sub-head"><i class="fab fa-discord"></i> Discord Presence</div>
     <div class="dc-outer fade">
       <div id="dc-banner" class="dc-banner"></div>
       <div class="dc-body">
-        <!-- LEFT: Profile -->
         <div class="dc-left">
           <div class="dc-av-area">
             <div class="dc-av-ring">
@@ -952,7 +917,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
             <a href="https://t.me/Astear17..." target="_blank">t.me/Astear17...</a>
           </div>
         </div>
-        <!-- RIGHT: Activities -->
         <div class="dc-right">
           <div class="dc-right-title">Activities</div>
           <div id="dc-acts" class="dc-acts">
@@ -967,20 +931,17 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 
 <div class="divider"></div>
 
-<!-- ─── ACADEMIC JOURNEY ─────────────────────────────────── -->
 <section id="academic">
   <div class="container">
     <div class="sh-eye">Education</div>
     <h2 class="sh-title"><span>Academic</span> Journey</h2>
     <div class="ac-grid" id="academic-grid">
-      <!-- Rendered by JS from ACADEMIC_DATA -->
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ─── ABOUT ────────────────────────────────────────────── -->
 <section id="about" class="alt-bg">
   <div class="container">
     <div class="sh-eye">whoami</div>
@@ -1018,20 +979,17 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 
 <div class="divider"></div>
 
-<!-- ─── LATEST UPDATES ────────────────────────────────────── -->
 <section id="updates">
   <div class="container">
     <div class="sh-eye">Blog</div>
     <h2 class="sh-title"><span>Latest</span> Updates</h2>
     <div class="upd-grid" id="updates-grid">
-      <!-- Rendered by JS from UPDATES_DATA -->
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ─── CONNECT ──────────────────────────────────────────── -->
 <section id="connect" class="alt-bg">
   <div class="container">
     <div class="sh-eye">Links</div>
@@ -1078,8 +1036,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
 </section>
 
 <div class="divider"></div>
-
-<!-- ─── SUPPORT ───────────────────────────────────────────── -->
 <section id="support" class="alt-bg">
   <div class="container">
     <div class="sh-eye">Donation</div>
@@ -1114,7 +1070,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
   </div>
 </footer>
 
-<!-- ─── Easter egg modal ──────────────────────────────────── -->
 <div id="easter" role="dialog" aria-modal="true">
   <div class="easter-term">
     <div class="term-bar" style="cursor:default;">
@@ -1126,18 +1081,15 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
   </div>
 </div>
 
-<!-- Click toast -->
 <div id="egg-toast"></div>
 
 <script>
-/* ═══════════════════════════════════════════════════════════
-   EDITABLE CONTENT — modify these arrays to update sections
-   ═══════════════════════════════════════════════════════════ */
+
 
 const ACADEMIC_DATA = [
   {
     title: "IGCSE",
-    status: "completed",       // "completed" | "in_progress"
+    status: "completed",
     period: "2023–2025",
     label: "SUBJECTS COMPLETED",
     subjects: [
@@ -1160,14 +1112,13 @@ const ACADEMIC_DATA = [
   }
 ];
 
-// time format: "HH:MM:SS DD/MM/YYYY" (GMT+7)
 const UPDATES_DATA = [
   {
     title: "Portfolio Revamp v2.5",
     content: "Merged GitHub + Discord into a single Activity section, added Academic Journey and Latest Updates, rebuilt Discord card with a Discord-accurate purple theme, and replaced the keyboard Konami code with a click-based easter egg.",
     description: "Major overhaul — cleaner structure, new sections, better mobile layout.",
     time: "21:00:00 19/04/2026"
-  }
+  },
   {
     title: "Successfully verified domain",
     content: "Finally verified https://astear17.sino.tw",
@@ -1176,13 +1127,10 @@ const UPDATES_DATA = [
   },
 ];
 
-/* ═══════════════════════════════════════════════════════════
-   END OF EDITABLE CONTENT
-   ═══════════════════════════════════════════════════════════ */
+
 
 const HERO_TEXT = "A young tech enthusiast building tools for iOS, Android & webApps. Learning Python, HTML, JS, CSS & Pascal. Open-source projects, one vibe-coded commit at a time.";
 
-/* ─── Boot sequence ─────────────────────────────────────── */
 (function boot(){
   const log  = document.getElementById('boot-log');
   const el   = document.getElementById('boot');
@@ -1223,7 +1171,6 @@ const HERO_TEXT = "A young tech enthusiast building tools for iOS, Android & web
   }, 180);
 })();
 
-/* ─── Card spotlight ────────────────────────────────────── */
 document.addEventListener('mousemove', e => {
   document.querySelectorAll('.sk-card, .pj-card').forEach(card => {
     const r = card.getBoundingClientRect();
@@ -1232,7 +1179,6 @@ document.addEventListener('mousemove', e => {
   });
 });
 
-/* ─── Matrix rain ───────────────────────────────────────── */
 function matrixRain(canvas, opts) {
   const ctx = canvas.getContext('2d');
   const cfg = Object.assign({ host: canvas, color: '#00ff80', fontSize: 14, step: 20, fade: .08, interval: 60 }, opts);
@@ -1261,7 +1207,6 @@ function matrixRain(canvas, opts) {
 matrixRain(document.getElementById('mc'),        { host: document.getElementById('hero'), step:20, fontSize:14, fade:.08, interval:60 });
 matrixRain(document.getElementById('bg-matrix'), { host: window, step:22, fontSize:13, fade:.05, interval:85 });
 
-/* ─── Clock (Asia/Ho_Chi_Minh) ──────────────────────────── */
 function updateClock() {
   const now = new Date();
   const timeOpts = { timeZone:'Asia/Ho_Chi_Minh', hour12:false, hour:'2-digit', minute:'2-digit', second:'2-digit' };
@@ -1271,7 +1216,6 @@ function updateClock() {
 }
 setInterval(updateClock, 1000); updateClock();
 
-/* ─── Typewriter ────────────────────────────────────────── */
 let typeTimer = null;
 function startTypewriter() {
   const out = document.getElementById('typed');
@@ -1284,7 +1228,6 @@ function startTypewriter() {
   }, 16);
 }
 
-/* ─── Scroll reveal ─────────────────────────────────────── */
 function reveal(el) {
   el.classList.add('in');
   el.querySelectorAll('.sk-fill').forEach(b => { b.style.width = (b.dataset.w || 0) + '%'; });
@@ -1306,7 +1249,6 @@ function reObserve() {
   setTimeout(check, 50);
 }
 
-/* ─── Render: Academic Journey ──────────────────────────── */
 function renderAcademic() {
   const grid = document.getElementById('academic-grid');
   if (!grid) return;
@@ -1345,7 +1287,6 @@ function renderAcademic() {
   reObserve();
 }
 
-/* ─── Render: Latest Updates ────────────────────────────── */
 function renderUpdates() {
   const grid = document.getElementById('updates-grid');
   if (!grid) return;
@@ -1353,7 +1294,6 @@ function renderUpdates() {
     grid.innerHTML = '<p class="upd-empty">No updates yet.</p>';
     return;
   }
-  // newest first
   grid.innerHTML = [...UPDATES_DATA].reverse().map((item, i) => `
     <article class="upd-card fade">
       <div class="upd-card-head">
@@ -1368,7 +1308,6 @@ function renderUpdates() {
   reObserve();
 }
 
-/* ─── Init static + dynamic sections ───────────────────── */
 renderAcademic();
 renderUpdates();
 
@@ -1379,7 +1318,6 @@ document.querySelectorAll('.fade').forEach((el, idx) => {
 check();
 setTimeout(check, 150);
 
-/* ─── Live GitHub stats ─────────────────────────────────── */
 (async function loadGithubStats() {
   try {
     const r = await fetch('https://api.github.com/users/Astear17');
@@ -1392,7 +1330,6 @@ setTimeout(check, 150);
   } catch(e) {}
 })();
 
-/* ─── Lanyard Discord widget ────────────────────────────── */
 (function lanyard() {
   const USER_ID = '1036621192515297322';
 
@@ -1425,16 +1362,13 @@ setTimeout(check, 150);
     const u = data.discord_user || {};
     const status = data.discord_status || 'offline';
 
-    // Status dot
     if (statusDot) statusDot.setAttribute('data-status', status);
 
-    // Avatar
     if (u.avatar && avEl) {
       const ext = u.avatar.startsWith('a_') ? 'gif' : 'png';
       avEl.src = `https://cdn.discordapp.com/avatars/${u.id}/${u.avatar}.${ext}?size=128`;
     }
 
-    // Banner (if available)
     const bannerEl = document.getElementById('dc-banner');
     if (u.banner && bannerEl) {
       const ext = u.banner.startsWith('a_') ? 'gif' : 'png';
@@ -1443,13 +1377,11 @@ setTimeout(check, 150);
       bannerEl.style.backgroundPosition = 'center';
     }
 
-    // Name & handle
     const display = u.global_name || u.display_name || u.username || 'astear17';
     if (nameEl)   nameEl.textContent = display;
     if (handleEl) handleEl.textContent = u.username ? '@' + u.username : '@astear17';
     if (socHandle) socHandle.textContent = display;
 
-    // Build activities HTML
     if (!actsEl) return;
     let html = '';
 
@@ -1507,7 +1439,6 @@ setTimeout(check, 150);
   poll();
   setInterval(poll, 20000);
 
-  // WebSocket real-time updates
   try {
     const ws = new WebSocket('wss://api.lanyard.rest/socket');
     let hb = null;
@@ -1525,7 +1456,6 @@ setTimeout(check, 150);
   } catch(e) {}
 })();
 
-/* ─── Click easter egg (terminal bar) ───────────────────── */
 (function clickEgg() {
   const termBar = document.getElementById('term-bar');
   const toast   = document.getElementById('egg-toast');
@@ -1604,7 +1534,6 @@ setTimeout(check, 150);
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
 })();
 
-/* ─── Kick off ──────────────────────────────────────────── */
 startTypewriter();
 </script>
 </body>
