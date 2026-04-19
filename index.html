@@ -1114,16 +1114,22 @@ const ACADEMIC_DATA = [
 
 const UPDATES_DATA = [
   {
-    title: "Portfolio Revamp v2.5",
-    content: "Merged GitHub + Discord into a single Activity section, added Academic Journey and Latest Updates, rebuilt Discord card with a Discord-accurate purple theme, and replaced the keyboard Konami code with a click-based easter egg.",
-    description: "Major overhaul — cleaner structure, new sections, better mobile layout.",
+    title: "Portfolio Remake",
+    content: "Claude Opus 4.7 released, so I supposed to build this portfolio by Emergent, and this was a very good result for me. Literally rebuilded the whole site, better than Sonnet 4.6 like before. Tuff head page though.",
+    description: "Major portfolio rework — cleaner structure, new sections, better mobile layout.",
     time: "21:00:00 19/04/2026"
   },
   {
     title: "Successfully verified domain",
-    content: "Finally verified https://astear17.sino.tw",
-    description: "I have finally done verifying https://astear17.sino.tw on GitHub (still sad becasue no Vercel ToT)",
+    content: "I have finally done verifying https://astear17.sino.tw on GitHub (still sad becasue no Vercel ToT). Big thanks to Mint1 for promoting FreeDNS domain and help me seting things up for GitHUb Pages.",
+    description: "Finally verified https://astear17.sino.tw",
     time: "17:12:02 18/04/2026"
+  },
+  {
+    title: "Final for VN Cybersecurity",
+    content: "So shocked, I have officially enrolled to be 3rd rank of Gia Lai to be in the 'Secondary School Students with Cybersecurity' contest. I am very proud from the time I was writing this.",
+    description: "Staying 3rd rank in 'Secondary School Students with Cybersecurity' contest",
+    time: "3:24:31 16/04/2026"
   },
 ];
 
@@ -1138,17 +1144,18 @@ const HERO_TEXT = "A young tech enthusiast building tools for iOS, Android & web
   if (sessionStorage.getItem('astear17.booted') === '1') { el.remove(); return; }
   const lines = [
     ['ok',   'BIOS POST ....................... OK'],
-    ['dim',  'Probing CPU: vibecoder-core @ ∞MHz'],
-    ['ok',   'Loading kernel /boot/astear17.sys .. OK'],
+    ['dim',  'Probing CPU: xeon_E3-1225v3 @ 3,20 GHz'],
+    ['ok',   'Loading kernel /boot/geekyOS_v1.1.0_x86-64.img .. OK'],
     ['ok',   'Mounting /dev/curiosity ........... OK'],
-    ['ok',   'Mounting /dev/coffee .............. OK'],
+    ['ok',   'Mounting /dev/resources ........... OK'],
     ['warn', 'Checking /dev/sleep ............... MISSING (ignored)'],
-    ['ok',   'Starting network: wlan0 up ........ OK'],
+    ['ok',   'Starting network: wlan0_PPPoE ..... OK'],
     ['dim',  'Resolving github.com .............. 140.82.121.4'],
-    ['ok',   'Loading modules: python, html, js, css, pascal'],
-    ['ok',   'Spawning vibecoder daemon ......... [PID 1337]'],
-    ['dim',  'Connecting to lanyard.rest ........ connected'],
-    ['white','astear17@web:~$ ./portfolio --launch']
+    ['dim',  'Resolving freedns.afraid.com ...... 169.47.130.72'],
+    ['ok',   'Loading modules: python, html, js, css'],
+    ['ok',   'Spawning vibecoder daemon ......... [PID 3667]'],
+    ['dim',  'Connecting to api.lanyard.rest .... success'],
+    ['white','astear17@guest:~$ ./portfolio --launch']
   ];
   const colorMap = { ok:'boot-ok', warn:'boot-warn', dim:'boot-dim', white:'boot-white' };
   function finish() {
