@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astear17 • Portfolio</title>
+<meta name="description" content="Tech-styled portfolio of Nghĩa (Astear17) — iOS / Android / Web tooling, open-source &amp; vibecoded." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<meta property="og:title" content="Astear17 • Portfolio" />
+<meta property="og:description" content="Know things about me on GitHub, first portfolio about myself." />
+<meta property="og:image" content="https://raw.githubusercontent.com/Astear17/astear17.github.io/refs/heads/main/embed.png" />
+<meta property="og:url" content="https://astear17.sino.tw" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Astear17 • Portfolio" />
+<meta name="twitter:description" content="Know things about me on GitHub, first portfolio about myself." />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Astear17/astear17.github.io/refs/heads/main/embed.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Syne:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+:root {
+  --bg:      #04080c;
+  --bg2:     #070e12;
+  --em:      #34d399;
+  --em2:     #6ee7b7;
+  --em3:     #10b981;
+  --border:  rgba(52,211,153,.15);
+  --surface: rgba(10,22,16,.65);
+  --text:    #c8ffe8;
+  --muted:   #607060;
+  --mono:    'Share Tech Mono', monospace;
+  --sans:    'Syne', sans-serif;
+  --terminal:'Consolas','Monaco','Courier New', monospace;
+  --clock-font:'JetBrains Mono', monospace;
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  overflow-x: hidden;
+  cursor: url('cursor.png'), auto;
+}
+a, button, .btn, .sk-card, .pj-card, .soc-card, .easter-close, .ac-card { cursor: url('finger.png'), pointer; }
+
+#bg-matrix { position: fixed; inset: 0; opacity: 0.04; pointer-events: none; z-index: 0; }
+#mc { position: absolute; inset: 0; opacity: 0.22; pointer-events: none; z-index: 0; }
+
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background: repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.08) 3px,rgba(0,0,0,.08) 4px);
+  pointer-events: none; z-index: 1;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: radial-gradient(circle,rgba(52,211,153,.09) 1px,transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none; z-index: 0;
+}
+
+main { position: relative; z-index: 2; }
+.container { width: min(1100px, 92vw); margin-inline: auto; }
+
+#boot {
+  position: fixed; inset: 0; z-index: 9999;
+  background: #04080c; color: var(--em);
+  font-family: var(--terminal); font-size: 0.9rem; line-height: 1.65;
+  padding: 40px 6vw; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-start;
+}
+#boot.done { animation: bootFade .55s ease forwards; }
+@keyframes bootFade { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+#boot::before {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(52,211,153,.05) 2px,rgba(52,211,153,.05) 3px);
+  pointer-events: none;
+}
+.boot-hdr { color: var(--em2); margin-bottom: 14px; letter-spacing: .04em; }
+.boot-hdr .boot-ver { color: var(--muted); }
+#boot-log div { white-space: pre-wrap; opacity: 0; animation: bootLine .18s ease forwards; }
+@keyframes bootLine { to { opacity: 1; } }
+.boot-ok { color: var(--em); } .boot-warn { color: #fbbf24; } .boot-dim { color: var(--muted); } .boot-white { color: #e5e7eb; }
+.boot-skip {
+  position: absolute; bottom: 24px; right: 28px;
+  font-family: var(--mono); font-size: .7rem; color: var(--muted);
+  letter-spacing: .15em; border: 1px solid var(--border);
+  padding: 8px 14px; background: transparent; text-transform: uppercase;
+}
+.boot-skip:hover { color: var(--em); border-color: var(--em); }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 20px 0;
+  background: rgba(4,8,12,.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  width: min(1100px, 92vw); margin-inline: auto; gap: 16px;
+}
+.nav-logo {
+  font-family: var(--mono); color: var(--em); font-size: 1rem;
+  letter-spacing: .1em; text-decoration: none; flex-shrink: 0;
+}
+.nav-logo span { color: var(--muted); }
+.nav-links { display: flex; gap: 24px; list-style: none; }
+.nav-links a {
+  font-family: var(--mono); font-size: .72rem; color: var(--muted);
+  text-decoration: none; letter-spacing: .1em; text-transform: uppercase;
+  transition: color .2s; position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 1px; background: var(--em); transition: width .25s;
+}
+.nav-links a:hover { color: var(--em); }
+.nav-links a:hover::after { width: 100%; }
+
+#hero {
+  padding: 120px 0 80px; position: relative;
+  overflow: hidden; min-height: 100vh; display: flex; align-items: center;
+}
+.hero-glow {
+  position: absolute; width: 600px; height: 600px;
+  background: radial-gradient(ellipse, rgba(52,211,153,.12) 0%, transparent 70%);
+  top: -100px; right: -100px; pointer-events: none;
+  animation: glow 6s ease-in-out infinite; z-index: 1;
+}
+@keyframes glow { 0%,100% { transform: scale(1); opacity: .8; } 50% { transform: scale(1.12); opacity: 1; } }
+.hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; position: relative; z-index: 2; }
+.hero-eyebrow {
+  font-family: var(--mono); font-size: .7rem; color: var(--em3);
+  letter-spacing: .25em; text-transform: uppercase; margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-eyebrow::before { content: ''; display: inline-block; width: 40px; height: 1px; background: var(--em3); }
+h1.hero-name { font-size: clamp(3.2rem,7vw,6.5rem); font-weight: 800; line-height: .95; letter-spacing: -.02em; color: #fff; margin-bottom: 8px; }
+h1.hero-name .em { color: var(--em); }
+.hero-handle { font-family: var(--mono); font-size: 1rem; color: var(--muted); margin-bottom: 32px; }
+.hero-handle span { color: var(--em2); }
+.hero-type {
+  font-family: var(--terminal); font-size: 1.05rem; color: #9ca3af;
+  line-height: 1.7; max-width: 540px; margin-bottom: 44px; min-height: 3.4em;
+}
+.hero-type .tw-cur {
+  display: inline-block; width: 9px; height: 1.1em; background: var(--em);
+  vertical-align: text-bottom; animation: blink .9s step-end infinite; margin-left: 2px;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 28px; font-family: var(--mono); font-size: .8rem;
+  letter-spacing: .1em; text-transform: uppercase; text-decoration: none;
+  transition: all .25s; border: 0;
+}
+.btn-primary {
+  background: var(--em); color: #000;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.btn-primary:hover { background: var(--em2); transform: translateY(-2px); box-shadow: 0 10px 40px rgba(52,211,153,.3); }
+.btn-ghost { border: 1px solid var(--border); color: var(--em); background: transparent; }
+.btn-ghost:hover { border-color: var(--em); background: rgba(52,211,153,.08); transform: translateY(-2px); }
+.av-wrap { position: relative; flex-shrink: 0; z-index: 10; }
+.av-spin { width: 220px; height: 220px; border-radius: 50%; position: relative; }
+.av-spin::before {
+  content: ''; position: absolute; inset: -3px; border-radius: 50%;
+  background: conic-gradient(var(--em), transparent, var(--em3), transparent, var(--em));
+  animation: spinring 4s linear infinite;
+}
+@keyframes spinring { to { transform: rotate(360deg); } }
+.av-spin img { position: relative; z-index: 1; width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 3px solid var(--bg); }
+.av-badge {
+  position: absolute; bottom: 10px; right: 10px;
+  background: var(--bg2); border: 1px solid var(--em); border-radius: 6px;
+  padding: 4px 10px; font-family: var(--mono); font-size: .65rem; color: var(--em);
+  letter-spacing: .05em; z-index: 20;
+}
+
+section { padding: 96px 0; position: relative; }
+.sh-eye {
+  font-family: var(--mono); font-size: .68rem; color: var(--em3);
+  letter-spacing: .25em; text-transform: uppercase; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 12px;
+}
+.sh-eye::before { content: ''; width: 28px; height: 1px; background: var(--em3); }
+.sh-title { font-size: clamp(1.8rem,3.5vw,2.8rem); font-weight: 800; color: #fff; letter-spacing: -.02em; margin-bottom: 48px; }
+.sh-title span { color: var(--em); }
+.divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(52,211,153,.25), transparent); position: relative; z-index: 2; }
+.alt-bg { background: rgba(6,14,10,.75); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.sk-card, .pj-card {
+  background: var(--surface); position: relative; overflow: hidden;
+  transition: transform .25s, box-shadow .25s; border: 1px solid transparent;
+}
+.sk-card::before, .pj-card::before {
+  content: ''; position: absolute; inset: 0; padding: 1px;
+  background: radial-gradient(350px circle at var(--mouse-x) var(--mouse-y), rgba(52,211,153,0.8), transparent 80%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  z-index: 3; pointer-events: none; opacity: 0; transition: opacity .4s ease;
+}
+.sk-card::after, .pj-card::after { content: ''; position: absolute; inset: 0; border: 1px solid var(--border); z-index: 1; pointer-events: none; }
+.sk-card:hover::before, .pj-card:hover::before { opacity: 1; }
+.sk-card { padding: 28px 28px 24px; clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px)); }
+.sk-card:hover, .pj-card:hover { transform: translateY(-4px); box-shadow: inset 0 0 15px rgba(52,211,153,0.05); }
+.sk-card > *, .pj-card > * { position: relative; z-index: 2; }
+.sk-icon { font-size: 1.6rem; margin-bottom: 14px; display: block; color: var(--em); }
+.sk-name { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.sk-desc { font-size: .82rem; color: var(--muted); line-height: 1.55; margin-bottom: 18px; }
+.sk-bar { height: 3px; background: rgba(52,211,153,.12); border-radius: 99px; overflow: hidden; }
+.sk-fill { height: 100%; background: linear-gradient(90deg, var(--em3), var(--em2)); border-radius: 99px; width: 0; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+
+.proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+.pj-card { padding: 32px; display: flex; flex-direction: column; }
+.pj-num { font-family: var(--mono); font-size: .65rem; color: var(--em3); letter-spacing: .2em; margin-bottom: 16px; }
+.pj-name { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+.pj-tag, .pj-archived { font-family: var(--mono); font-size: .6rem; padding: 2px 8px; border-radius: 3px; white-space: nowrap; margin-top: 3px; flex-shrink: 0; }
+.pj-tag { color: var(--em); border: 1px solid rgba(52,211,153,.3); }
+.pj-archived { color: #ffd600; border: 1px solid #ffd600; }
+.pj-desc { font-size: .86rem; color: #9ca3af; line-height: 1.65; flex: 1; margin-bottom: 22px; }
+.pj-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.pill { font-family: var(--mono); font-size: .65rem; color: var(--em2); background: rgba(52,211,153,.08); border: 1px solid rgba(52,211,153,.2); padding: 3px 10px; border-radius: 3px; letter-spacing: .05em; }
+.pj-link {
+  font-family: var(--mono); font-size: .72rem; color: var(--em);
+  text-decoration: none; letter-spacing: .1em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 6px; transition: gap .2s; margin-top: auto;
+}
+.pj-link:hover { gap: 12px; }
+
+.act-sub-head {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 28px;
+  font-family: var(--mono); font-size: .78rem;
+  color: var(--em2); letter-spacing: .12em; text-transform: uppercase;
+  border-left: 3px solid var(--em); padding-left: 12px;
+}
+.act-sub-head + .gh-grid,
+.act-sub-head + .dc-outer { margin-top: 0; }
+.act-github { margin-bottom: 64px; }
+
+.gh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+.gh-card {
+  background: var(--surface); border: 1px solid var(--border);
+  padding: 10px; display: flex; align-items: center; justify-content: center;
+  min-height: 190px; overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+.gh-card img { max-width: 100%; height: auto; display: block; }
+.gh-streak { grid-column: 1 / -1; }
+@media(max-width:760px) { .gh-grid { grid-template-columns: 1fr; } }
+
+.dc-outer {
+  max-width: 780px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(139,92,246,.35);
+  box-shadow: 0 8px 48px rgba(109,40,217,.2), 0 0 0 1px rgba(139,92,246,.1);
+  background: linear-gradient(160deg, #12072b 0%, #1e0e48 30%, #2d1568 55%, #3d2085 80%, #4f2da0 100%);
+}
+
+.dc-banner {
+  height: 88px;
+  background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 45%, #7c3aed 75%, #8b5cf6 100%);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.dc-banner::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(18,7,43,.6) 100%);
+}
+
+.dc-body {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.dc-left {
+  padding: 0 20px 28px;
+  border-right: 1px solid rgba(255,255,255,.07);
+  position: relative;
+}
+
+.dc-av-area {
+  position: relative;
+  width: fit-content;
+  margin-top: -36px;
+  margin-bottom: 14px;
+  z-index: 2;
+}
+
+.dc-av-ring {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+.dc-av-ring::before {
+  content: '';
+  position: absolute; inset: -3px; border-radius: 50%;
+  background: conic-gradient(var(--em), transparent, #a78bfa, transparent, var(--em));
+  animation: spinring 5s linear infinite;
+}
+.dc-av {
+  position: relative; z-index: 1;
+  width: 80px; height: 80px; border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #12072b;
+  display: block;
+}
+.dc-status-dot {
+  position: absolute;
+  bottom: 2px; right: 2px;
+  width: 18px; height: 18px; border-radius: 50%;
+  border: 3px solid #12072b;
+  background: #6b7280;
+  z-index: 3; transition: background .3s;
+}
+.dc-status-dot[data-status="online"]  { background: #22c55e; }
+.dc-status-dot[data-status="idle"]    { background: #f59e0b; }
+.dc-status-dot[data-status="dnd"]     { background: #ef4444; }
+.dc-status-dot[data-status="offline"] { background: #6b7280; }
+
+.dc-gradient-name {
+  font-family: var(--sans); font-size: 1.25rem; font-weight: 800;
+  background: linear-gradient(90deg, #34d399 0%, #6ee7b7 20%, #818cf8 45%, #a78bfa 65%, #f472b6 85%, #34d399 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: nameShift 5s linear infinite;
+  letter-spacing: .01em; margin-bottom: 4px;
+}
+@keyframes nameShift { to { background-position: 200% center; } }
+
+.dc-username {
+  font-family: var(--mono); font-size: .72rem;
+  color: rgba(200,180,255,.55); letter-spacing: .03em; margin-bottom: 10px;
+}
+.dc-since {
+  font-family: var(--mono); font-size: .68rem;
+  color: rgba(200,180,255,.45); display: flex; align-items: center; gap: 6px;
+}
+.dc-since i { color: rgba(139,92,246,.7); }
+
+.dc-left-divider {
+  width: 100%; height: 1px;
+  background: rgba(255,255,255,.07);
+  margin: 14px 0;
+}
+
+.dc-bio-links {
+  font-family: var(--mono); font-size: .65rem;
+  color: rgba(139,92,246,.9);
+  line-height: 1.8;
+}
+.dc-bio-links a { color: rgba(139,92,246,.9); text-decoration: none; }
+.dc-bio-links a:hover { color: var(--em); }
+
+.dc-right {
+  padding: 20px 22px;
+  background: rgba(0,0,0,.3);
+  backdrop-filter: blur(4px);
+}
+.dc-right-title {
+  font-family: var(--mono); font-size: .65rem;
+  color: rgba(200,180,255,.5); letter-spacing: .2em;
+  text-transform: uppercase; margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  padding-bottom: 10px;
+}
+.dc-acts { display: flex; flex-direction: column; gap: 10px; }
+
+.dc-act-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(139,92,246,.18);
+  border-radius: 8px;
+  transition: background .2s;
+}
+.dc-act-item:hover { background: rgba(255,255,255,.07); }
+.dc-act-img {
+  width: 48px; height: 48px; border-radius: 8px;
+  object-fit: cover; flex-shrink: 0; background: #1a1a2e;
+}
+.dc-act-img-placeholder {
+  width: 48px; height: 48px; border-radius: 8px;
+  background: rgba(139,92,246,.15); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; color: rgba(139,92,246,.5);
+}
+.dc-act-info { min-width: 0; flex: 1; }
+.dc-act-type {
+  font-family: var(--mono); font-size: .6rem;
+  color: rgba(200,180,255,.5); letter-spacing: .12em;
+  text-transform: uppercase; margin-bottom: 3px;
+}
+.dc-act-name {
+  font-family: var(--sans); font-size: .85rem; font-weight: 700;
+  color: #e5e7eb; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.dc-act-sub {
+  font-family: var(--mono); font-size: .7rem;
+  color: rgba(200,180,255,.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  margin-top: 2px;
+}
+.dc-custom-status {
+  font-family: var(--mono); font-size: .78rem;
+  color: rgba(200,180,255,.65);
+  padding: 8px 12px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 6px;
+}
+.dc-no-act {
+  font-family: var(--mono); font-size: .78rem;
+  color: rgba(200,180,255,.35); font-style: italic;
+  padding: 24px 0; text-align: center;
+}
+
+@media (max-width: 680px) {
+  .dc-body { grid-template-columns: 1fr; }
+  .dc-left { border-right: none; border-bottom: 1px solid rgba(255,255,255,.07); padding-bottom: 20px; }
+  .dc-right { padding: 18px; }
+  .dc-outer { border-radius: 8px; }
+}
+
+.ac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+.ac-card {
+  background: rgba(8,18,14,.85);
+  border: 1px solid rgba(52,211,153,.12);
+  border-radius: 14px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.ac-card::before {
+  content: '';
+  position: absolute; inset: 0; border-radius: 14px;
+  background: radial-gradient(ellipse 60% 40% at 20% 80%, rgba(52,211,153,.06), transparent);
+  pointer-events: none;
+}
+.ac-card:hover { transform: translateY(-4px); border-color: rgba(52,211,153,.3); box-shadow: 0 12px 40px rgba(52,211,153,.08); }
+
+.ac-card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; }
+
+.ac-icon-wrap { position: relative; width: 52px; height: 52px; flex-shrink: 0; }
+.ac-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: rgba(52,211,153,.12);
+  border: 1px solid rgba(52,211,153,.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; color: var(--em);
+}
+.ac-icon-badge {
+  position: absolute; top: -6px; right: -6px;
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 2px solid rgba(8,18,14,.9);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .55rem;
+}
+.ac-badge-done { background: #14532d; color: #4ade80; border-color: rgba(8,18,14,.9); }
+.ac-badge-prog { background: #78350f; color: #fbbf24; border-color: rgba(8,18,14,.9); }
+
+.ac-status-info { text-align: right; }
+.ac-status {
+  display: inline-block;
+  font-family: var(--mono); font-size: .58rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 99px;
+  margin-bottom: 5px;
+}
+.ac-status-done { background: rgba(20,83,45,.6); color: #4ade80; border: 1px solid rgba(74,222,128,.25); }
+.ac-status-prog { background: rgba(120,53,15,.6); color: #fbbf24; border: 1px solid rgba(251,191,36,.25); }
+.ac-period {
+  display: block; font-family: var(--mono); font-size: .65rem;
+  color: var(--muted); letter-spacing: .05em;
+}
+
+.ac-title {
+  font-size: 2rem; font-weight: 800; color: #fff;
+  letter-spacing: -.02em; margin-bottom: 18px;
+}
+
+.ac-label-row {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 14px;
+}
+.ac-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--em); flex-shrink: 0;
+}
+.ac-dot-prog { background: #f59e0b; }
+.ac-label {
+  font-family: var(--mono); font-size: .6rem;
+  color: rgba(200,255,232,.5); letter-spacing: .18em; text-transform: uppercase;
+}
+
+.ac-subjects { display: flex; flex-wrap: wrap; gap: 8px; }
+.ac-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--mono); font-size: .68rem;
+  padding: 5px 12px; border-radius: 8px;
+  color: var(--em2);
+  background: rgba(52,211,153,.07);
+  border: 1px solid rgba(52,211,153,.2);
+  letter-spacing: .03em; transition: background .2s;
+}
+.ac-chip:hover { background: rgba(52,211,153,.12); }
+.ac-chip-prog {
+  color: #fbbf24;
+  background: rgba(251,191,36,.06);
+  border-color: rgba(251,191,36,.25);
+}
+.ac-chip i { font-size: .6rem; }
+
+.stats-row { display: flex; gap: 0; border: 1px solid var(--border); overflow: hidden; margin-bottom: 56px; }
+.stat-box { flex: 1; padding: 28px 24px; border-right: 1px solid var(--border); text-align: center; }
+.stat-box:last-child { border-right: none; }
+.stat-n { font-family: var(--mono); font-size: 2.2rem; font-weight: 800; color: var(--em); display: block; }
+.stat-n.has-plus::after { content: '+'; font-size: 1rem; vertical-align: middle; margin-left: 2px; }
+.stat-l { font-family: var(--mono); font-size: .65rem; color: var(--muted); letter-spacing: .15em; text-transform: uppercase; margin-top: 6px; }
+
+.terminal { background: #080d11; border: 1px solid rgba(52,211,153,.25); border-radius: 0; overflow: hidden; max-width: 700px; box-shadow: 0 0 80px rgba(52,211,153,.08); }
+.term-bar {
+  background: #111820; padding: 10px 16px;
+  display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid rgba(52,211,153,.15);
+  cursor: url('finger.png'), pointer;
+  user-select: none;
+  transition: background .2s;
+}
+.term-bar:hover { background: #162030; }
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.d-r { background: #ef4444; } .d-y { background: #f59e0b; } .d-g { background: var(--em); }
+.term-title { font-family: var(--mono); font-size: .7rem; color: var(--muted); margin-left: 8px; }
+.term-body { padding: 24px 28px; font-family: var(--mono); font-size: .85rem; line-height: 2; color: #9ca3af; }
+.t-p { color: var(--em); } .t-c { color: #fff; } .t-s { color: #fbbf24; } .t-k { color: var(--em2); } .t-v { color: #93c5fd; } .t-dim { color: var(--muted); }
+.t-cur { display: inline-block; width: 8px; height: 16px; background: var(--em); vertical-align: middle; animation: blink .9s step-end infinite; }
+
+.upd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.upd-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s, border-color .25s;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+.upd-card::after { content: ''; position: absolute; inset: 0; border: 1px solid var(--border); z-index: 1; pointer-events: none; }
+.upd-card:hover { transform: translateY(-3px); border-color: rgba(52,211,153,.3); }
+.upd-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; gap: 8px; flex-wrap: wrap; }
+.upd-time { font-family: var(--mono); font-size: .62rem; color: var(--muted); letter-spacing: .05em; display: flex; align-items: center; gap: 5px; }
+.upd-time i { color: var(--em3); }
+.upd-new {
+  font-family: var(--mono); font-size: .55rem; letter-spacing: .18em;
+  text-transform: uppercase; background: var(--em); color: #000;
+  padding: 2px 8px; border-radius: 3px; font-weight: 700;
+}
+.upd-title { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+.upd-desc { font-size: .82rem; color: #9ca3af; line-height: 1.6; margin-bottom: 10px; }
+.upd-content { font-size: .78rem; color: var(--muted); line-height: 1.6; font-family: var(--mono); border-top: 1px dashed var(--border); padding-top: 10px; margin-top: 6px; }
+.upd-empty { font-family: var(--mono); color: var(--muted); font-size: .8rem; }
+
+.soc-grid { display: flex; flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
+.soc-card {
+  display: flex; align-items: center; gap: 14px;
+  padding: 12px 20px; background: var(--surface);
+  border: 1px solid var(--border); text-decoration: none;
+  transition: border-color .25s, transform .25s, background .25s;
+  flex: 0 1 auto; min-width: 180px;
+}
+.soc-card:hover { border-color: var(--em); background: rgba(52,211,153,.1); transform: translateY(-3px); }
+.soc-ic { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: rgba(52,211,153,.1); border: 1px solid rgba(52,211,153,.2); border-radius: 4px; font-size: 1rem; flex-shrink: 0; color: var(--em); }
+.soc-plat { font-family: var(--mono); font-size: .6rem; color: var(--em3); letter-spacing: .15em; text-transform: uppercase; }
+.soc-handle { font-family: var(--terminal); font-size: .8rem; font-weight: 600; color: #e5e7eb; white-space: nowrap; }
+.support-card {
+  max-width: 420px; margin: 0 auto; text-align: center;
+  background: var(--surface); border: 1px solid var(--border);
+  padding: 48px 32px;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+.qr-box { width: 220px; height: 220px; margin: 0 auto 32px; border: 1px solid var(--em); background: #000; display: flex; align-items: center; justify-content: center; }
+.qr-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.bank-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px; font-size: .95rem; color: #fff; }
+.bank-row i { color: var(--em); font-size: 1.1rem; }
+.bank-row span.t-sep { font-family: var(--terminal); color: var(--em); font-weight: bold; margin: 0 2px; }
+.bank-id { font-family: var(--terminal); color: #e5e7eb; }
+
+#clock-widget {
+  position: fixed; top: 90px; right: 24px;
+  background: var(--surface); border: 1px solid var(--border);
+  backdrop-filter: blur(10px); padding: 10px 18px; border-radius: 12px;
+  z-index: 90; text-align: right;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4); pointer-events: none;
+}
+#clock-time { font-family: var(--clock-font); color: var(--em); font-size: 1.25rem; font-weight: 700; display: block; letter-spacing: .05em; }
+#clock-date { font-family: var(--mono); color: var(--muted); font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; display: block; margin-top: 2px; }
+
+#easter {
+  position: fixed; inset: 0; z-index: 9998;
+  background: rgba(4,8,12,.88); backdrop-filter: blur(6px);
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+#easter.open { display: flex; animation: bootLine .25s ease forwards; }
+.easter-term {
+  width: min(720px, 100%);
+  background: #080d11; border: 1px solid var(--em);
+  box-shadow: 0 0 80px rgba(52,211,153,.35); overflow: hidden; position: relative;
+}
+.easter-close {
+  position: absolute; top: 10px; right: 14px;
+  background: transparent; border: 0;
+  color: var(--muted); font-family: var(--mono); font-size: .75rem; letter-spacing: .1em;
+}
+.easter-close:hover { color: var(--em); }
+.easter-body {
+  padding: 28px 28px 32px; font-family: var(--mono);
+  font-size: .88rem; line-height: 1.95; color: #9ca3af; min-height: 280px;
+}
+.easter-body .line { white-space: pre-wrap; }
+#egg-toast {
+  position: fixed;
+  bottom: 72px; left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  background: rgba(7,14,18,.96);
+  border: 1px solid var(--em);
+  color: var(--em);
+  font-family: var(--mono);
+  font-size: .72rem;
+  padding: 10px 22px;
+  border-radius: 4px;
+  letter-spacing: .1em;
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  pointer-events: none;
+  z-index: 9990;
+  white-space: nowrap;
+  box-shadow: 0 4px 24px rgba(52,211,153,.15);
+}
+#egg-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40px 0; text-align: center; position: relative; z-index: 2; }
+.ft-sig { font-family: var(--mono); font-size: .75rem; color: var(--muted); letter-spacing: .1em; }
+.ft-sig a { color: var(--em); text-decoration: none; }
+.ft-sig a:hover { text-decoration: underline; }
+.ft-hint { font-family: var(--mono); font-size: .65rem; color: var(--muted); letter-spacing: .12em; margin-top: 10px; opacity: .5; }
+
+.fade { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.fade.in { opacity: 1; transform: none; }
+
+@media(max-width:760px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .av-wrap { justify-self: center; }
+  .nav-links { display: none; }
+  .stats-row { flex-wrap: wrap; }
+  .stat-box { flex: 1 1 50%; }
+  #clock-widget { top: 80px; right: 16px; padding: 8px 14px; }
+  .soc-grid { justify-content: center; }
+  .ac-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div id="boot" role="dialog" aria-label="System boot">
+  <div class="boot-hdr">astear17.sys <span class="boot-ver">v2.5.0</span> — booting portfolio kernel…</div>
+  <div id="boot-log"></div>
+  <button class="boot-skip" type="button">[ESC] skip</button>
+</div>
+
+<canvas id="bg-matrix"></canvas>
+
+<div id="clock-widget">
+  <span id="clock-time">00:00:00</span>
+  <span id="clock-date">loading...</span>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero"><span>~/</span>astear17</a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#activity">Activity</a></li>
+      <li><a href="#academic">Academic</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#updates">Updates</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<section id="hero">
+  <canvas id="mc"></canvas>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">Head Page — Astear17</div>
+        <h1 class="hero-name"><span class="em">Nghĩa</span><br>Astear17</h1>
+        <p class="hero-handle"><span>@Astear17</span> · GitHub · Vibecoder</p>
+        <p class="hero-type"><span id="typed"></span><span class="tw-cur"></span></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/Astear17" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          <a class="btn btn-ghost" href="https://astear17.sino.tw" target="_blank" rel="noopener">Visit Website</a>
+        </div>
+      </div>
+      <div class="av-wrap">
+        <div class="av-spin">
+          <img src="pfp.png" alt="Astear17">
+        </div>
+        <div class="av-badge">HE / HIM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="skills" class="alt-bg">
+  <div class="container">
+    <div class="sh-eye">Tech Stack</div>
+    <h2 class="sh-title"><span>Skills &amp;</span> Tools</h2>
+    <div class="skills-grid">
+      <div class="sk-card fade">
+        <span class="sk-icon"><i class="fab fa-python"></i></span>
+        <div class="sk-name">Python</div>
+        <p class="sk-desc">Backend scripts, automation, and API servers. Powers SignTool's Render backend and others.</p>
+        <div class="sk-bar"><div class="sk-fill" data-w="72"></div></div>
+      </div>
+      <div class="sk-card fade">
+        <span class="sk-icon"><i class="fas fa-code"></i></span>
+        <div class="sk-name">HTML / CSS / JS</div>
+        <p class="sk-desc">Core web stack for portfolio sites, GitHub Pages / Vercel projects, and frontend UI components.</p>
+        <div class="sk-bar"><div class="sk-fill" data-w="86"></div></div>
+      </div>
+      <div class="sk-card fade">
+        <span class="sk-icon"><i class="fab fa-react"></i></span>
+        <div class="sk-name">React</div>
+        <p class="sk-desc">Full-stack Vercel apps with component UIs, hooks, Tailwind, and dynamic state management.</p>
+        <div class="sk-bar"><div class="sk-fill" data-w="68"></div></div>
+      </div>
+      <div class="sk-card fade">
+        <span class="sk-icon"><i class="fab fa-apple"></i></span>
+        <div class="sk-name">iOS Tweaking</div>
+        <p class="sk-desc">IPA signing webapps via zsign, and Sileo repository for iOS 26 icon packs.</p>
+        <div class="sk-bar"><div class="sk-fill" data-w="61"></div></div>
+      </div>
+      <div class="sk-card fade">
+        <span class="sk-icon"><i class="fab fa-android"></i></span>
+        <div class="sk-name">Android / Termux</div>
+        <p class="sk-desc">APK distribution, iOS 26 icon packs, Android TV modded APKs, and self-hosted tooling.</p>
+        <div class="sk-bar"><div class="sk-fill" data-w="58"></div></div>
+      </div>
+      <div class="sk-card fade">
+        <span class="sk-icon"><i class="fas fa-cloud"></i></span>
+        <div class="sk-name">Cloud &amp; DevOps</div>
+        <p class="sk-desc">VercelDrive / OneDrive, Vercel, Render, InfinityFree, MongoDB, Upstash.</p>
+        <div class="sk-bar"><div class="sk-fill" data-w="64"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="projects">
+  <div class="container">
+    <div class="sh-eye">My Works</div>
+    <h2 class="sh-title"><span>Featured</span> Projects</h2>
+    <div class="proj-grid">
+
+      <div class="pj-card fade">
+        <div class="pj-num">01 — Web</div>
+        <div class="pj-name">SignTool <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">React + Python web app for IPA signing. Signing via zsign, certificate validation checking, and P12 management.</p>
+        <div class="pj-stack"><span class="pill">React</span><span class="pill">Python</span><span class="pill">Vercel</span><span class="pill">Render</span></div>
+        <a class="pj-link" href="https://signipa.vercel.app" target="_blank" rel="noopener">&gt; Visit Website</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">02 — Android</div>
+        <div class="pj-name">Android26 <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">Useless iOS 26 icon packs for Android TV with HyperDroid.</p>
+        <div class="pj-stack"><span class="pill">Icon Pack</span><span class="pill">Android TV APK</span><span class="pill">Lucide</span><span class="pill">GitHub API</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/Android26" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">03 — iOS</div>
+        <div class="pj-name">iDevicePatcher <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">Curated iPA store via web or AltStore repository link. Great for TrollStore or certificate signing.</p>
+        <div class="pj-stack"><span class="pill">HTML</span><span class="pill">iOS Apps</span><span class="pill">TrollStore</span></div>
+        <a class="pj-link" href="https://astear17.github.io/iDevicePatcher" target="_blank" rel="noopener">&gt; Visit Website</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">04 — Hosting</div>
+        <div class="pj-name">VercelDrive <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">Host OneDrive files publicly via Vercel with one-click deploy. Powered by Vercel and Upstash.</p>
+        <div class="pj-stack"><span class="pill">Next.js</span><span class="pill">OneDrive API</span><span class="pill">Vercel</span><span class="pill">Upstash</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/VercelDrive" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">05 — Web</div>
+        <div class="pj-name">StandbyD <span class="pj-archived">Archived</span></div>
+        <p class="pj-desc">A standby dock webapp — clock, day/date, Lanyard API for Discord activities, and YouTube player. Perfect for dummy phones.</p>
+        <div class="pj-stack"><span class="pill">HTML</span><span class="pill">Standby</span><span class="pill">Lanyard</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/StandbyD" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">06 — Web</div>
+        <div class="pj-name">VNTelexWriter <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">Write Vietnamese using Telex method directly in the browser. Works offline, zero dependencies.</p>
+        <div class="pj-stack"><span class="pill">HTML</span><span class="pill">Vanilla JS</span><span class="pill">Telex</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/VNTelexWriter" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">07 — Windows</div>
+        <div class="pj-name">Windoze <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">A small hub for Windows optimizer tools and useful apps — curated, no bloat.</p>
+        <div class="pj-stack"><span class="pill">HTML</span><span class="pill">MIT</span><span class="pill">Windows</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/Windoze" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">08 — Hardware</div>
+        <div class="pj-name">Console_Tester <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">A browser tester for gamepads and game controllers — map sticks, buttons, triggers in real time.</p>
+        <div class="pj-stack"><span class="pill">HTML</span><span class="pill">Gamepad API</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/Console_Tester" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+      <div class="pj-card fade">
+        <div class="pj-num">09 — Theme</div>
+        <div class="pj-name">Pure26 <span class="pj-tag">Active</span></div>
+        <p class="pj-desc">A SnowBoard theme bringing the iOS 26 look to jailbroken devices.</p>
+        <div class="pj-stack"><span class="pill">SnowBoard</span><span class="pill">iOS Theme</span><span class="pill">HTML</span></div>
+        <a class="pj-link" href="https://github.com/Astear17/Pure26" target="_blank" rel="noopener">&gt; View Repository</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<section id="activity" class="alt-bg">
+  <div class="container">
+    <div class="sh-eye">Live Metrics</div>
+    <h2 class="sh-title"><span>Activity</span></h2>
+
+    <div class="act-github">
+      <div class="act-sub-head"><i class="fab fa-github"></i> GitHub Stats</div>
+      <div class="gh-grid fade">
+        <div class="gh-card">
+          <img loading="lazy" alt="Astear17 GitHub Stats"
+            src="https://github-readme-stats.vercel.app/api?username=Astear17&amp;theme=nord&amp;show_icons=true&amp;hide_border=true&amp;count_private=true&amp;bg_color=0D1117&amp;title_color=34d399&amp;icon_color=34d399&amp;text_color=c8ffe8&amp;ring_color=34d399">
+        </div>
+        <div class="gh-card">
+          <img loading="lazy" alt="Astear17 Top Languages"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Astear17&amp;theme=nord&amp;show_icons=true&amp;hide_border=true&amp;layout=compact&amp;bg_color=0D1117&amp;title_color=34d399&amp;text_color=c8ffe8">
+        </div>
+        <div class="gh-card gh-streak">
+          <img loading="lazy" alt="Astear17 Streak"
+            src="https://streak-stats.demolab.com?user=Astear17&amp;theme=nord&amp;hide_border=true&amp;background=0D1117&amp;stroke=34d399&amp;ring=34d399&amp;fire=34d399&amp;currStreakLabel=34d399&amp;sideLabels=c8ffe8&amp;dates=9ca3af&amp;sideNums=c8ffe8&amp;currStreakNum=c8ffe8">
+        </div>
+      </div>
+    </div>
+
+    <div class="act-sub-head"><i class="fab fa-discord"></i> Discord Presence</div>
+    <div class="dc-outer fade">
+      <div id="dc-banner" class="dc-banner"></div>
+      <div class="dc-body">
+        <div class="dc-left">
+          <div class="dc-av-area">
+            <div class="dc-av-ring">
+              <img id="dc-av" class="dc-av" src="pfp.png" alt="Discord avatar">
+            </div>
+            <div id="dc-status-dot" class="dc-status-dot" data-status="offline"></div>
+          </div>
+          <div id="dc-name" class="dc-gradient-name">astear17</div>
+          <div id="dc-username" class="dc-username">@astear17</div>
+          <div class="dc-left-divider"></div>
+          <div class="dc-since">
+            <i class="fas fa-calendar-alt"></i> Joined Oct 31, 2022
+          </div>
+          <div class="dc-left-divider"></div>
+          <div class="dc-bio-links">
+            <a href="https://astear17.sino.tw" target="_blank">astear17.sino.tw</a><br>
+            <a href="https://signipa.vercel.app" target="_blank">signipa.vercel.app</a><br>
+            <a href="https://t.me/Astear17..." target="_blank">t.me/Astear17...</a>
+          </div>
+        </div>
+        <div class="dc-right">
+          <div class="dc-right-title">Activities</div>
+          <div id="dc-acts" class="dc-acts">
+            <div class="dc-no-act">Connecting to lanyard.rest…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="academic">
+  <div class="container">
+    <div class="sh-eye">Education</div>
+    <h2 class="sh-title"><span>Academic</span> Journey</h2>
+    <div class="ac-grid" id="academic-grid">
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="about" class="alt-bg">
+  <div class="container">
+    <div class="sh-eye">whoami</div>
+    <h2 class="sh-title"><span>About</span> Me</h2>
+    <div class="stats-row fade">
+      <div class="stat-box"><span class="stat-n has-plus" id="stat-repos">12</span><span class="stat-l">Repositories</span></div>
+      <div class="stat-box"><span class="stat-n has-plus" id="stat-followers">3</span><span class="stat-l">Followers</span></div>
+      <div class="stat-box"><span class="stat-n">UTC+7</span><span class="stat-l">Timezone</span></div>
+      <div class="stat-box"><span class="stat-n">∞</span><span class="stat-l">Curiosity</span></div>
+    </div>
+    <div class="terminal fade">
+      <div class="term-bar" id="term-bar" title="Click me 10 times...">
+        <div class="dot d-r"></div><div class="dot d-y"></div><div class="dot d-g"></div>
+        <span class="term-title">astear17@guest — zsh</span>
+      </div>
+      <div class="term-body">
+        <div><span class="t-p">❯ </span><span class="t-c">cat whoami.json</span></div>
+        <div class="t-dim">{</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"name"</span>: <span class="t-s">"Lê Thành Nghĩa"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"alias"</span>: <span class="t-s">"Astear17"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"location"</span>: <span class="t-s">"Phu My Dong, Gia Lai, Vietnam"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"pronouns"</span>: <span class="t-s">"he/him"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"learning"</span>: <span class="t-v">["Python","HTML","JS","CSS","Pascal"]</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"builds"</span>: <span class="t-v">["iOS tweaking","Android APKs","web apps"]</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"frontend"</span>: <span class="t-v">["Vercel","GitHub Pages","InfinityFree"]</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"backend"</span>: <span class="t-v">["Railway","Render","MongoDB","Upstash"]</span>,</div>
+        <div>&nbsp;&nbsp;<span class="t-k">"email"</span>: <span class="t-s">"go548394@gmail.com"</span></div>
+        <div class="t-dim">}</div>
+        <br>
+        <div><span class="t-p">❯ </span><span class="t-cur"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="updates">
+  <div class="container">
+    <div class="sh-eye">Blog</div>
+    <h2 class="sh-title"><span>Latest</span> Updates</h2>
+    <div class="upd-grid" id="updates-grid">
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="connect" class="alt-bg">
+  <div class="container">
+    <div class="sh-eye">Links</div>
+    <h2 class="sh-title"><span>Let's</span> Connect</h2>
+    <div class="soc-grid">
+      <a class="soc-card fade" href="https://github.com/Astear17" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fab fa-github"></i></div>
+        <div><div class="soc-plat">GitHub</div><div class="soc-handle">@Astear17</div></div>
+      </a>
+      <a class="soc-card fade" href="https://astear17.sino.tw" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fas fa-globe"></i></div>
+        <div><div class="soc-plat">Website</div><div class="soc-handle">astear17.sino.tw</div></div>
+      </a>
+      <a class="soc-card fade" href="https://www.tiktok.com/@astear.17" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fab fa-tiktok"></i></div>
+        <div><div class="soc-plat">TikTok</div><div class="soc-handle">@astear.17</div></div>
+      </a>
+      <a class="soc-card fade" href="https://www.facebook.com/Uma.MoXumXue" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fab fa-facebook"></i></div>
+        <div><div class="soc-plat">Facebook</div><div class="soc-handle">ヾ・astear　ꪮৎཾ.ᐟ</div></div>
+      </a>
+      <a class="soc-card fade" href="https://instagram.com/astear.17" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fab fa-instagram"></i></div>
+        <div><div class="soc-plat">Instagram</div><div class="soc-handle">@astear.17</div></div>
+      </a>
+      <a class="soc-card fade" href="https://www.youtube.com/@Astear17" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fab fa-youtube"></i></div>
+        <div><div class="soc-plat">YouTube</div><div class="soc-handle">@Astear17</div></div>
+      </a>
+      <a class="soc-card fade" href="https://discord.com/users/1036621192515297322" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fab fa-discord"></i></div>
+        <div><div class="soc-plat">Discord</div><div class="soc-handle" id="dc-soc-handle">astear17</div></div>
+      </a>
+      <a class="soc-card fade" href="mailto:go548394@gmail.com">
+        <div class="soc-ic"><i class="fas fa-envelope"></i></div>
+        <div><div class="soc-plat">Email</div><div class="soc-handle">go548394@gmail.com</div></div>
+      </a>
+      <a class="soc-card fade" href="https://zaloapp.com/qr/p/wcotot3277t5" target="_blank" rel="noopener">
+        <div class="soc-ic"><i class="fas fa-comment-dots"></i></div>
+        <div><div class="soc-plat">Zalo</div><div class="soc-handle">0359623729</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<section id="support" class="alt-bg">
+  <div class="container">
+    <div class="sh-eye">Donation</div>
+    <h2 class="sh-title"><span>Support</span> Me</h2>
+    <div class="support-card fade">
+      <div class="qr-box">
+        <img src="qr.png" alt="Payment QR">
+      </div>
+      <div class="bank-details">
+        <p class="bank-row">
+          <i class="fa-solid fa-wallet"></i>
+          Zalopay<span class="t-sep">:</span> <span class="bank-id">0818102612</span>
+        </p>
+        <p class="bank-row">
+          <i class="fa-solid fa-building-columns"></i>
+          BVBank<span class="t-sep">:</span> <span class="bank-id">99ZP26084M41011180</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="ft-sig">
+      Built and deployed by Astear17 ·
+      <a href="https://github.com/Astear17" target="_blank" rel="noopener">github.com/Astear17</a>
+    </p>
+    <p class="ft-hint">Click the terminal bar 10 times for a surprise.</p>
+  </div>
+</footer>
+
+<div id="easter" role="dialog" aria-modal="true">
+  <div class="easter-term">
+    <div class="term-bar" style="cursor:default;">
+      <div class="dot d-r"></div><div class="dot d-y"></div><div class="dot d-g"></div>
+      <span class="term-title">root@astear17 — /</span>
+    </div>
+    <button class="easter-close" id="easter-close" type="button">[ESC]</button>
+    <div class="easter-body" id="easter-body"></div>
+  </div>
+</div>
+
+<div id="egg-toast"></div>
+
+<script>
+
+
+const ACADEMIC_DATA = [
+  {
+    title: "IGCSE",
+    status: "completed",
+    period: "2023–2025",
+    label: "SUBJECTS COMPLETED",
+    subjects: [
+      { name: "Biology",          icon: "check" },
+      { name: "Chemistry",        icon: "check" },
+      { name: "Physics",          icon: "check" },
+      { name: "Combined Science", icon: "check" },
+      { name: "Mathematics",      icon: "check" }
+    ]
+  },
+  {
+    title: "A-Levels",
+    status: "in_progress",
+    period: "2025–Present",
+    label: "CURRENT SUBJECTS",
+    subjects: [
+      { name: "Biology A-Level",   icon: "hourglass" },
+      { name: "Chemistry A-Level", icon: "flask"     }
+    ]
+  }
+];
+
+const UPDATES_DATA = [
+  {
+    title: "Portfolio Revamp v2.5",
+    content: "Merged GitHub + Discord into a single Activity section, added Academic Journey and Latest Updates, rebuilt Discord card with a Discord-accurate purple theme, and replaced the keyboard Konami code with a click-based easter egg.",
+    description: "Major overhaul — cleaner structure, new sections, better mobile layout.",
+    time: "21:00:00 19/04/2026"
+  }
+  {
+    title: "Successfully verified domain",
+    content: "Finally verified https://astear17.sino.tw",
+    description: "I have finally done verifying https://astear17.sino.tw on GitHub (still sad becasue no Vercel ToT)",
+    time: "17:12:02 18/04/2026"
+  },
+];
+
+
+
+const HERO_TEXT = "A young tech enthusiast building tools for iOS, Android & webApps. Learning Python, HTML, JS, CSS & Pascal. Open-source projects, one vibe-coded commit at a time.";
+
+(function boot(){
+  const log  = document.getElementById('boot-log');
+  const el   = document.getElementById('boot');
+  const skip = el.querySelector('.boot-skip');
+  if (sessionStorage.getItem('astear17.booted') === '1') { el.remove(); return; }
+  const lines = [
+    ['ok',   'BIOS POST ....................... OK'],
+    ['dim',  'Probing CPU: vibecoder-core @ ∞MHz'],
+    ['ok',   'Loading kernel /boot/astear17.sys .. OK'],
+    ['ok',   'Mounting /dev/curiosity ........... OK'],
+    ['ok',   'Mounting /dev/coffee .............. OK'],
+    ['warn', 'Checking /dev/sleep ............... MISSING (ignored)'],
+    ['ok',   'Starting network: wlan0 up ........ OK'],
+    ['dim',  'Resolving github.com .............. 140.82.121.4'],
+    ['ok',   'Loading modules: python, html, js, css, pascal'],
+    ['ok',   'Spawning vibecoder daemon ......... [PID 1337]'],
+    ['dim',  'Connecting to lanyard.rest ........ connected'],
+    ['white','astear17@web:~$ ./portfolio --launch']
+  ];
+  const colorMap = { ok:'boot-ok', warn:'boot-warn', dim:'boot-dim', white:'boot-white' };
+  function finish() {
+    el.classList.add('done');
+    sessionStorage.setItem('astear17.booted', '1');
+    setTimeout(() => el.remove(), 600);
+  }
+  skip.addEventListener('click', finish);
+  document.addEventListener('keydown', function onEsc(e){ if (e.key==='Escape'){ finish(); document.removeEventListener('keydown',onEsc); } });
+  let i = 0;
+  const iv = setInterval(() => {
+    if (i >= lines.length) { clearInterval(iv); setTimeout(finish, 700); return; }
+    const [kind, text] = lines[i++];
+    const prefix = kind==='ok'?'[ OK ] ':kind==='warn'?'[WARN] ':kind==='white'?'':'       ';
+    const div = document.createElement('div');
+    div.className = colorMap[kind] || '';
+    div.style.animationDelay = '0s';
+    div.textContent = prefix + text;
+    log.appendChild(div);
+  }, 180);
+})();
+
+document.addEventListener('mousemove', e => {
+  document.querySelectorAll('.sk-card, .pj-card').forEach(card => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
+    card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
+  });
+});
+
+function matrixRain(canvas, opts) {
+  const ctx = canvas.getContext('2d');
+  const cfg = Object.assign({ host: canvas, color: '#00ff80', fontSize: 14, step: 20, fade: .08, interval: 60 }, opts);
+  let W, H, cols, drops;
+  const ch = '01ABCDEF<>/_';
+  function resize() {
+    W = canvas.width  = cfg.host === window ? innerWidth  : (cfg.host.offsetWidth  || innerWidth);
+    H = canvas.height = cfg.host === window ? innerHeight : (cfg.host.offsetHeight || innerHeight);
+    cols = Math.floor(W / cfg.step);
+    drops = Array(cols).fill(0).map(() => Math.floor(Math.random() * (H / cfg.step)));
+  }
+  resize();
+  addEventListener('resize', resize);
+  setInterval(() => {
+    ctx.fillStyle = `rgba(4,8,12,${cfg.fade})`;
+    ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = cfg.color;
+    ctx.font = cfg.fontSize + 'px Share Tech Mono, monospace';
+    drops.forEach((y, idx) => {
+      ctx.fillText(ch[Math.floor(Math.random() * ch.length)], idx * cfg.step, y * cfg.step);
+      if (y * cfg.step > H && Math.random() > .975) drops[idx] = 0;
+      drops[idx]++;
+    });
+  }, cfg.interval);
+}
+matrixRain(document.getElementById('mc'),        { host: document.getElementById('hero'), step:20, fontSize:14, fade:.08, interval:60 });
+matrixRain(document.getElementById('bg-matrix'), { host: window, step:22, fontSize:13, fade:.05, interval:85 });
+
+function updateClock() {
+  const now = new Date();
+  const timeOpts = { timeZone:'Asia/Ho_Chi_Minh', hour12:false, hour:'2-digit', minute:'2-digit', second:'2-digit' };
+  const dateOpts = { timeZone:'Asia/Ho_Chi_Minh', weekday:'long', day:'2-digit', month:'short', year:'numeric' };
+  document.getElementById('clock-time').textContent = new Intl.DateTimeFormat('en-GB', timeOpts).format(now);
+  document.getElementById('clock-date').textContent = new Intl.DateTimeFormat('en-GB', dateOpts).format(now);
+}
+setInterval(updateClock, 1000); updateClock();
+
+let typeTimer = null;
+function startTypewriter() {
+  const out = document.getElementById('typed');
+  if (!out) return;
+  if (typeTimer) clearInterval(typeTimer);
+  out.textContent = ''; let i = 0;
+  typeTimer = setInterval(() => {
+    out.textContent = HERO_TEXT.slice(0, i);
+    if (++i > HERO_TEXT.length) clearInterval(typeTimer);
+  }, 16);
+}
+
+function reveal(el) {
+  el.classList.add('in');
+  el.querySelectorAll('.sk-fill').forEach(b => { b.style.width = (b.dataset.w || 0) + '%'; });
+}
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) reveal(e.target); });
+}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+function check() {
+  document.querySelectorAll('.fade').forEach(el => {
+    if (!el.classList.contains('in')) {
+      const r = el.getBoundingClientRect();
+      if (r.top < innerHeight + 40) reveal(el);
+    }
+  });
+}
+function reObserve() {
+  document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+  setTimeout(check, 50);
+}
+
+function renderAcademic() {
+  const grid = document.getElementById('academic-grid');
+  if (!grid) return;
+  const iconMap = { check: 'fa-check', hourglass: 'fa-hourglass-half', flask: 'fa-flask' };
+  grid.innerHTML = ACADEMIC_DATA.map(item => {
+    const done = item.status === 'completed';
+    const chips = item.subjects.map(s =>
+      `<span class="ac-chip ${done ? '' : 'ac-chip-prog'}">
+        <i class="fas ${iconMap[s.icon] || 'fa-circle'}"></i>${s.name}
+      </span>`
+    ).join('');
+    return `
+      <div class="ac-card fade">
+        <div class="ac-card-top">
+          <div class="ac-icon-wrap">
+            <div class="ac-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="ac-icon-badge ${done ? 'ac-badge-done' : 'ac-badge-prog'}">
+              <i class="fas ${done ? 'fa-check' : 'fa-rotate'}"></i>
+            </div>
+          </div>
+          <div class="ac-status-info">
+            <span class="ac-status ${done ? 'ac-status-done' : 'ac-status-prog'}">
+              ${done ? 'COMPLETED' : 'IN PROGRESS'}
+            </span>
+            <span class="ac-period">${item.period}</span>
+          </div>
+        </div>
+        <h3 class="ac-title">${item.title}</h3>
+        <div class="ac-label-row">
+          <span class="ac-dot ${done ? '' : 'ac-dot-prog'}"></span>
+          <span class="ac-label">${item.label}</span>
+        </div>
+        <div class="ac-subjects">${chips}</div>
+      </div>`;
+  }).join('');
+  reObserve();
+}
+
+function renderUpdates() {
+  const grid = document.getElementById('updates-grid');
+  if (!grid) return;
+  if (!UPDATES_DATA.length) {
+    grid.innerHTML = '<p class="upd-empty">No updates yet.</p>';
+    return;
+  }
+  grid.innerHTML = [...UPDATES_DATA].reverse().map((item, i) => `
+    <article class="upd-card fade">
+      <div class="upd-card-head">
+        <span class="upd-time"><i class="fas fa-clock"></i> ${item.time} GMT+7</span>
+        ${i === 0 ? '<span class="upd-new">NEW</span>' : ''}
+      </div>
+      <h3 class="upd-title">${item.title}</h3>
+      <p class="upd-desc">${item.description}</p>
+      ${item.content ? `<p class="upd-content">${item.content}</p>` : ''}
+    </article>`
+  ).join('');
+  reObserve();
+}
+
+renderAcademic();
+renderUpdates();
+
+document.querySelectorAll('.fade').forEach((el, idx) => {
+  el.style.transitionDelay = (idx % 6 * 0.07) + 's';
+  obs.observe(el);
+});
+check();
+setTimeout(check, 150);
+
+(async function loadGithubStats() {
+  try {
+    const r = await fetch('https://api.github.com/users/Astear17');
+    if (!r.ok) return;
+    const d = await r.json();
+    const repos = document.getElementById('stat-repos');
+    const fol   = document.getElementById('stat-followers');
+    if (repos && d.public_repos != null) repos.textContent = d.public_repos;
+    if (fol   && d.followers   != null) fol.textContent   = d.followers;
+  } catch(e) {}
+})();
+
+(function lanyard() {
+  const USER_ID = '1036621192515297322';
+
+  function assetURL(app_id, asset_id) {
+    if (!asset_id) return null;
+    if (asset_id.startsWith('mp:external/'))
+      return 'https://media.discordapp.net/external/' + asset_id.slice('mp:external/'.length);
+    if (asset_id.startsWith('spotify:'))
+      return 'https://i.scdn.co/image/' + asset_id.slice('spotify:'.length);
+    return `https://cdn.discordapp.com/app-assets/${app_id}/${asset_id}.png`;
+  }
+
+  function escapeHtml(s) {
+    return String(s || '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[c]);
+  }
+
+  function render(data) {
+    const statusDot = document.getElementById('dc-status-dot');
+    const avEl      = document.getElementById('dc-av');
+    const nameEl    = document.getElementById('dc-name');
+    const handleEl  = document.getElementById('dc-username');
+    const actsEl    = document.getElementById('dc-acts');
+    const socHandle = document.getElementById('dc-soc-handle');
+
+    if (!data) {
+      if (actsEl) actsEl.innerHTML = '<div class="dc-no-act">lanyard.rest unreachable</div>';
+      return;
+    }
+
+    const u = data.discord_user || {};
+    const status = data.discord_status || 'offline';
+
+    if (statusDot) statusDot.setAttribute('data-status', status);
+
+    if (u.avatar && avEl) {
+      const ext = u.avatar.startsWith('a_') ? 'gif' : 'png';
+      avEl.src = `https://cdn.discordapp.com/avatars/${u.id}/${u.avatar}.${ext}?size=128`;
+    }
+
+    const bannerEl = document.getElementById('dc-banner');
+    if (u.banner && bannerEl) {
+      const ext = u.banner.startsWith('a_') ? 'gif' : 'png';
+      bannerEl.style.backgroundImage = `url(https://cdn.discordapp.com/banners/${u.id}/${u.banner}.${ext}?size=480)`;
+      bannerEl.style.backgroundSize = 'cover';
+      bannerEl.style.backgroundPosition = 'center';
+    }
+
+    const display = u.global_name || u.display_name || u.username || 'astear17';
+    if (nameEl)   nameEl.textContent = display;
+    if (handleEl) handleEl.textContent = u.username ? '@' + u.username : '@astear17';
+    if (socHandle) socHandle.textContent = display;
+
+    if (!actsEl) return;
+    let html = '';
+
+    const custom = (data.activities || []).find(a => a.type === 4);
+    if (custom && custom.state) {
+      html += `<div class="dc-custom-status">${custom.emoji?.name ? escapeHtml(custom.emoji.name) + ' ' : ''}${escapeHtml(custom.state)}</div>`;
+    }
+
+    if (data.listening_to_spotify && data.spotify) {
+      const s = data.spotify;
+      html += `<div class="dc-act-item">
+        <img class="dc-act-img" src="${escapeHtml(s.album_art_url || '')}" alt="Album">
+        <div class="dc-act-info">
+          <div class="dc-act-type"><i class="fab fa-spotify" style="color:#1DB954"></i> Listening to Spotify</div>
+          <div class="dc-act-name">${escapeHtml(s.song)}</div>
+          <div class="dc-act-sub">${escapeHtml(s.artist)} — ${escapeHtml(s.album)}</div>
+        </div>
+      </div>`;
+    }
+
+    const acts = (data.activities || []).filter(a => a.type !== 4 && a.name !== 'Spotify');
+    acts.forEach(a => {
+      const icoId = a.assets && (a.assets.large_image || a.assets.small_image);
+      const ico   = icoId ? assetURL(a.application_id, icoId) : null;
+      const typeLabel = a.type === 0 ? 'Playing' : a.type === 2 ? 'Listening' : a.type === 3 ? 'Watching' : 'Activity';
+      html += `<div class="dc-act-item">
+        ${ico
+          ? `<img class="dc-act-img" src="${escapeHtml(ico)}" alt="Activity">`
+          : `<div class="dc-act-img-placeholder"><i class="fas fa-gamepad"></i></div>`}
+        <div class="dc-act-info">
+          <div class="dc-act-type">${typeLabel}</div>
+          <div class="dc-act-name">${escapeHtml(a.name || '')}</div>
+          ${a.details ? `<div class="dc-act-sub">${escapeHtml(a.details)}</div>` : ''}
+          ${a.state   ? `<div class="dc-act-sub">${escapeHtml(a.state)}</div>`   : ''}
+        </div>
+      </div>`;
+    });
+
+    if (!html) {
+      html = status === 'offline'
+        ? '<div class="dc-no-act">Currently offline</div>'
+        : '<div class="dc-no-act">No current activity</div>';
+    }
+
+    actsEl.innerHTML = html;
+  }
+
+  async function poll() {
+    try {
+      const r = await fetch(`https://api.lanyard.rest/v1/users/${USER_ID}`);
+      const j = await r.json();
+      if (j && j.success) render(j.data); else render(null);
+    } catch(e) { render(null); }
+  }
+  poll();
+  setInterval(poll, 20000);
+
+  try {
+    const ws = new WebSocket('wss://api.lanyard.rest/socket');
+    let hb = null;
+    ws.addEventListener('message', ev => {
+      let msg; try { msg = JSON.parse(ev.data); } catch(e){ return; }
+      if (msg.op === 1) {
+        ws.send(JSON.stringify({ op:2, d:{ subscribe_to_id: USER_ID } }));
+        if (hb) clearInterval(hb);
+        hb = setInterval(() => { try { ws.send(JSON.stringify({op:3})); } catch(e){} }, (msg.d && msg.d.heartbeat_interval) || 30000);
+      } else if (msg.t === 'INIT_STATE' || msg.t === 'PRESENCE_UPDATE') {
+        render(msg.d);
+      }
+    });
+    ws.addEventListener('close', () => { if (hb) clearInterval(hb); });
+  } catch(e) {}
+})();
+
+(function clickEgg() {
+  const termBar = document.getElementById('term-bar');
+  const toast   = document.getElementById('egg-toast');
+  const modal   = document.getElementById('easter');
+  const body    = document.getElementById('easter-body');
+  const closeBtn = document.getElementById('easter-close');
+  const TOTAL = 10;
+  let clicks = 0;
+  let toastTimer = null;
+
+  const script = [
+    { txt: 'astear17@root:~# sudo rm -rf /',          color: 't-c',  delay: 600 },
+    { txt: '[sudo] password for astear17: ••••••••',  color: 't-dim',delay: 900 },
+    { txt: 'rm: cannot remove \'/\':',                color: 't-c',  delay: 450 },
+    { txt: '        Operation not permitted 🙃',       color: 't-s',  delay: 700 },
+    { txt: '',                                         color: 't-dim',delay: 200 },
+    { txt: '↳ Just kidding. Nothing was harmed.',      color: 't-k',  delay: 600 },
+    { txt: '↳ You found the click easter egg.',        color: 't-k',  delay: 500 },
+    { txt: '',                                         color: 't-dim',delay: 200 },
+    { txt: 'astear17@root:~# whoami',                  color: 't-c',  delay: 500 },
+    { txt: 'a vibecoder who should be sleeping.',      color: 't-v',  delay: 700 },
+    { txt: '',                                         color: 't-dim',delay: 200 },
+    { txt: 'astear17@root:~# echo "thanks for visiting ♥"', color:'t-c', delay: 500 },
+    { txt: 'thanks for visiting ♥',                    color: 't-s',  delay: 500 },
+    { txt: '', color: 't-dim', delay: 200 },
+    { cursor: true, delay: 0 }
+  ];
+
+  function playScript() {
+    body.innerHTML = '';
+    let acc = 0;
+    script.forEach(step => {
+      acc += step.delay;
+      setTimeout(() => {
+        const d = document.createElement('div');
+        d.className = 'line';
+        if (step.cursor) {
+          d.innerHTML = '<span class="t-p">astear17@root:~# </span><span class="t-cur"></span>';
+        } else {
+          d.innerHTML = `<span class="${step.color}">${step.txt.replace(/</g,'&lt;')}</span>`;
+        }
+        body.appendChild(d);
+      }, acc);
+    });
+  }
+
+  function openModal() { modal.classList.add('open'); playScript(); }
+  function closeModal() { modal.classList.remove('open'); }
+
+  function showToast(remaining) {
+    toast.textContent = `Press ${remaining} more time${remaining !== 1 ? 's' : ''} to enter easter egg mode`;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+      clicks = 0;
+    }, 3500);
+  }
+
+  if (termBar) {
+    termBar.addEventListener('click', () => {
+      clicks++;
+      if (clicks >= TOTAL) {
+        clicks = 0;
+        toast.classList.remove('show');
+        clearTimeout(toastTimer);
+        openModal();
+      } else if (clicks >= 3) {
+        showToast(TOTAL - clicks);
+      }
+    });
+  }
+
+  closeBtn && closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+})();
+
+startTypewriter();
+</script>
+</body>
+</html>
