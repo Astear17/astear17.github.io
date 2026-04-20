@@ -953,7 +953,7 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
       <div class="stat-box"><span class="stat-n">∞</span><span class="stat-l">Curiosity</span></div>
     </div>
     <div class="terminal fade">
-      <div class="term-bar" id="term-bar" title="Click me 10 times...">
+      <div class="term-bar" id="term-bar" title="You should spam on this bar">
         <div class="dot d-r"></div><div class="dot d-y"></div><div class="dot d-g"></div>
         <span class="term-title">astear17@guest — zsh</span>
       </div>
@@ -1066,7 +1066,7 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40
       Built and deployed by Astear17 ·
       <a href="https://github.com/Astear17" target="_blank" rel="noopener">github.com/Astear17</a>
     </p>
-    <p class="ft-hint">Click the terminal bar 10 times for a surprise.</p>
+    <p class="ft-hint">Click the terminal bar 10 times for system access.</p>
   </div>
 </footer>
 
@@ -1129,7 +1129,13 @@ const UPDATES_DATA = [
     title: "Final for VN Cybersecurity",
     content: "So shocked, I have officially enrolled to be 3rd rank of Gia Lai to be in the 'Secondary School Students with Cybersecurity' contest. I am very proud from the time I was writing this.",
     description: "Staying 3rd rank in 'Secondary School Students with Cybersecurity' contest",
-    time: "3:24:31 16/04/2026"
+    time: "13:24:31 16/04/2026"
+  },
+  {
+    title: "1st of Gia Lai Province for VN Cybersecurity",
+    content: "Mind you but I have done my final for 19/24 with 6 mins and being the 1st rank of Gia Lai Province. There might be a high chance that I should be invited by NCA to go to Hanoi for free (self-prize). Currently I already have a school and province prizes.",
+    description: "Won 1st rank in 'Secondary School Students with Cybersecurity' contest at Province level",
+    time: "22:41:09 20/04/2026"
   },
 ];
 
@@ -1475,12 +1481,15 @@ setTimeout(check, 150);
 
   const script = [
     { txt: 'astear17@root:~# sudo rm -rf /',          color: 't-c',  delay: 600 },
-    { txt: '[sudo] password for astear17: ••••••••',  color: 't-dim',delay: 900 },
+    { txt: '[sudo] password for astear17: ',          color: 't-dim',delay: 900 },
     { txt: 'rm: cannot remove \'/\':',                color: 't-c',  delay: 450 },
-    { txt: '        Operation not permitted 🙃',       color: 't-s',  delay: 700 },
-    { txt: '',                                         color: 't-dim',delay: 200 },
-    { txt: '↳ Just kidding. Nothing was harmed.',      color: 't-k',  delay: 600 },
-    { txt: '↳ You found the click easter egg.',        color: 't-k',  delay: 500 },
+    { txt: 'Operation not permitted. Access denied.', color: 't-s',  delay: 700 },
+    { txt: 'ldr devices',                             color: 't-dim',delay: 200 },
+    { txt: '↳ localhost',      color: 't-k',  delay: 600 },
+    { txt: 'astear17@root:~# sudo mqsas.IMQSNative --no-preserve',          color: 't-c',delay: 1500 },
+    { txt: 'Waiting for localhost:5555',              color: 't-k',delay: 2000 },
+    { txt: '↳ connected to localhost. Performing actions.',      color: 't-k',  delay: 600 },
+    { txt: '↳ You have successfully turned on Developer Mode.',        color: 't-k',  delay: 500 },
     { txt: '',                                         color: 't-dim',delay: 200 },
     { txt: 'astear17@root:~# whoami',                  color: 't-c',  delay: 500 },
     { txt: 'a vibecoder who should be sleeping.',      color: 't-v',  delay: 700 },
@@ -1513,7 +1522,7 @@ setTimeout(check, 150);
   function closeModal() { modal.classList.remove('open'); }
 
   function showToast(remaining) {
-    toast.textContent = `Press ${remaining} more time${remaining !== 1 ? 's' : ''} to enter easter egg mode`;
+    toast.textContent = `Press ${remaining} more time${remaining !== 1 ? 's' : ''} to enter developer mode`;
     toast.classList.add('show');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => {
